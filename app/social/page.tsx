@@ -5,11 +5,11 @@ import type React from "react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { config } from "@/lib/site-config"
-import { Github, Linkedin, Twitter, Instagram, Music, Send, MessageCircle } from "lucide-react"
+import { Github, Linkedin, Twitter, Instagram, Music, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function SocialPage() {
-  const socials = config.socialMedia
+  const socials = config.socialMedia ?? {}
 
   const socialIcons: Record<string, React.ComponentType<any>> = {
     github: Github,
@@ -17,7 +17,6 @@ export default function SocialPage() {
     twitter: Twitter,
     instagram: Instagram,
     tiktok: Music,
-    telegram: Send,
     whatsapp: MessageCircle,
   }
 
@@ -27,9 +26,10 @@ export default function SocialPage() {
     twitter: "from-sky-400 to-sky-600",
     instagram: "from-pink-500 to-rose-700",
     tiktok: "from-black to-slate-800",
-    telegram: "from-blue-400 to-blue-600",
     whatsapp: "from-green-400 to-green-600",
   }
+
+  const entries = Object.entries(socials).filter(([, social]) => Boolean(social?.url))
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -41,7 +41,7 @@ export default function SocialPage() {
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-4">Connect With Me</h1>
               <p className="text-lg text-muted-foreground">
-                Follow my work, get updates, and stay connected across various social platforms. Let's build amazing
+                Follow my work, get updates, and stay connected across various social platforms. Let&apos;s build amazing
                 things together!
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function SocialPage() {
             <div className="max-w-3xl mx-auto">
               {/* Main Social Links Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-                {Object.entries(socials).map(([key, social]) => {
+                {entries.map(([key, social]) => {
                   const Icon = socialIcons[key] || Github
                   const colorClass = socialColors[key] || "from-gray-600 to-gray-900"
 
@@ -78,9 +78,11 @@ export default function SocialPage() {
                         </div>
                         <div className="flex-1">
                           <h3 className="text-lg font-semibold text-foreground capitalize mb-1">{key}</h3>
-                          <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
-                            @{social.username}
-                          </p>
+                          {social.username && (
+                            <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                              @{social.username}
+                            </p>
+                          )}
                         </div>
                         <div className="text-accent opacity-0 group-hover:opacity-100 transition-opacity">
                           <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,9 +99,9 @@ export default function SocialPage() {
               <div className="rounded-lg border border-border bg-card/50 p-8 mb-12">
                 <h2 className="text-2xl font-bold text-foreground mb-8">My Presence</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {Object.entries(socials).map(([key, social]) => (
+                  {entries.map(([key], idx) => (
                     <div key={key} className="text-center p-4 rounded-lg bg-card border border-border/50">
-                      <p className="text-2xl font-bold gradient-text mb-2">{Object.keys(socials).indexOf(key) + 1}</p>
+                      <p className="text-2xl font-bold gradient-text mb-2">{idx + 1}</p>
                       <p className="text-xs text-muted-foreground capitalize">{key}</p>
                     </div>
                   ))}
@@ -107,25 +109,22 @@ export default function SocialPage() {
               </div>
 
               {/* CTA Section */}
-              <div className="rounded-lg border border-accent/30 bg-accent/5 p-8 text-center">
-                <h3 className="text-2xl font-bold text-foreground mb-4">Start a Conversation</h3>
-                <p className="text-muted-foreground mb-6">
-                  Pick your favorite platform and let's connect. I'm always excited to chat about projects, ideas, and
-                  opportunities.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                    <a href={socials.whatsapp.url} target="_blank" rel="noopener noreferrer">
-                      Message on WhatsApp
-                    </a>
-                  </Button>
-                  <Button asChild variant="outline">
-                    <a href={socials.telegram.url} target="_blank" rel="noopener noreferrer">
-                      Connect on Telegram
-                    </a>
-                  </Button>
+              {socials.whatsapp?.url && (
+                <div className="rounded-lg border border-accent/30 bg-accent/5 p-8 text-center">
+                  <h3 className="text-2xl font-bold text-foreground mb-4">Start a Conversation</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Pick your favorite platform and let&apos;s connect. I&apos;m always excited to chat about projects,
+                    ideas, and opportunities.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                      <a href={socials.whatsapp.url} target="_blank" rel="noopener noreferrer">
+                        Message on WhatsApp
+                      </a>
+                    </Button>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </section>
