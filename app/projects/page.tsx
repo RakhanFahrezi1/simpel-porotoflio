@@ -28,96 +28,6 @@ const projectsData: ProjectItem[] = [
   },
   {
     id: 2,
-    title: "Dashboard Pengeluaran & Pembelian Bahan Baku Uih Ka Imah",
-    category: "Operations & Data",
-    role: "Koordinator Operasional & Data • Warung Uih Ka Imah",
-    period: "Looker Studio",
-    image: "/images/projects/project-2-uih-ka-imah.jpg",
-    shortDescription:
-      "Kontrol pengeluaran cabang, kategori beban, vendor, dan pembelian bahan baku untuk efisiensi biaya operasional",
-    description:
-      "Membangun dashboard pelaporan di Looker Studio untuk mengendalikan pengeluaran operasional per cabang, memetakan proporsi kategori beban, serta mengevaluasi fluktuasi harga dan pembelian bahan baku berdasarkan vendor dan metode bayar di Warung Uih Ka Imah.",
-    highlights: [
-      "Menyediakan filter interaktif per cabang dan bulan untuk mendeteksi lonjakan beban operasional lebih dini",
-      "Membandingkan efisiensi pembelian bahan baku antar-vendor dan metode pembayaran guna mendukung negosiasi supplier",
-    ],
-    technologies: ["Looker Studio", "Operational Data", "Cost & Vendor Tracking", "Reporting"],
-    featured: true,
-  },
-  {
-    id: 3,
-    title: "Dashboard Penjualan Multi-Channel & Promosi (2025)",
-    category: "BI & Dashboard",
-    role: "Business Intelligence / Data Analyst",
-    period: "Power BI",
-    image: "/images/projects/project-3-sales-channel-promo.png",
-    shortDescription:
-      "Evaluasi revenue, net revenue, efektivitas diskon, dan kontribusi channel penjualan untuk optimasi promosi",
-    description:
-      "Menganalisis performa penjualan lintas channel (POS Kasir, GrabFood, GoFood, Website, Tokopedia, ShopeeFood) untuk mengukur dampak program promo terhadap margin, metode pembayaran, potensi wilayah provinsi, produk terlaris, dan segmen pelanggan.",
-    highlights: [
-      "Memantau rasio Revenue (86M) terhadap Net Revenue (78M), total diskon, kuantitas terjual, dan frekuensi transaksi",
-      "Mengidentifikasi channel penjualan, wilayah provinsi, dan lini produk dengan kontribusi tertinggi untuk alokasi anggaran promo",
-    ],
-    technologies: ["Power BI", "Sales Analytics", "Promo & Channel Analysis", "Data Visualization"],
-    featured: true,
-  },
-  {
-    id: 4,
-    title: "Dashboard Supermarket — Profit & Product Line",
-    category: "BI & Dashboard",
-    role: "Business Intelligence / Data Analyst",
-    period: "BI Dashboard",
-    image: "/images/projects/project-4-supermarket.png",
-    shortDescription:
-      "Analisis profitabilitas lini produk, tren laba harian, kepuasan pelanggan, dan preferensi metode pembayaran",
-    description:
-      "Menyusun dashboard performa ritel supermarket untuk mengevaluasi kontribusi profit per product line, pergerakan laba harian, rata-rata rating kepuasan pelanggan, serta preferensi metode pembayaran berdasarkan segmen pembeli.",
-    highlights: [
-      "Memungkinkan segmentasi cepat berdasarkan metode pembayaran (Payment) dan gender untuk memahami pola belanja pelanggan",
-      "Membandingkan margin keuntungan dan skor rating antar lini produk (Food & beverages, Fashion, dll.) sebagai dasar prioritas stok",
-    ],
-    technologies: ["Data Visualization", "Retail Analytics", "KPI Reporting", "Dashboard Design"],
-    featured: false,
-  },
-  {
-    id: 5,
-    title: "Dashboard Data Covid Regional Indonesia",
-    category: "BI & Dashboard",
-    role: "Business Intelligence / Data Analyst",
-    period: "Tableau Public",
-    image: "/images/projects/project-5-covid-tableau.jpg",
-    shortDescription:
-      "Pemetaan sebaran kasus regional, rasio pemulihan, dan tren tahunan antarprovinsi di Indonesia",
-    description:
-      "Mengolah dan memvisualisasikan data epidemiologi regional di Tableau Public guna memantau perbandingan kasus aktif, kasus baru, tingkat kematian, dan tingkat pemulihan antarprovinsi di Indonesia secara geografis maupun historis.",
-    highlights: [
-      "Menyajikan peta interaktif antarprovinsi untuk mengidentifikasi wilayah dengan konsentrasi kasus tertinggi secara cepat",
-      "Melacak tren tahunan dan perbandingan rasio pemulihan terhadap total kasus per wilayah",
-    ],
-    technologies: ["Tableau", "Geo Mapping", "Data Visualization", "Public Analytics"],
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "Mental Care — Prototipe Aplikasi Kesehatan Mental",
-    category: "Analytics & Research",
-    role: "UI/UX & Product Prototype • PKM",
-    period: "Mobile UI/UX",
-    image: "/images/projects/project-6-mental-care.jpg",
-    shortDescription:
-      "Perancangan alur layanan konseling digital mulai dari pemetaan topik, pemilihan psikolog, hingga penjadwalan",
-    description:
-      "Merancang prototipe aplikasi mobile Mental Care berbasis kebutuhan pengguna untuk menyederhanakan perjalanan pasien dalam memilih topik konseling, mencocokkan rekomendasi psikolog, mengatur jadwal sesi, hingga menyelesaikan pembayaran dalam satu alur terpadu.",
-    highlights: [
-      "Merancang alur eksplorasi topik konseling dan pencocokan profil psikolog untuk menurunkan hambatan awal pengguna",
-      "Menyederhanakan proses booking jadwal konsultasi dan pembayaran guna meningkatkan kelancaran konversi sesi",
-    ],
-    technologies: ["UI/UX Design", "Mobile Prototyping", "User Flow", "Product Design"],
-    featured: false,
-  },
-  {
-    id: 7,
     title: "Interactive BI Playground — E-Commerce & Digital Marketing",
     category: "BI & Dashboard",
     role: "Data & BI Analyst • Portfolio Project",
@@ -136,7 +46,26 @@ const projectsData: ProjectItem[] = [
     href: "/projects/bi-playground",
   },
   {
-    id: 8,
+    id: 3,
+    title: "Demand Forecasting, Margin & Inventory What-If Simulator",
+    category: "Operations & Data",
+    role: "Business & Data Analyst • Decision Simulator",
+    period: "2026 • Next.js & Recharts",
+    image: "/images/projects/simulasi.png",
+    shortDescription:
+      "Simulator proyeksi permintaan 14 hari, sensitivitas net margin akibat diskon & kenaikan harga bahan baku, serta perhitungan Reorder Point (ROP) stok",
+    description:
+      "Membangun simulator analitik bisnis interaktif untuk memproyeksikan permintaan 14 hari ke depan, menguji dampak perubahan harga bahan baku dan diskon promo terhadap net profit, serta menghitung rekomendasi pemesanan ulang stok berbasis safety stock dan lead time.",
+    highlights: [
+      "What-If slider & preset skenario cepat untuk menguji dampak kenaikan harga bahan baku, promo, dan lonjakan akhir pekan terhadap net margin",
+      "Grafik tren aktual vs proyeksi beserta batas atas/bawah serta tabel Reorder Point (ROP) otomatis per bahan baku",
+    ],
+    technologies: ["Next.js", "TypeScript", "Recharts", "Demand Forecasting", "Inventory ROP"],
+    featured: true,
+    href: "/projects/demand-forecast",
+  },
+  {
+    id: 4,
     title: "SQL & Python — Retail Customer Segmentation (RFM) & Profit Analysis",
     category: "Analytics & Research",
     role: "Data Analyst • SQL & Python Case Study",
@@ -153,6 +82,96 @@ const projectsData: ProjectItem[] = [
     technologies: ["SQL", "BigQuery", "Python", "Pandas", "RFM Analysis"],
     featured: true,
     href: "/projects/sql-python-case",
+  },
+  {
+    id: 5,
+    title: "Dashboard Penjualan Multi-Channel & Promosi (2025)",
+    category: "BI & Dashboard",
+    role: "Business Intelligence / Data Analyst",
+    period: "Power BI",
+    image: "/images/projects/project-3-sales-channel-promo.png",
+    shortDescription:
+      "Evaluasi revenue, net revenue, efektivitas diskon, dan kontribusi channel penjualan untuk optimasi promosi",
+    description:
+      "Menganalisis performa penjualan lintas channel (POS Kasir, GrabFood, GoFood, Website, Tokopedia, ShopeeFood) untuk mengukur dampak program promo terhadap margin, metode pembayaran, potensi wilayah provinsi, produk terlaris, dan segmen pelanggan.",
+    highlights: [
+      "Memantau rasio Revenue (86M) terhadap Net Revenue (78M), total diskon, kuantitas terjual, dan frekuensi transaksi",
+      "Mengidentifikasi channel penjualan, wilayah provinsi, dan lini produk dengan kontribusi tertinggi untuk alokasi anggaran promo",
+    ],
+    technologies: ["Power BI", "Sales Analytics", "Promo & Channel Analysis", "Data Visualization"],
+    featured: true,
+  },
+  {
+    id: 6,
+    title: "Dashboard Pengeluaran & Pembelian Bahan Baku Uih Ka Imah",
+    category: "Operations & Data",
+    role: "Koordinator Operasional & Data • Warung Uih Ka Imah",
+    period: "Looker Studio",
+    image: "/images/projects/project-2-uih-ka-imah.jpg",
+    shortDescription:
+      "Kontrol pengeluaran cabang, kategori beban, vendor, dan pembelian bahan baku untuk efisiensi biaya operasional",
+    description:
+      "Membangun dashboard pelaporan di Looker Studio untuk mengendalikan pengeluaran operasional per cabang, memetakan proporsi kategori beban, serta mengevaluasi fluktuasi harga dan pembelian bahan baku berdasarkan vendor dan metode bayar di Warung Uih Ka Imah.",
+    highlights: [
+      "Menyediakan filter interaktif per cabang dan bulan untuk mendeteksi lonjakan beban operasional lebih dini",
+      "Membandingkan efisiensi pembelian bahan baku antar-vendor dan metode pembayaran guna mendukung negosiasi supplier",
+    ],
+    technologies: ["Looker Studio", "Operational Data", "Cost & Vendor Tracking", "Reporting"],
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "Dashboard Supermarket — Profit & Product Line",
+    category: "BI & Dashboard",
+    role: "Business Intelligence / Data Analyst",
+    period: "BI Dashboard",
+    image: "/images/projects/project-4-supermarket.png",
+    shortDescription:
+      "Analisis profitabilitas lini produk, tren laba harian, kepuasan pelanggan, dan preferensi metode pembayaran",
+    description:
+      "Menyusun dashboard performa ritel supermarket untuk mengevaluasi kontribusi profit per product line, pergerakan laba harian, rata-rata rating kepuasan pelanggan, serta preferensi metode pembayaran berdasarkan segmen pembeli.",
+    highlights: [
+      "Memungkinkan segmentasi cepat berdasarkan metode pembayaran (Payment) dan gender untuk memahami pola belanja pelanggan",
+      "Membandingkan margin keuntungan dan skor rating antar lini produk (Food & beverages, Fashion, dll.) sebagai dasar prioritas stok",
+    ],
+    technologies: ["Data Visualization", "Retail Analytics", "KPI Reporting", "Dashboard Design"],
+    featured: false,
+  },
+  {
+    id: 8,
+    title: "Dashboard Data Covid Regional Indonesia",
+    category: "BI & Dashboard",
+    role: "Business Intelligence / Data Analyst",
+    period: "Tableau Public",
+    image: "/images/projects/project-5-covid-tableau.jpg",
+    shortDescription:
+      "Pemetaan sebaran kasus regional, rasio pemulihan, dan tren tahunan antarprovinsi di Indonesia",
+    description:
+      "Mengolah dan memvisualisasikan data epidemiologi regional di Tableau Public guna memantau perbandingan kasus aktif, kasus baru, tingkat kematian, dan tingkat pemulihan antarprovinsi di Indonesia secara geografis maupun historis.",
+    highlights: [
+      "Menyajikan peta interaktif antarprovinsi untuk mengidentifikasi wilayah dengan konsentrasi kasus tertinggi secara cepat",
+      "Melacak tren tahunan dan perbandingan rasio pemulihan terhadap total kasus per wilayah",
+    ],
+    technologies: ["Tableau", "Geo Mapping", "Data Visualization", "Public Analytics"],
+    featured: false,
+  },
+  {
+    id: 9,
+    title: "Mental Care — Prototipe Aplikasi Kesehatan Mental",
+    category: "Analytics & Research",
+    role: "UI/UX & Product Prototype • PKM",
+    period: "Mobile UI/UX",
+    image: "/images/projects/project-6-mental-care.jpg",
+    shortDescription:
+      "Perancangan alur layanan konseling digital mulai dari pemetaan topik, pemilihan psikolog, hingga penjadwalan",
+    description:
+      "Merancang prototipe aplikasi mobile Mental Care berbasis kebutuhan pengguna untuk menyederhanakan perjalanan pasien dalam memilih topik konseling, mencocokkan rekomendasi psikolog, mengatur jadwal sesi, hingga menyelesaikan pembayaran dalam satu alur terpadu.",
+    highlights: [
+      "Merancang alur eksplorasi topik konseling dan pencocokan profil psikolog untuk menurunkan hambatan awal pengguna",
+      "Menyederhanakan proses booking jadwal konsultasi dan pembayaran guna meningkatkan kelancaran konversi sesi",
+    ],
+    technologies: ["UI/UX Design", "Mobile Prototyping", "User Flow", "Product Design"],
+    featured: false,
   },
 ]
 
