@@ -163,14 +163,14 @@ export default function Home() {
                 <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full p-1 bg-gradient-to-br from-primary to-accent shadow-xl">
                   <img
                     src="/images/profile.jpg"
-                    alt="Rakhan"
+                    alt="Rakhan Fahrezi Aritonang"
                     className="w-full h-full object-cover object-top rounded-full bg-card"
                   />
                 </div>
               </div>
 
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-tight">
-                <span className="block text-foreground">Rakhan Fahrezi</span>
+                <span className="block text-foreground">Rakhan Fahrezi Aritonang</span>
                 <span className="block gradient-text">Data &amp; BI Analyst</span>
               </h1>
 
