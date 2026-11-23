@@ -55,7 +55,7 @@ export default function HeroSection() {
             className="text-base md:text-lg text-muted-foreground leading-relaxed mb-12 animate-slide-in-up"
             style={{ animationDelay: "150ms" }}
           >
-            Full Stack Developer berbasis di Malang dengan passion untuk membangun aplikasi yang scalable, modern, dan
+            Data Analyst berbasis di Malang dengan passion untuk membangun aplikasi yang scalable, modern, dan
             user-friendly. Saya mengkombinasikan technical expertise dengan creative problem-solving untuk hasil
             maksimal.
           </p>
@@ -109,7 +109,7 @@ export default function HeroSection() {
             {[
               { icon: Github, href: "https://github.com", label: "GitHub" },
               { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:contact@yilzi.dev", label: "Email" },
+              { icon: Mail, href: "mailto:contact@Rakhan.dev", label: "Email" },
             ].map((social, i) => {
               const Icon = social.icon
               return (
@@ -138,8 +138,8 @@ export default function HeroSection() {
                   <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-6xl font-bold text-primary-foreground shadow-lg mb-6 hover:scale-110 transition-transform">
                     Y
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">Yilzi Developer</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Full Stack Developer • Malang</p>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">Rakhan Developer</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Data Analyst • Malang</p>
                   <div className="flex gap-2 flex-wrap justify-center">
                     <span className="px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-semibold">
                       React

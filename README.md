@@ -1,4 +1,4 @@
-# Yilzi Portfolio Website
+# Rakhan Portfolio Website
 
 ![Portfolio Preview](public/readme.jpg)
 
@@ -97,16 +97,16 @@ Example:
 \`\`\`json
 {
   "personal": {
-    "name": "Yilzi",
-    "title": "Full Stack Developer",
-    "location": "Malang, Indonesia"
+    "name": "Rakhan Fahrezi Aritonang",
+    "title": "Data Analyst",
+    "location": "Jakarta, Indonesia"
   },
   "social": [
-    {
+    <!-- {
       "name": "GitHub",
-      "url": "https://github.com/yilzi",
+      "url": "https://github.com/Rakhan",
       "icon": "📱"
-    }
+    } -->
   ],
   "projects": [
     {
@@ -217,10 +217,10 @@ MIT License - feel free to use this project for personal or commercial purposes.
 
 ## Contact
 
-- Email: yilzi@owner.com
-- GitHub: [@yilzi](https://github.com/yilzi)
-- Twitter: [@yilzi](https://twitter.com/yilzi)
+- Email: Rakhan@owner.com
+- GitHub: [@Rakhan](https://github.com/Rakhan)
+- Twitter: [@Rakhan](https://twitter.com/Rakhan)
 
 ---
 
-Built with ❤️ by Yilzi
+Built with ❤️ by Rakhan

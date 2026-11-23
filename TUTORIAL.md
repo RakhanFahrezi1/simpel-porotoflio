@@ -1,4 +1,4 @@
-# Tutorial Lengkap Portfolio Yilzi
+# Tutorial Lengkap Portfolio Rakhan
 
 Panduan langkah demi langkah untuk memahami dan mengembangkan portfolio website.
 
@@ -59,16 +59,16 @@ Semua data portfolio disimpan di `src/config/site-config.json`. Inilah file yang
 \`\`\`json
 {
   "personal": {
-    "name": "Yilzi",
-    "title": "Full Stack Developer",
-    "email": "yilzi@example.com",
+    "name": "Rakhan",
+    "title": "Data Analyst",
+    "email": "Rakhan@example.com",
     "location": "Malang, Indonesia",
-    "description": "I'm a full stack developer..."
+    "description": "I'm a Data Analyst..."
   },
   "social": [
     {
       "name": "GitHub",
-      "url": "https://github.com/yilzi",
+      "url": "https://github.com/Rakhan",
       "icon": "🐙"
     }
   ],

@@ -9,7 +9,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
       defaultTheme="system"
       enableSystem
       disableTransitionOnChange
-      storageKey="yilzi-theme"
+      storageKey="Rakhan-theme"
       forcedTheme={undefined}
       enableColorScheme={false}
     >

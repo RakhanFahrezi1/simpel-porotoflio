@@ -17,18 +17,18 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Yilzi - Full Stack Developer Portfolio",
+  title: "Rakhan Fahrezi Aritonang-Portofolio",
   description:
     ", Indonesia. Specialized in building modern web applications with React, Next.js, and TypeScript.",
   generator: "v0.app",
   keywords: ["developer", "portfolio", "next.js", "react", "malang"],
-  authors: [{ name: "Yilzi" }],
+  authors: [{ name: "Rakhan" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yilzi.dev",
-    title: "Yilzi - Full Stack Developer",
-    description: "Full Stack Developer specializing in modern web applications",
+    url: "https://Rakhan.dev",
+    title: "Rakhan - Data Analyst",
+    description: "Data Analyst specializing in modern web applications",
     images: [
       {
         url: "https://example.com/og-image.jpg",

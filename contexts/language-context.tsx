@@ -17,9 +17,9 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.about": "About",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
-    "home.greeting": "Hi, I'm Yilzi",
+    "home.greeting": "Hi, I'm Rakhan",
     "home.description":
-      "Full Stack Developer from Malang, Indonesia. I specialize in building modern web applications with React, Next.js, and TypeScript.",
+      "Data Analyst From Jakarta, Indonesia. I specialize in building modern web applications with React, Next.js, and TypeScript.",
     "home.viewProjects": "View Projects",
     "home.getInTouch": "Get in Touch",
     "projects.title": "My Projects",
@@ -42,7 +42,7 @@ const translations: Record<Language, Record<string, string>> = {
     "social.title": "Connect With Me",
     "social.description":
       "Follow my work, get updates, and stay connected across various social platforms. Let's build amazing things together!",
-    "footer.description": "Full Stack Developer crafting beautiful digital experiences.",
+    "footer.description": "Data Analyst crafting beautiful digital experiences.",
     "footer.navigation": "Navigation",
     "footer.connect": "Connect",
     "footer.getInTouch": "Get in Touch",
@@ -56,9 +56,9 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.about": "Tentang",
     "nav.projects": "Proyek",
     "nav.contact": "Kontak",
-    "home.greeting": "Hai, saya Yilzi",
+    "home.greeting": "Hai, saya Rakhan",
     "home.description":
-      "Full Stack Developer dari Malang, Indonesia. Saya mengkhususkan diri dalam membangun aplikasi web modern dengan React, Next.js, dan TypeScript.",
+      "Data Analyst dari Malang, Indonesia. Saya mengkhususkan diri dalam membangun aplikasi web modern dengan React, Next.js, dan TypeScript.",
     "home.viewProjects": "Lihat Proyek",
     "home.getInTouch": "Hubungi Saya",
     "projects.title": "Proyek Saya",
@@ -81,7 +81,7 @@ const translations: Record<Language, Record<string, string>> = {
     "social.title": "Terhubung Dengan Saya",
     "social.description":
       "Ikuti pekerjaan saya, dapatkan pembaruan, dan tetap terhubung di berbagai platform sosial. Mari kita membangun hal-hal luar biasa bersama!",
-    "footer.description": "Full Stack Developer yang menciptakan pengalaman digital yang indah.",
+    "footer.description": "Data Analyst yang menciptakan pengalaman digital yang indah.",
     "footer.navigation": "Navigasi",
     "footer.connect": "Terhubung",
     "footer.getInTouch": "Hubungi Kami",
