@@ -163,7 +163,7 @@ export default function Home() {
                 <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full p-1 bg-gradient-to-br from-primary to-accent shadow-xl">
                   <img
                     src="/images/profile.jpg"
-                    alt="Rakhan Fahrezi"
+                    alt="Rakhan Fahrezi Aritonang"
                     className="w-full h-full object-cover object-top rounded-full bg-card"
                   />
                 </div>
