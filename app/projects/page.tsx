@@ -15,12 +15,13 @@ const projectsData: ProjectItem[] = [
     role: "Data Analyst Intern • PT Integrasi Jaringan Ekosistem (WEAVE)",
     period: "2025 • Metabase",
     image: "/images/projects/project-1-magang-starlite.png",
-    shortDescription: "Dashboard monitoring metrik layanan, registrasi pelanggan, prospek, dan performa Starlite Wi-Fi",
+    shortDescription:
+      "Dashboard monitoring layanan Starlite Wi-Fi untuk mengevaluasi konversi registrasi, performa prospek, dan distribusi wilayah",
     description:
-      "Merancang dan mengembangkan dashboard interaktif menggunakan Metabase selama magang untuk memantau kinerja layanan Starlite Wi-Fi, tingkat registrasi pelanggan, performa prospek, serta distribusi wilayah dan transaksi.",
+      "Merancang dan mengembangkan dashboard interaktif berbasis Metabase selama magang di PT Integrasi Jaringan Ekosistem (WEAVE) guna membantu tim memantau kinerja layanan Starlite Wi-Fi, laju registrasi pelanggan, performa prospek, serta sebaran wilayah dan transaksi secara real-time.",
     highlights: [
-      "Monitoring KPI utama, tingkat konversi/registrasi, dan persebaran wilayah layanan",
-      "Mengubah data operasional menjadi ringkasan visual untuk evaluasi bisnis",
+      "Menyatukan KPI utama, tingkat konversi registrasi pelanggan, dan persebaran wilayah layanan dalam satu tampilan terpusat",
+      "Mempercepat evaluasi performa prospek dan kesehatan transaksi operasional bagi tim bisnis",
     ],
     technologies: ["Metabase", "SQL", "Business Intelligence", "KPI Dashboard"],
     featured: true,
@@ -32,12 +33,13 @@ const projectsData: ProjectItem[] = [
     role: "Koordinator Operasional & Data • Warung Uih Ka Imah",
     period: "Looker Studio",
     image: "/images/projects/project-2-uih-ka-imah.jpg",
-    shortDescription: "Pemantauan total pengeluaran, perbandingan cabang, kategori beban, vendor, dan pembelian bahan baku",
+    shortDescription:
+      "Kontrol pengeluaran cabang, kategori beban, vendor, dan pembelian bahan baku untuk efisiensi biaya operasional",
     description:
-      "Membangun dashboard pelaporan di Looker Studio untuk melacak pengeluaran operasional per cabang, proporsi kategori beban, rincian transaksi, serta harga dan pembelian bahan baku berdasarkan vendor dan metode bayar.",
+      "Membangun dashboard pelaporan di Looker Studio untuk mengendalikan pengeluaran operasional per cabang, memetakan proporsi kategori beban, serta mengevaluasi fluktuasi harga dan pembelian bahan baku berdasarkan vendor dan metode bayar di Warung Uih Ka Imah.",
     highlights: [
-      "Filter interaktif berdasarkan cabang dan bulan untuk pemantauan rutin",
-      "Rekapitulasi pengeluaran per cabang, kategori beban, dan top vendor bahan baku",
+      "Menyediakan filter interaktif per cabang dan bulan untuk mendeteksi lonjakan beban operasional lebih dini",
+      "Membandingkan efisiensi pembelian bahan baku antar-vendor dan metode pembayaran guna mendukung negosiasi supplier",
     ],
     technologies: ["Looker Studio", "Operational Data", "Cost & Vendor Tracking", "Reporting"],
     featured: true,
@@ -49,12 +51,13 @@ const projectsData: ProjectItem[] = [
     role: "Business Intelligence / Data Analyst",
     period: "Power BI",
     image: "/images/projects/project-3-sales-channel-promo.png",
-    shortDescription: "Analisis revenue, net revenue, transaksi bulanan, promo, channel penjualan, dan segmen pelanggan",
+    shortDescription:
+      "Evaluasi revenue, net revenue, efektivitas diskon, dan kontribusi channel penjualan untuk optimasi promosi",
     description:
-      "Menganalisis performa penjualan lintas channel (POS Kasir, GrabFood, GoFood, Website, Tokopedia, ShopeeFood) beserta dampak promo, metode pembayaran, wilayah provinsi, produk terlaris, dan segmen pelanggan.",
+      "Menganalisis performa penjualan lintas channel (POS Kasir, GrabFood, GoFood, Website, Tokopedia, ShopeeFood) untuk mengukur dampak program promo terhadap margin, metode pembayaran, potensi wilayah provinsi, produk terlaris, dan segmen pelanggan.",
     highlights: [
-      "Monitoring Revenue (86M), Net Revenue (78M), Quantity Terjual, Total Transaksi, dan Diskon",
-      "Pemetaan penjualan per channel, segmen pelanggan, provinsi, dan produk",
+      "Memantau rasio Revenue (86M) terhadap Net Revenue (78M), total diskon, kuantitas terjual, dan frekuensi transaksi",
+      "Mengidentifikasi channel penjualan, wilayah provinsi, dan lini produk dengan kontribusi tertinggi untuk alokasi anggaran promo",
     ],
     technologies: ["Power BI", "Sales Analytics", "Promo & Channel Analysis", "Data Visualization"],
     featured: true,
@@ -66,12 +69,13 @@ const projectsData: ProjectItem[] = [
     role: "Business Intelligence / Data Analyst",
     period: "BI Dashboard",
     image: "/images/projects/project-4-supermarket.png",
-    shortDescription: "Pemantauan profit, revenue, net revenue, rating rata-rata, dan metode pembayaran per product line",
+    shortDescription:
+      "Analisis profitabilitas lini produk, tren laba harian, kepuasan pelanggan, dan preferensi metode pembayaran",
     description:
-      "Menyusun dashboard performa supermarket untuk memantau jumlah product line, kuantitas terjual, revenue, net revenue, tren profit harian, rata-rata rating pelanggan, serta kontribusi metode pembayaran.",
+      "Menyusun dashboard performa ritel supermarket untuk mengevaluasi kontribusi profit per product line, pergerakan laba harian, rata-rata rating kepuasan pelanggan, serta preferensi metode pembayaran berdasarkan segmen pembeli.",
     highlights: [
-      "Filter berdasarkan metode pembayaran (Payment) dan gender",
-      "Perbandingan performa dan rating antar lini produk (Food & beverages, Fashion, dll.)",
+      "Memungkinkan segmentasi cepat berdasarkan metode pembayaran (Payment) dan gender untuk memahami pola belanja pelanggan",
+      "Membandingkan margin keuntungan dan skor rating antar lini produk (Food & beverages, Fashion, dll.) sebagai dasar prioritas stok",
     ],
     technologies: ["Data Visualization", "Retail Analytics", "KPI Reporting", "Dashboard Design"],
     featured: false,
@@ -83,12 +87,13 @@ const projectsData: ProjectItem[] = [
     role: "Business Intelligence / Data Analyst",
     period: "Tableau Public",
     image: "/images/projects/project-5-covid-tableau.jpg",
-    shortDescription: "Visualisasi total kasus, kasus baru, kematian, pemulihan, dan peta persebaran per provinsi",
+    shortDescription:
+      "Pemetaan sebaran kasus regional, rasio pemulihan, dan tren tahunan antarprovinsi di Indonesia",
     description:
-      "Mengolah dan memvisualisasikan data kasus regional di Tableau Public guna memantau perkembangan total kasus, kasus baru, total kematian, total pemulihan, serta persebaran antarprovinsi di Indonesia.",
+      "Mengolah dan memvisualisasikan data epidemiologi regional di Tableau Public guna memantau perbandingan kasus aktif, kasus baru, tingkat kematian, dan tingkat pemulihan antarprovinsi di Indonesia secara geografis maupun historis.",
     highlights: [
-      "Peta interaktif dan perbandingan metrik per provinsi",
-      "Visualisasi tren tahunan, total kematian, dan pemulihan wilayah",
+      "Menyajikan peta interaktif antarprovinsi untuk mengidentifikasi wilayah dengan konsentrasi kasus tertinggi secara cepat",
+      "Melacak tren tahunan dan perbandingan rasio pemulihan terhadap total kasus per wilayah",
     ],
     technologies: ["Tableau", "Geo Mapping", "Data Visualization", "Public Analytics"],
     featured: false,
@@ -100,37 +105,36 @@ const projectsData: ProjectItem[] = [
     role: "UI/UX & Product Prototype • PKM",
     period: "Mobile UI/UX",
     image: "/images/projects/project-6-mental-care.jpg",
-    shortDescription: "Rancangan alur pendaftaran, topik konseling, rekomendasi psikolog, jadwal sesi, dan pembayaran",
+    shortDescription:
+      "Perancangan alur layanan konseling digital mulai dari pemetaan topik, pemilihan psikolog, hingga penjadwalan",
     description:
-      "Merancang antarmuka aplikasi mobile Mental Care yang menyediakan alur pendaftaran, pemilihan topik konseling, direktori rekomendasi psikolog, pemilihan jadwal konsultasi, hingga pembayaran dalam satu aplikasi.",
+      "Merancang prototipe aplikasi mobile Mental Care berbasis kebutuhan pengguna untuk menyederhanakan perjalanan pasien dalam memilih topik konseling, mencocokkan rekomendasi psikolog, mengatur jadwal sesi, hingga menyelesaikan pembayaran dalam satu alur terpadu.",
     highlights: [
-      "Alur eksplorasi topik konseling dan rekomendasi psikolog terpercaya",
-      "Desain layar penjadwalan waktu konsultasi dan metode pembayaran",
+      "Merancang alur eksplorasi topik konseling dan pencocokan profil psikolog untuk menurunkan hambatan awal pengguna",
+      "Menyederhanakan proses booking jadwal konsultasi dan pembayaran guna meningkatkan kelancaran konversi sesi",
     ],
     technologies: ["UI/UX Design", "Mobile Prototyping", "User Flow", "Product Design"],
     featured: false,
   },
   {
-   
     id: 7,
     title: "Interactive BI Playground — E-Commerce & Digital Marketing",
     category: "BI & Dashboard",
     role: "Data & BI Analyst • Portfolio Project",
     period: "2026 • Next.js & Recharts",
-    image: "/images/projects/bi-foto.jpg",    
+    image: "/images/projects/bi-foto.jpg",
     shortDescription:
-      "Dashboard BI interaktif berbasis web untuk mengeksplorasi dataset E-Commerce Indonesia dan Digital Marketing (ROAS) dalam Rupiah, lengkap dengan filter dan upload CSV mandiri.",
+      "Dashboard BI interaktif berbasis web untuk mengeksplorasi dataset E-Commerce Indonesia dan Digital Marketing (ROAS) dalam Rupiah, lengkap dengan filter dan upload CSV mandiri",
     description:
-      "Membangun halaman BI Playground interaktif di Next.js untuk mendemonstrasikan analisis KPI penjualan e-commerce dan efisiensi kampanye digital secara langsung bagi HRD maupun hiring manager.",
+      "Membangun halaman BI Playground interaktif di Next.js untuk mendemonstrasikan analisis KPI penjualan e-commerce dan efisiensi kampanye digital (ROAS) dalam Rupiah secara langsung bagi HRD maupun hiring manager.",
     highlights: [
-      "Beralih instan antara dataset E-Commerce Indonesia dan Digital Marketing & ROAS dalam Rupiah",
-      "Filter channel/platform dinamis, KPI card, insight otomatis, serta fitur upload file CSV mandiri",
+      "Beralih instan antara dataset E-Commerce Indonesia dan Digital Marketing & ROAS dalam Rupiah untuk evaluasi channel dan kampanye",
+      "Filter channel/platform dinamis, KPI card, insight otomatis, serta fitur upload file CSV mandiri untuk eksplorasi data langsung",
     ],
     technologies: ["Next.js", "TypeScript", "PapaParse", "Recharts", "Tailwind CSS"],
     featured: true,
     href: "/projects/bi-playground",
   },
-  
 ]
 
 const categories = ["All", "BI & Dashboard", "Operations & Data", "Analytics & Research"] as const
