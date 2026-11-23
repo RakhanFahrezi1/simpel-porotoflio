@@ -1,0 +1,181 @@
+id_pesanan,tanggal,platform,kota_tujuan,nama_produk,kategori,jumlah_unit,harga_satuan_idr,diskon_idr,pendapatan_idr,laba_bersih_idr,rating_pembeli,status_pesanan
+ECM-2093,2026-10-01,Tokopedia,Semarang,Stand Laptop Aluminium Lipat,Aksesoris Kerja,4,135000,0,540000,268000,4,Retur
+ECM-2064,2026-10-01,Lazada,Jakarta,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,3,95000,15000,270000,144000,4,Selesai
+ECM-2148,2026-10-01,Shopee,Bekasi,Serum Wajah Niacinamide 30ml,Perawatan Diri,3,89000,10000,257000,152000,4,Selesai
+ECM-2041,2026-10-01,Shopee,Bandung,Tas Ransel Laptop Anti Air,Fashion & Tas,3,265000,0,795000,390000,5,Selesai
+ECM-2174,2026-10-01,TikTok Shop,Medan,Kemeja Linen Lengan Pendek,Fashion Pria,1,175000,0,175000,87000,5,Selesai
+ECM-2023,2026-10-01,Shopee,Bekasi,Kemeja Linen Lengan Pendek,Fashion Pria,4,175000,25000,675000,323000,5,Retur
+ECM-2090,2026-10-02,Lazada,Bandung,TWS Earbuds Noise Cancelling,Elektronik & Gadget,3,245000,15000,720000,300000,5,Selesai
+ECM-2138,2026-10-02,Tokopedia,Bekasi,Lampu Meja LED Belajar,Perlengkapan Rumah,3,125000,0,375000,189000,5,Selesai
+ECM-2060,2026-10-02,Shopee,Jakarta,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,4,189000,15000,741000,321000,5,Dikirim
+ECM-2154,2026-10-02,Tokopedia,Surabaya,Mouse Wireless Ergonomis,Aksesoris Kerja,4,115000,10000,450000,218000,3,Selesai
+ECM-2043,2026-10-02,TikTok Shop,Bekasi,Tas Ransel Laptop Anti Air,Fashion & Tas,3,265000,0,795000,390000,5,Selesai
+ECM-2031,2026-10-02,Tokopedia,Jakarta,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,3,189000,15000,552000,237000,5,Selesai
+ECM-2024,2026-10-02,Shopee,Jakarta,TWS Earbuds Noise Cancelling,Elektronik & Gadget,3,245000,0,735000,315000,5,Selesai
+ECM-2022,2026-10-02,Lazada,Bekasi,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,2,95000,10000,180000,96000,2,Selesai
+ECM-2108,2026-10-02,Shopee,Bekasi,Stand Laptop Aluminium Lipat,Aksesoris Kerja,1,135000,25000,110000,42000,4,Selesai
+ECM-2178,2026-10-02,Lazada,Bandung,Lampu Meja LED Belajar,Perlengkapan Rumah,4,125000,10000,490000,242000,5,Retur
+ECM-2176,2026-10-03,Shopee,Jakarta,Kemeja Linen Lengan Pendek,Fashion Pria,2,175000,10000,340000,164000,5,Retur
+ECM-2071,2026-10-03,Tokopedia,Semarang,Mouse Wireless Ergonomis,Aksesoris Kerja,3,115000,15000,330000,156000,5,Dikirim
+ECM-2155,2026-10-03,Tokopedia,Surabaya,Kemeja Linen Lengan Pendek,Fashion Pria,3,175000,0,525000,261000,5,Dikirim
+ECM-2163,2026-10-03,Shopee,Bandung,Serum Wajah Niacinamide 30ml,Perawatan Diri,1,89000,0,89000,54000,5,Selesai
+ECM-2114,2026-10-03,Tokopedia,Bandung,Tas Ransel Laptop Anti Air,Fashion & Tas,1,265000,15000,250000,115000,5,Selesai
+ECM-2012,2026-10-03,Tokopedia,Jakarta,Stand Laptop Aluminium Lipat,Aksesoris Kerja,3,135000,10000,395000,191000,4,Selesai
+ECM-2166,2026-10-04,Tokopedia,Bandung,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,4,95000,15000,365000,197000,5,Selesai
+ECM-2157,2026-10-04,Shopee,Tangerang,Lampu Meja LED Belajar,Perlengkapan Rumah,1,125000,25000,100000,38000,5,Selesai
+ECM-2085,2026-10-05,Shopee,Bekasi,Stand Laptop Aluminium Lipat,Aksesoris Kerja,4,135000,10000,530000,258000,5,Selesai
+ECM-2011,2026-10-05,TikTok Shop,Medan,Stand Laptop Aluminium Lipat,Aksesoris Kerja,2,135000,0,270000,134000,4,Selesai
+ECM-2032,2026-10-05,Tokopedia,Bandung,Lampu Meja LED Belajar,Perlengkapan Rumah,1,125000,0,125000,63000,5,Selesai
+ECM-2033,2026-10-05,Shopee,Surabaya,Sunscreen Gel SPF 50,Perawatan Diri,2,78000,0,156000,94000,5,Selesai
+ECM-2075,2026-10-05,Shopee,Tangerang,Serum Wajah Niacinamide 30ml,Perawatan Diri,4,89000,0,356000,216000,4,Dikirim
+ECM-2035,2026-10-05,TikTok Shop,Medan,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,3,95000,10000,275000,149000,3,Selesai
+ECM-2137,2026-10-05,TikTok Shop,Jakarta,Tas Ransel Laptop Anti Air,Fashion & Tas,1,265000,0,265000,130000,5,Selesai
+ECM-2048,2026-10-06,Shopee,Jakarta,Tas Ransel Laptop Anti Air,Fashion & Tas,4,265000,0,1060000,520000,4,Dikirim
+ECM-2069,2026-10-06,Shopee,Jakarta,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,1,189000,10000,179000,74000,5,Retur
+ECM-2122,2026-10-06,Lazada,Jakarta,Tas Ransel Laptop Anti Air,Fashion & Tas,3,265000,0,795000,390000,5,Selesai
+ECM-2119,2026-10-06,Tokopedia,Semarang,Kemeja Linen Lengan Pendek,Fashion Pria,4,175000,0,700000,348000,5,Selesai
+ECM-2050,2026-10-06,Shopee,Jakarta,Kemeja Linen Lengan Pendek,Fashion Pria,2,175000,0,350000,174000,3,Selesai
+ECM-2152,2026-10-06,Shopee,Jakarta,Stand Laptop Aluminium Lipat,Aksesoris Kerja,1,135000,0,135000,67000,5,Dikirim
+ECM-2047,2026-10-07,Shopee,Surabaya,Tas Ransel Laptop Anti Air,Fashion & Tas,1,265000,25000,240000,105000,5,Selesai
+ECM-2006,2026-10-07,Tokopedia,Jakarta,Serum Wajah Niacinamide 30ml,Perawatan Diri,1,89000,15000,74000,39000,5,Dikirim
+ECM-2061,2026-10-07,Tokopedia,Medan,Stand Laptop Aluminium Lipat,Aksesoris Kerja,3,135000,0,405000,201000,4,Selesai
+ECM-2086,2026-10-07,Shopee,Bandung,TWS Earbuds Noise Cancelling,Elektronik & Gadget,2,245000,15000,475000,195000,5,Selesai
+ECM-2080,2026-10-08,Tokopedia,Tangerang,Lampu Meja LED Belajar,Perlengkapan Rumah,3,125000,0,375000,189000,5,Selesai
+ECM-2128,2026-10-08,Shopee,Medan,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,3,95000,15000,270000,144000,4,Selesai
+ECM-2140,2026-10-08,TikTok Shop,Bekasi,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,2,189000,0,378000,168000,4,Selesai
+ECM-2079,2026-10-08,Tokopedia,Bekasi,Tas Ransel Laptop Anti Air,Fashion & Tas,4,265000,15000,1045000,505000,4,Selesai
+ECM-2106,2026-10-08,Tokopedia,Bekasi,Lampu Meja LED Belajar,Perlengkapan Rumah,2,125000,0,250000,126000,5,Selesai
+ECM-2042,2026-10-08,TikTok Shop,Bandung,Stand Laptop Aluminium Lipat,Aksesoris Kerja,4,135000,10000,530000,258000,5,Dikirim
+ECM-2087,2026-10-09,Tokopedia,Jakarta,Lampu Meja LED Belajar,Perlengkapan Rumah,3,125000,0,375000,189000,5,Selesai
+ECM-2049,2026-10-09,Tokopedia,Bandung,Stand Laptop Aluminium Lipat,Aksesoris Kerja,1,135000,0,135000,67000,5,Retur
+ECM-2102,2026-10-09,Shopee,Tangerang,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,3,95000,25000,260000,134000,4,Selesai
+ECM-2015,2026-10-09,Tokopedia,Bandung,Stand Laptop Aluminium Lipat,Aksesoris Kerja,1,135000,10000,125000,57000,5,Selesai
+ECM-2053,2026-10-09,Shopee,Surabaya,Mouse Wireless Ergonomis,Aksesoris Kerja,4,115000,0,460000,228000,5,Retur
+ECM-2158,2026-10-09,Tokopedia,Bekasi,Tas Ransel Laptop Anti Air,Fashion & Tas,1,265000,15000,250000,115000,5,Retur
+ECM-2136,2026-10-10,Tokopedia,Bandung,Tas Ransel Laptop Anti Air,Fashion & Tas,2,265000,0,530000,260000,5,Selesai
+ECM-2172,2026-10-10,Tokopedia,Semarang,TWS Earbuds Noise Cancelling,Elektronik & Gadget,3,245000,0,735000,315000,5,Retur
+ECM-2177,2026-10-10,Lazada,Tangerang,Lampu Meja LED Belajar,Perlengkapan Rumah,1,125000,10000,115000,53000,4,Selesai
+ECM-2078,2026-10-10,Tokopedia,Jakarta,Mouse Wireless Ergonomis,Aksesoris Kerja,3,115000,0,345000,171000,5,Retur
+ECM-2110,2026-10-10,TikTok Shop,Bekasi,Serum Wajah Niacinamide 30ml,Perawatan Diri,2,89000,0,178000,108000,5,Selesai
+ECM-2068,2026-10-10,TikTok Shop,Jakarta,Serum Wajah Niacinamide 30ml,Perawatan Diri,4,89000,0,356000,216000,5,Selesai
+ECM-2020,2026-10-11,TikTok Shop,Jakarta,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,3,95000,0,285000,159000,5,Selesai
+ECM-2147,2026-10-11,TikTok Shop,Bandung,Serum Wajah Niacinamide 30ml,Perawatan Diri,4,89000,0,356000,216000,3,Selesai
+ECM-2151,2026-10-11,Shopee,Surabaya,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,4,189000,10000,746000,326000,3,Retur
+ECM-2017,2026-10-11,Tokopedia,Tangerang,TWS Earbuds Noise Cancelling,Elektronik & Gadget,2,245000,15000,475000,195000,5,Selesai
+ECM-2025,2026-10-11,Tokopedia,Tangerang,Serum Wajah Niacinamide 30ml,Perawatan Diri,1,89000,0,89000,54000,5,Selesai
+ECM-2084,2026-10-11,TikTok Shop,Surabaya,Stand Laptop Aluminium Lipat,Aksesoris Kerja,3,135000,15000,390000,186000,5,Dikirim
+ECM-2118,2026-10-12,Tokopedia,Tangerang,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,1,189000,15000,174000,69000,5,Retur
+ECM-2179,2026-10-12,Tokopedia,Bandung,Kemeja Linen Lengan Pendek,Fashion Pria,3,175000,0,525000,261000,5,Selesai
+ECM-2173,2026-10-12,Tokopedia,Tangerang,Sunscreen Gel SPF 50,Perawatan Diri,3,78000,0,234000,141000,3,Retur
+ECM-2003,2026-10-12,TikTok Shop,Jakarta,Mouse Wireless Ergonomis,Aksesoris Kerja,4,115000,15000,445000,213000,5,Selesai
+ECM-2026,2026-10-12,Lazada,Tangerang,Mouse Wireless Ergonomis,Aksesoris Kerja,1,115000,10000,105000,47000,5,Dikirim
+ECM-2160,2026-10-12,Shopee,Tangerang,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,1,189000,10000,179000,74000,5,Selesai
+ECM-2051,2026-10-12,Tokopedia,Bandung,Kemeja Linen Lengan Pendek,Fashion Pria,3,175000,25000,500000,236000,5,Selesai
+ECM-2134,2026-10-13,Tokopedia,Surabaya,Serum Wajah Niacinamide 30ml,Perawatan Diri,1,89000,10000,79000,44000,5,Retur
+ECM-2109,2026-10-13,TikTok Shop,Semarang,Stand Laptop Aluminium Lipat,Aksesoris Kerja,1,135000,0,135000,67000,4,Dikirim
+ECM-2170,2026-10-13,TikTok Shop,Jakarta,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,4,95000,0,380000,212000,5,Selesai
+ECM-2067,2026-10-13,TikTok Shop,Bandung,Kemeja Linen Lengan Pendek,Fashion Pria,4,175000,0,700000,348000,5,Selesai
+ECM-2167,2026-10-13,Shopee,Jakarta,Lampu Meja LED Belajar,Perlengkapan Rumah,1,125000,15000,110000,48000,3,Selesai
+ECM-2165,2026-10-13,Shopee,Bandung,Sunscreen Gel SPF 50,Perawatan Diri,4,78000,0,312000,188000,5,Selesai
+ECM-2115,2026-10-13,Tokopedia,Jakarta,Mouse Wireless Ergonomis,Aksesoris Kerja,3,115000,10000,335000,161000,5,Selesai
+ECM-2070,2026-10-13,TikTok Shop,Medan,Tas Ransel Laptop Anti Air,Fashion & Tas,1,265000,0,265000,130000,2,Selesai
+ECM-2005,2026-10-13,Shopee,Bandung,Kemeja Linen Lengan Pendek,Fashion Pria,2,175000,10000,340000,164000,5,Selesai
+ECM-2074,2026-10-13,TikTok Shop,Medan,Serum Wajah Niacinamide 30ml,Perawatan Diri,3,89000,15000,252000,147000,5,Selesai
+ECM-2004,2026-10-14,Tokopedia,Tangerang,Tas Ransel Laptop Anti Air,Fashion & Tas,3,265000,10000,785000,380000,5,Selesai
+ECM-2133,2026-10-14,Tokopedia,Bandung,Stand Laptop Aluminium Lipat,Aksesoris Kerja,2,135000,10000,260000,124000,5,Selesai
+ECM-2111,2026-10-14,Lazada,Tangerang,Mouse Wireless Ergonomis,Aksesoris Kerja,4,115000,10000,450000,218000,4,Selesai
+ECM-2121,2026-10-15,Lazada,Medan,Mouse Wireless Ergonomis,Aksesoris Kerja,4,115000,15000,445000,213000,5,Dikirim
+ECM-2144,2026-10-15,TikTok Shop,Medan,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,4,95000,25000,355000,187000,5,Selesai
+ECM-2019,2026-10-15,Shopee,Tangerang,Mouse Wireless Ergonomis,Aksesoris Kerja,3,115000,0,345000,171000,5,Dikirim
+ECM-2013,2026-10-15,Tokopedia,Bekasi,TWS Earbuds Noise Cancelling,Elektronik & Gadget,2,245000,0,490000,210000,3,Selesai
+ECM-2091,2026-10-15,Tokopedia,Bekasi,TWS Earbuds Noise Cancelling,Elektronik & Gadget,3,245000,0,735000,315000,5,Selesai
+ECM-2014,2026-10-15,Tokopedia,Semarang,Mouse Wireless Ergonomis,Aksesoris Kerja,4,115000,25000,435000,203000,5,Selesai
+ECM-2159,2026-10-16,Lazada,Jakarta,Stand Laptop Aluminium Lipat,Aksesoris Kerja,3,135000,0,405000,201000,4,Selesai
+ECM-2101,2026-10-16,Shopee,Tangerang,TWS Earbuds Noise Cancelling,Elektronik & Gadget,2,245000,15000,475000,195000,4,Selesai
+ECM-2002,2026-10-16,Lazada,Jakarta,Mouse Wireless Ergonomis,Aksesoris Kerja,3,115000,0,345000,171000,5,Dikirim
+ECM-2162,2026-10-16,Lazada,Surabaya,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,1,95000,15000,80000,38000,5,Selesai
+ECM-2094,2026-10-16,Shopee,Surabaya,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,2,189000,10000,368000,158000,5,Selesai
+ECM-2150,2026-10-16,Tokopedia,Bandung,Serum Wajah Niacinamide 30ml,Perawatan Diri,1,89000,10000,79000,44000,5,Retur
+ECM-2113,2026-10-17,Lazada,Surabaya,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,2,95000,0,190000,106000,5,Retur
+ECM-2097,2026-10-17,Tokopedia,Bandung,Tas Ransel Laptop Anti Air,Fashion & Tas,1,265000,0,265000,130000,4,Retur
+ECM-2089,2026-10-17,Lazada,Semarang,Tas Ransel Laptop Anti Air,Fashion & Tas,2,265000,15000,515000,245000,5,Dikirim
+ECM-2028,2026-10-17,Shopee,Semarang,Mouse Wireless Ergonomis,Aksesoris Kerja,1,115000,0,115000,57000,3,Selesai
+ECM-2103,2026-10-17,Shopee,Jakarta,Lampu Meja LED Belajar,Perlengkapan Rumah,4,125000,0,500000,252000,5,Dikirim
+ECM-2105,2026-10-17,Lazada,Jakarta,Kemeja Linen Lengan Pendek,Fashion Pria,1,175000,0,175000,87000,5,Selesai
+ECM-2095,2026-10-18,Shopee,Tangerang,Sunscreen Gel SPF 50,Perawatan Diri,4,78000,10000,302000,178000,5,Retur
+ECM-2100,2026-10-18,Lazada,Bandung,Kemeja Linen Lengan Pendek,Fashion Pria,4,175000,10000,690000,338000,5,Selesai
+ECM-2130,2026-10-18,Shopee,Tangerang,Tas Ransel Laptop Anti Air,Fashion & Tas,1,265000,0,265000,130000,5,Selesai
+ECM-2146,2026-10-19,Shopee,Bandung,Lampu Meja LED Belajar,Perlengkapan Rumah,2,125000,0,250000,126000,4,Selesai
+ECM-2001,2026-10-19,Shopee,Tangerang,Mouse Wireless Ergonomis,Aksesoris Kerja,3,115000,0,345000,171000,5,Selesai
+ECM-2180,2026-10-19,Shopee,Jakarta,Sunscreen Gel SPF 50,Perawatan Diri,1,78000,0,78000,47000,5,Selesai
+ECM-2029,2026-10-19,Tokopedia,Semarang,Tas Ransel Laptop Anti Air,Fashion & Tas,2,265000,0,530000,260000,5,Dikirim
+ECM-2063,2026-10-19,Shopee,Surabaya,Lampu Meja LED Belajar,Perlengkapan Rumah,2,125000,15000,235000,111000,5,Selesai
+ECM-2076,2026-10-19,TikTok Shop,Jakarta,Serum Wajah Niacinamide 30ml,Perawatan Diri,4,89000,10000,346000,206000,5,Selesai
+ECM-2171,2026-10-20,Tokopedia,Jakarta,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,4,189000,0,756000,336000,5,Selesai
+ECM-2098,2026-10-20,TikTok Shop,Bekasi,Sunscreen Gel SPF 50,Perawatan Diri,4,78000,0,312000,188000,3,Dikirim
+ECM-2030,2026-10-20,Shopee,Jakarta,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,3,189000,0,567000,252000,5,Dikirim
+ECM-2153,2026-10-20,Shopee,Surabaya,TWS Earbuds Noise Cancelling,Elektronik & Gadget,2,245000,25000,465000,185000,3,Retur
+ECM-2081,2026-10-20,TikTok Shop,Jakarta,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,1,189000,0,189000,84000,4,Retur
+ECM-2131,2026-10-21,Shopee,Semarang,Kemeja Linen Lengan Pendek,Fashion Pria,1,175000,10000,165000,77000,3,Selesai
+ECM-2104,2026-10-21,Tokopedia,Surabaya,Kemeja Linen Lengan Pendek,Fashion Pria,4,175000,15000,685000,333000,5,Retur
+ECM-2129,2026-10-22,Shopee,Bandung,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,4,189000,25000,731000,311000,5,Selesai
+ECM-2139,2026-10-22,Shopee,Jakarta,Kemeja Linen Lengan Pendek,Fashion Pria,2,175000,0,350000,174000,5,Selesai
+ECM-2065,2026-10-22,Tokopedia,Jakarta,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,1,95000,0,95000,53000,4,Selesai
+ECM-2066,2026-10-23,Tokopedia,Surabaya,TWS Earbuds Noise Cancelling,Elektronik & Gadget,1,245000,0,245000,105000,5,Selesai
+ECM-2009,2026-10-23,Lazada,Jakarta,Serum Wajah Niacinamide 30ml,Perawatan Diri,1,89000,10000,79000,44000,5,Retur
+ECM-2077,2026-10-23,Shopee,Bekasi,Mouse Wireless Ergonomis,Aksesoris Kerja,1,115000,10000,105000,47000,4,Selesai
+ECM-2125,2026-10-23,TikTok Shop,Bandung,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,3,189000,15000,552000,237000,5,Dikirim
+ECM-2126,2026-10-23,Tokopedia,Jakarta,Lampu Meja LED Belajar,Perlengkapan Rumah,4,125000,15000,485000,237000,4,Dikirim
+ECM-2127,2026-10-23,TikTok Shop,Tangerang,TWS Earbuds Noise Cancelling,Elektronik & Gadget,2,245000,25000,465000,185000,5,Retur
+ECM-2062,2026-10-23,Lazada,Tangerang,Sunscreen Gel SPF 50,Perawatan Diri,1,78000,10000,68000,37000,5,Selesai
+ECM-2132,2026-10-23,Tokopedia,Surabaya,Serum Wajah Niacinamide 30ml,Perawatan Diri,3,89000,10000,257000,152000,5,Selesai
+ECM-2082,2026-10-23,Lazada,Bekasi,Sunscreen Gel SPF 50,Perawatan Diri,4,78000,10000,302000,178000,5,Selesai
+ECM-2145,2026-10-24,Shopee,Bekasi,Lampu Meja LED Belajar,Perlengkapan Rumah,3,125000,15000,360000,174000,4,Selesai
+ECM-2046,2026-10-24,Shopee,Tangerang,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,2,95000,0,190000,106000,5,Dikirim
+ECM-2156,2026-10-24,Tokopedia,Surabaya,Kemeja Linen Lengan Pendek,Fashion Pria,3,175000,0,525000,261000,5,Retur
+ECM-2149,2026-10-24,Tokopedia,Surabaya,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,2,95000,0,190000,106000,5,Dikirim
+ECM-2072,2026-10-24,Tokopedia,Jakarta,TWS Earbuds Noise Cancelling,Elektronik & Gadget,4,245000,10000,970000,410000,4,Selesai
+ECM-2018,2026-10-24,Tokopedia,Tangerang,Mouse Wireless Ergonomis,Aksesoris Kerja,1,115000,0,115000,57000,5,Selesai
+ECM-2117,2026-10-24,Tokopedia,Jakarta,Mouse Wireless Ergonomis,Aksesoris Kerja,2,115000,25000,205000,89000,5,Selesai
+ECM-2168,2026-10-25,Lazada,Medan,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,4,189000,10000,746000,326000,5,Selesai
+ECM-2099,2026-10-25,Tokopedia,Bekasi,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,3,189000,10000,557000,242000,3,Dikirim
+ECM-2034,2026-10-25,TikTok Shop,Jakarta,Mouse Wireless Ergonomis,Aksesoris Kerja,3,115000,10000,335000,161000,5,Selesai
+ECM-2161,2026-10-25,Shopee,Jakarta,Kemeja Linen Lengan Pendek,Fashion Pria,1,175000,0,175000,87000,5,Selesai
+ECM-2124,2026-10-25,TikTok Shop,Bekasi,Stand Laptop Aluminium Lipat,Aksesoris Kerja,4,135000,25000,515000,243000,5,Selesai
+ECM-2021,2026-10-25,Tokopedia,Semarang,TWS Earbuds Noise Cancelling,Elektronik & Gadget,2,245000,15000,475000,195000,5,Retur
+ECM-2058,2026-10-25,TikTok Shop,Bandung,Mouse Wireless Ergonomis,Aksesoris Kerja,3,115000,0,345000,171000,5,Retur
+ECM-2027,2026-10-26,Tokopedia,Semarang,Mouse Wireless Ergonomis,Aksesoris Kerja,4,115000,15000,445000,213000,3,Retur
+ECM-2016,2026-10-26,TikTok Shop,Surabaya,Lampu Meja LED Belajar,Perlengkapan Rumah,2,125000,0,250000,126000,5,Selesai
+ECM-2052,2026-10-26,TikTok Shop,Jakarta,Stand Laptop Aluminium Lipat,Aksesoris Kerja,2,135000,0,270000,134000,5,Selesai
+ECM-2054,2026-10-26,Tokopedia,Tangerang,Kemeja Linen Lengan Pendek,Fashion Pria,1,175000,10000,165000,77000,4,Selesai
+ECM-2057,2026-10-26,Shopee,Jakarta,Serum Wajah Niacinamide 30ml,Perawatan Diri,4,89000,0,356000,216000,5,Selesai
+ECM-2123,2026-10-26,Shopee,Jakarta,Sunscreen Gel SPF 50,Perawatan Diri,1,78000,15000,63000,32000,5,Retur
+ECM-2116,2026-10-26,Shopee,Bekasi,Tas Ransel Laptop Anti Air,Fashion & Tas,2,265000,25000,505000,235000,5,Selesai
+ECM-2056,2026-10-27,Tokopedia,Jakarta,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,1,95000,0,95000,53000,4,Selesai
+ECM-2007,2026-10-27,Shopee,Jakarta,Stand Laptop Aluminium Lipat,Aksesoris Kerja,1,135000,15000,120000,52000,5,Retur
+ECM-2008,2026-10-27,Tokopedia,Bekasi,Lampu Meja LED Belajar,Perlengkapan Rumah,4,125000,10000,490000,242000,4,Selesai
+ECM-2045,2026-10-27,Tokopedia,Jakarta,Sunscreen Gel SPF 50,Perawatan Diri,1,78000,15000,63000,32000,5,Dikirim
+ECM-2039,2026-10-27,TikTok Shop,Jakarta,Mouse Wireless Ergonomis,Aksesoris Kerja,3,115000,0,345000,171000,5,Selesai
+ECM-2038,2026-10-27,Shopee,Tangerang,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,2,189000,15000,363000,153000,5,Selesai
+ECM-2142,2026-10-27,Tokopedia,Tangerang,Stand Laptop Aluminium Lipat,Aksesoris Kerja,4,135000,25000,515000,243000,5,Dikirim
+ECM-2036,2026-10-28,Shopee,Jakarta,TWS Earbuds Noise Cancelling,Elektronik & Gadget,4,245000,10000,970000,410000,5,Selesai
+ECM-2120,2026-10-28,TikTok Shop,Bekasi,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,3,95000,10000,275000,149000,5,Selesai
+ECM-2037,2026-10-28,Shopee,Jakarta,Kemeja Linen Lengan Pendek,Fashion Pria,1,175000,0,175000,87000,5,Selesai
+ECM-2044,2026-10-28,TikTok Shop,Bekasi,Serum Wajah Niacinamide 30ml,Perawatan Diri,4,89000,25000,331000,191000,5,Retur
+ECM-2141,2026-10-29,Tokopedia,Medan,Powerbank Fast Charging 10000mAh,Elektronik & Gadget,1,189000,10000,179000,74000,5,Selesai
+ECM-2112,2026-10-29,Shopee,Semarang,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,2,95000,0,190000,106000,5,Selesai
+ECM-2073,2026-10-29,Tokopedia,Surabaya,Serum Wajah Niacinamide 30ml,Perawatan Diri,2,89000,15000,163000,93000,5,Selesai
+ECM-2010,2026-10-29,Shopee,Tangerang,Tas Ransel Laptop Anti Air,Fashion & Tas,1,265000,10000,255000,120000,5,Retur
+ECM-2083,2026-10-29,Shopee,Tangerang,Stand Laptop Aluminium Lipat,Aksesoris Kerja,1,135000,15000,120000,52000,5,Selesai
+ECM-2040,2026-10-30,TikTok Shop,Surabaya,Mouse Wireless Ergonomis,Aksesoris Kerja,4,115000,0,460000,228000,5,Retur
+ECM-2164,2026-10-30,Shopee,Jakarta,Lampu Meja LED Belajar,Perlengkapan Rumah,3,125000,15000,360000,174000,5,Selesai
+ECM-2055,2026-10-30,Shopee,Tangerang,Sunscreen Gel SPF 50,Perawatan Diri,3,78000,0,234000,141000,4,Retur
+ECM-2059,2026-10-30,Shopee,Bekasi,TWS Earbuds Noise Cancelling,Elektronik & Gadget,3,245000,0,735000,315000,5,Selesai
+ECM-2088,2026-10-30,Tokopedia,Jakarta,TWS Earbuds Noise Cancelling,Elektronik & Gadget,2,245000,15000,475000,195000,5,Dikirim
+ECM-2169,2026-10-30,Tokopedia,Jakarta,Botol Minum Vacuum Flask 1L,Perlengkapan Rumah,4,95000,0,380000,212000,5,Selesai
+ECM-2135,2026-10-30,Shopee,Jakarta,Serum Wajah Niacinamide 30ml,Perawatan Diri,4,89000,0,356000,216000,4,Retur
+ECM-2175,2026-10-30,TikTok Shop,Surabaya,Sunscreen Gel SPF 50,Perawatan Diri,1,78000,10000,68000,37000,5,Selesai
+ECM-2107,2026-10-31,TikTok Shop,Jakarta,Tas Ransel Laptop Anti Air,Fashion & Tas,3,265000,15000,780000,375000,5,Selesai
+ECM-2143,2026-10-31,Lazada,Bandung,Tas Ransel Laptop Anti Air,Fashion & Tas,1,265000,25000,240000,105000,4,Selesai
+ECM-2092,2026-10-31,Shopee,Bekasi,Serum Wajah Niacinamide 30ml,Perawatan Diri,1,89000,15000,74000,39000,5,Retur
+ECM-2096,2026-10-31,Lazada,Tangerang,Stand Laptop Aluminium Lipat,Aksesoris Kerja,4,135000,0,540000,268000,2,Selesai

@@ -110,6 +110,27 @@ const projectsData: ProjectItem[] = [
     technologies: ["UI/UX Design", "Mobile Prototyping", "User Flow", "Product Design"],
     featured: false,
   },
+  {
+    id: 7,
+    title: "Interactive BI Playground — E-Commerce & Digital Marketing",
+    category: "BI & Dashboard",
+    role: "Data & BI Analyst • Portfolio Project",
+    period: "2026 • Next.js & Recharts",
+    image: "/images/projects/project-1-magang-starlite.png",
+    shortDescription:
+      "Dashboard BI interaktif berbasis web untuk mengeksplorasi dataset E-Commerce Indonesia dan Digital Marketing (ROAS) dalam Rupiah, lengkap dengan filter dan upload CSV mandiri.",
+    description:
+      "Membangun halaman BI Playground interaktif di Next.js untuk mendemonstrasikan analisis KPI penjualan e-commerce dan efisiensi kampanye digital secara langsung bagi HRD maupun hiring manager.",
+    highlights: [
+      "Beralih instan antara dataset E-Commerce Indonesia dan Digital Marketing & ROAS dalam Rupiah",
+      "Filter channel/platform dinamis, KPI card, insight otomatis, serta fitur upload file CSV mandiri",
+    ],
+    technologies: ["Next.js", "TypeScript", "PapaParse", "Recharts", "Tailwind CSS"],
+    featured: true,
+    href: "/projects/bi-playground",
+    
+  },
+  
 ]
 
 const categories = ["All", "BI & Dashboard", "Operations & Data", "Analytics & Research"] as const

@@ -1,0 +1,181 @@
+id_kampanye,tanggal,channel,nama_kampanye,segmen_audiens,impressions,clicks,biaya_iklan_idr,konversi_order,pendapatan_konversi_idr,roas
+MKT-7109,2026-10-01,Instagram Ads,Promo Gajian Oktober,Mahasiswa & Fresh Grad,18002,455,1280825,12,3487764,2.72
+MKT-7080,2026-10-01,Google Search,Flash Sale Akhir Pekan,Pemilik UMKM,55188,2036,9715792,86,16419464,1.69
+MKT-7173,2026-10-01,Google Search,Brand Awareness Q4,Pekerja Kantoran,40664,1256,2566008,96,22653408,8.83
+MKT-7061,2026-10-01,Instagram Ads,Brand Awareness Q4,Keluarga Muda,18358,268,567088,8,1568352,2.77
+MKT-7115,2026-10-01,TikTok Ads,Brand Awareness Q4,Keluarga Muda,45346,965,4232490,31,8143452,1.92
+MKT-7139,2026-10-01,TikTok Ads,Brand Awareness Q4,Pemilik UMKM,55242,618,2692626,33,8390217,3.12
+MKT-7135,2026-10-01,Instagram Ads,Promo Gajian Oktober,Pekerja Kantoran,36564,833,1960049,46,10148888,5.18
+MKT-7070,2026-10-02,TikTok Ads,Retargeting Keranjang,Pekerja Kantoran,18459,623,1974287,40,8219680,4.16
+MKT-7178,2026-10-02,Google Search,Retargeting Keranjang,Pemilik UMKM,59949,2625,5950875,216,59239296,9.95
+MKT-7053,2026-10-02,TikTok Ads,Brand Awareness Q4,Pekerja Kantoran,52010,2246,10699944,112,29398656,2.75
+MKT-7098,2026-10-03,Google Search,Brand Awareness Q4,Pemilik UMKM,43060,1623,8228610,43,13186036,1.6
+MKT-7157,2026-10-03,Google Search,Retargeting Keranjang,Mahasiswa & Fresh Grad,8545,103,349376,3,820908,2.35
+MKT-7140,2026-10-03,Instagram Ads,Promo Gajian Oktober,Mahasiswa & Fresh Grad,61588,1527,3736569,107,32202185,8.62
+MKT-7071,2026-10-03,TikTok Ads,Retargeting Keranjang,Keluarga Muda,46425,1299,2726601,102,30700266,11.26
+MKT-7127,2026-10-03,TikTok Ads,Brand Awareness Q4,Pemilik UMKM,21909,666,2931066,39,10661274,3.64
+MKT-7159,2026-10-04,Instagram Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,60969,1127,3054170,67,18629082,6.1
+MKT-7142,2026-10-04,Google Search,Retargeting Keranjang,Mahasiswa & Fresh Grad,11568,320,757760,26,6364800,8.4
+MKT-7145,2026-10-04,Google Search,Retargeting Keranjang,Mahasiswa & Fresh Grad,58597,1388,4577624,56,14343840,3.13
+MKT-7162,2026-10-04,Instagram Ads,Retargeting Keranjang,Keluarga Muda,60155,1708,3472364,85,16189270,4.66
+MKT-7020,2026-10-05,Instagram Ads,Retargeting Keranjang,Mahasiswa & Fresh Grad,61868,2264,8216056,149,25855672,3.15
+MKT-7107,2026-10-05,TikTok Ads,Retargeting Keranjang,Mahasiswa & Fresh Grad,46471,1561,6382929,94,27734418,4.35
+MKT-7009,2026-10-05,Instagram Ads,Promo Gajian Oktober,Pemilik UMKM,40768,1227,2244183,40,5956240,2.65
+MKT-7033,2026-10-05,Instagram Ads,Flash Sale Akhir Pekan,Pemilik UMKM,32844,561,2015673,36,5906016,2.93
+MKT-7037,2026-10-05,TikTok Ads,Brand Awareness Q4,Pemilik UMKM,50284,1538,7617714,112,22999760,3.02
+MKT-7146,2026-10-05,Instagram Ads,Flash Sale Akhir Pekan,Keluarga Muda,34412,894,3868338,49,12351626,3.19
+MKT-7085,2026-10-05,Google Search,Promo Gajian Oktober,Pemilik UMKM,18244,308,1150072,19,2854180,2.48
+MKT-7095,2026-10-05,TikTok Ads,Retargeting Keranjang,Keluarga Muda,49714,586,2089090,42,9464406,4.53
+MKT-7164,2026-10-05,Google Search,Brand Awareness Q4,Mahasiswa & Fresh Grad,28094,688,3360880,57,13027977,3.88
+MKT-7078,2026-10-05,Instagram Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,34185,950,4741450,46,13408586,2.83
+MKT-7011,2026-10-06,Instagram Ads,Flash Sale Akhir Pekan,Pemilik UMKM,39021,597,2214870,23,5319808,2.4
+MKT-7160,2026-10-06,TikTok Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,21828,373,1701626,28,7592480,4.46
+MKT-7150,2026-10-06,Google Search,Brand Awareness Q4,Mahasiswa & Fresh Grad,31595,821,3674796,67,11868715,3.23
+MKT-7012,2026-10-06,Google Search,Retargeting Keranjang,Mahasiswa & Fresh Grad,33266,1480,4089240,81,20597976,5.04
+MKT-7096,2026-10-07,YouTube Ads,Brand Awareness Q4,Pemilik UMKM,53693,1669,7714118,88,22823152,2.96
+MKT-7028,2026-10-07,YouTube Ads,Brand Awareness Q4,Pekerja Kantoran,53358,1574,4183692,71,19771583,4.73
+MKT-7013,2026-10-07,Instagram Ads,Promo Gajian Oktober,Pemilik UMKM,49950,1278,4274910,89,25523420,5.97
+MKT-7100,2026-10-07,Google Search,Promo Gajian Oktober,Pekerja Kantoran,21768,472,2004112,12,2782524,1.39
+MKT-7077,2026-10-08,Instagram Ads,Promo Gajian Oktober,Mahasiswa & Fresh Grad,20532,837,3681963,60,10879980,2.95
+MKT-7058,2026-10-08,Instagram Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,19671,725,2361325,24,5996664,2.54
+MKT-7086,2026-10-08,YouTube Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,47226,1223,4869986,53,9373633,1.92
+MKT-7138,2026-10-08,TikTok Ads,Brand Awareness Q4,Pemilik UMKM,53308,1481,6445312,124,30792796,4.78
+MKT-7090,2026-10-08,YouTube Ads,Retargeting Keranjang,Keluarga Muda,60046,1513,6810013,110,25218710,3.7
+MKT-7117,2026-10-08,Google Search,Brand Awareness Q4,Pemilik UMKM,46212,1187,3652399,37,11593506,3.17
+MKT-7027,2026-10-08,YouTube Ads,Flash Sale Akhir Pekan,Mahasiswa & Fresh Grad,21562,620,2984060,24,6225336,2.09
+MKT-7176,2026-10-08,Instagram Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,36423,502,2444238,21,5050794,2.07
+MKT-7035,2026-10-08,Google Search,Retargeting Keranjang,Pemilik UMKM,52274,2012,9941292,142,40685414,4.09
+MKT-7076,2026-10-09,TikTok Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,44568,1341,5051547,111,18569967,3.68
+MKT-7063,2026-10-09,Google Search,Brand Awareness Q4,Keluarga Muda,16629,537,1989048,32,9724032,4.89
+MKT-7134,2026-10-09,Instagram Ads,Flash Sale Akhir Pekan,Pemilik UMKM,24324,1002,4920822,65,16053960,3.26
+MKT-7006,2026-10-09,YouTube Ads,Promo Gajian Oktober,Pekerja Kantoran,8792,393,1817625,20,4680840,2.58
+MKT-7069,2026-10-09,TikTok Ads,Retargeting Keranjang,Keluarga Muda,30688,1037,4900862,47,10071818,2.06
+MKT-7170,2026-10-09,TikTok Ads,Retargeting Keranjang,Mahasiswa & Fresh Grad,36989,562,2686922,24,7160904,2.67
+MKT-7038,2026-10-09,TikTok Ads,Retargeting Keranjang,Pekerja Kantoran,34157,1595,8064320,52,13318500,1.65
+MKT-7039,2026-10-09,TikTok Ads,Flash Sale Akhir Pekan,Pemilik UMKM,48081,2043,4796964,155,34836250,7.26
+MKT-7147,2026-10-10,YouTube Ads,Brand Awareness Q4,Pemilik UMKM,40139,497,1190315,40,6676840,5.61
+MKT-7049,2026-10-10,YouTube Ads,Brand Awareness Q4,Pekerja Kantoran,47891,938,3566276,39,8817549,2.47
+MKT-7124,2026-10-10,Instagram Ads,Promo Gajian Oktober,Pekerja Kantoran,50584,1107,4752351,87,20397150,4.29
+MKT-7118,2026-10-10,TikTok Ads,Promo Gajian Oktober,Pemilik UMKM,26892,594,2574990,15,3415155,1.33
+MKT-7046,2026-10-10,Instagram Ads,Retargeting Keranjang,Pekerja Kantoran,38342,755,2261980,31,5166646,2.28
+MKT-7102,2026-10-11,Instagram Ads,Brand Awareness Q4,Keluarga Muda,43315,1940,6954900,72,15573096,2.24
+MKT-7022,2026-10-11,TikTok Ads,Flash Sale Akhir Pekan,Keluarga Muda,24267,1082,5087564,50,14149800,2.78
+MKT-7106,2026-10-11,Instagram Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,48234,1842,3479538,106,32044754,9.21
+MKT-7108,2026-10-11,YouTube Ads,Retargeting Keranjang,Pekerja Kantoran,26285,441,2194416,20,4818160,2.2
+MKT-7133,2026-10-11,TikTok Ads,Retargeting Keranjang,Pemilik UMKM,24406,597,2844705,46,13376386,4.7
+MKT-7003,2026-10-11,YouTube Ads,Flash Sale Akhir Pekan,Pemilik UMKM,13550,493,1121082,35,10422370,9.3
+MKT-7025,2026-10-11,Google Search,Brand Awareness Q4,Keluarga Muda,57937,2103,10079679,166,50451384,5.01
+MKT-7161,2026-10-11,Google Search,Retargeting Keranjang,Mahasiswa & Fresh Grad,8859,216,581472,9,2204694,3.79
+MKT-7130,2026-10-11,TikTok Ads,Promo Gajian Oktober,Keluarga Muda,41816,497,2473569,20,4858100,1.96
+MKT-7128,2026-10-11,Instagram Ads,Flash Sale Akhir Pekan,Keluarga Muda,62060,2488,8270112,71,21652657,2.62
+MKT-7088,2026-10-12,YouTube Ads,Promo Gajian Oktober,Pemilik UMKM,57542,805,3432520,40,9483680,2.76
+MKT-7023,2026-10-12,TikTok Ads,Promo Gajian Oktober,Pemilik UMKM,64189,1797,3965979,76,17204728,4.34
+MKT-7154,2026-10-12,Google Search,Brand Awareness Q4,Pekerja Kantoran,44931,534,2466546,16,4615760,1.87
+MKT-7031,2026-10-12,TikTok Ads,Flash Sale Akhir Pekan,Keluarga Muda,32733,422,1223800,31,7904969,6.46
+MKT-7015,2026-10-13,TikTok Ads,Brand Awareness Q4,Pekerja Kantoran,55233,1331,3086589,39,7905924,2.56
+MKT-7029,2026-10-13,TikTok Ads,Brand Awareness Q4,Pemilik UMKM,36432,1235,2871375,65,10619115,3.7
+MKT-7083,2026-10-13,Google Search,Promo Gajian Oktober,Keluarga Muda,56946,2687,6808858,70,21910630,3.22
+MKT-7081,2026-10-14,YouTube Ads,Flash Sale Akhir Pekan,Pemilik UMKM,36318,897,2987010,33,9572013,3.2
+MKT-7153,2026-10-14,Instagram Ads,Promo Gajian Oktober,Mahasiswa & Fresh Grad,29109,1309,3555244,60,11923020,3.35
+MKT-7064,2026-10-14,YouTube Ads,Brand Awareness Q4,Keluarga Muda,13845,206,589778,15,4675305,7.93
+MKT-7026,2026-10-14,Google Search,Promo Gajian Oktober,Pekerja Kantoran,44619,1450,2775300,120,35393400,12.75
+MKT-7087,2026-10-15,Instagram Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,11470,459,1375164,37,10395890,7.56
+MKT-7103,2026-10-15,TikTok Ads,Brand Awareness Q4,Keluarga Muda,10738,134,492450,10,2284710,4.64
+MKT-7062,2026-10-15,YouTube Ads,Flash Sale Akhir Pekan,Keluarga Muda,15587,358,1213620,9,1357146,1.12
+MKT-7041,2026-10-15,YouTube Ads,Promo Gajian Oktober,Pemilik UMKM,31241,518,968142,37,8298508,8.57
+MKT-7016,2026-10-15,Instagram Ads,Brand Awareness Q4,Pekerja Kantoran,47583,1760,6332480,51,15506856,2.45
+MKT-7114,2026-10-16,TikTok Ads,Retargeting Keranjang,Keluarga Muda,21956,461,2273191,22,4224308,1.86
+MKT-7143,2026-10-16,TikTok Ads,Promo Gajian Oktober,Keluarga Muda,52743,669,1715985,45,6715845,3.91
+MKT-7137,2026-10-16,TikTok Ads,Flash Sale Akhir Pekan,Keluarga Muda,33458,1214,4675114,53,15588042,3.33
+MKT-7113,2026-10-16,Google Search,Promo Gajian Oktober,Pemilik UMKM,18406,303,1072317,17,3477758,3.24
+MKT-7043,2026-10-16,Instagram Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,42664,1723,8308306,62,16095572,1.94
+MKT-7056,2026-10-17,Google Search,Brand Awareness Q4,Keluarga Muda,59312,2633,4913178,139,21897365,4.46
+MKT-7174,2026-10-17,Instagram Ads,Promo Gajian Oktober,Keluarga Muda,21323,961,4702173,80,13556640,2.88
+MKT-7148,2026-10-17,Instagram Ads,Flash Sale Akhir Pekan,Pemilik UMKM,49691,1371,2493849,71,15677226,6.29
+MKT-7045,2026-10-17,Google Search,Brand Awareness Q4,Mahasiswa & Fresh Grad,35179,566,1619892,25,3836150,2.37
+MKT-7044,2026-10-17,Google Search,Flash Sale Akhir Pekan,Pemilik UMKM,41582,1426,7370994,73,22183167,3.01
+MKT-7163,2026-10-17,Instagram Ads,Brand Awareness Q4,Pemilik UMKM,12034,371,1460998,25,6589700,4.51
+MKT-7171,2026-10-17,Instagram Ads,Retargeting Keranjang,Keluarga Muda,14810,308,803264,25,6316400,7.86
+MKT-7018,2026-10-17,Instagram Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,40453,853,2597385,48,9714960,3.74
+MKT-7141,2026-10-18,TikTok Ads,Retargeting Keranjang,Pemilik UMKM,9343,332,750652,11,3180331,4.24
+MKT-7094,2026-10-18,Google Search,Retargeting Keranjang,Pemilik UMKM,14630,544,2659072,39,10117341,3.8
+MKT-7172,2026-10-18,Google Search,Retargeting Keranjang,Mahasiswa & Fresh Grad,38262,834,2645448,30,8402820,3.18
+MKT-7099,2026-10-18,Instagram Ads,Promo Gajian Oktober,Keluarga Muda,63049,2900,10730000,174,39795540,3.71
+MKT-7014,2026-10-18,Instagram Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,45665,2004,10286532,153,48244419,4.69
+MKT-7168,2026-10-18,Google Search,Promo Gajian Oktober,Keluarga Muda,56814,2465,8482065,195,38258025,4.51
+MKT-7019,2026-10-18,Instagram Ads,Promo Gajian Oktober,Keluarga Muda,45614,1044,4736628,46,11094096,2.34
+MKT-7116,2026-10-19,Instagram Ads,Retargeting Keranjang,Pemilik UMKM,9422,114,584592,8,2185784,3.74
+MKT-7060,2026-10-19,Instagram Ads,Promo Gajian Oktober,Mahasiswa & Fresh Grad,50805,619,2970581,40,9004680,3.03
+MKT-7112,2026-10-19,TikTok Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,9819,159,501486,4,752484,1.5
+MKT-7125,2026-10-20,TikTok Ads,Retargeting Keranjang,Pekerja Kantoran,32942,744,2415024,24,6946944,2.88
+MKT-7158,2026-10-20,Google Search,Flash Sale Akhir Pekan,Pemilik UMKM,48499,2032,6524752,156,27565980,4.22
+MKT-7166,2026-10-20,TikTok Ads,Flash Sale Akhir Pekan,Pemilik UMKM,37797,963,3628584,79,20871089,5.75
+MKT-7001,2026-10-20,Google Search,Retargeting Keranjang,Keluarga Muda,15474,476,1016736,37,7998364,7.87
+MKT-7002,2026-10-20,TikTok Ads,Brand Awareness Q4,Keluarga Muda,10148,459,2311983,31,7221450,3.12
+MKT-7097,2026-10-20,Instagram Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,59474,1385,6852980,77,19972491,2.91
+MKT-7052,2026-10-21,TikTok Ads,Flash Sale Akhir Pekan,Mahasiswa & Fresh Grad,33828,862,2018804,27,4505652,2.23
+MKT-7004,2026-10-21,YouTube Ads,Retargeting Keranjang,Pemilik UMKM,62446,1567,5526809,55,8926115,1.62
+MKT-7126,2026-10-21,Google Search,Retargeting Keranjang,Pemilik UMKM,36626,977,4030125,48,7718736,1.92
+MKT-7024,2026-10-21,Google Search,Promo Gajian Oktober,Pemilik UMKM,47283,1011,2472906,83,13518459,5.47
+MKT-7005,2026-10-22,TikTok Ads,Retargeting Keranjang,Mahasiswa & Fresh Grad,25124,962,4003844,53,14496507,3.62
+MKT-7066,2026-10-22,Instagram Ads,Promo Gajian Oktober,Pekerja Kantoran,53190,1595,6091305,45,11585025,1.9
+MKT-7065,2026-10-22,Instagram Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,51971,1465,7377740,101,24778027,3.36
+MKT-7008,2026-10-22,Instagram Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,17767,668,1848356,20,4542340,2.46
+MKT-7040,2026-10-22,Google Search,Flash Sale Akhir Pekan,Pemilik UMKM,9628,199,835203,7,1367212,1.64
+MKT-7149,2026-10-22,YouTube Ads,Retargeting Keranjang,Pemilik UMKM,29884,995,3395935,59,10534686,3.1
+MKT-7121,2026-10-22,Instagram Ads,Promo Gajian Oktober,Mahasiswa & Fresh Grad,51496,2291,7881040,147,27981891,3.55
+MKT-7093,2026-10-22,Instagram Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,54572,1069,4033337,51,12269988,3.04
+MKT-7177,2026-10-22,Google Search,Flash Sale Akhir Pekan,Pekerja Kantoran,33187,1483,3063878,120,25524120,8.33
+MKT-7104,2026-10-22,Google Search,Flash Sale Akhir Pekan,Pekerja Kantoran,40069,733,2135229,26,5832866,2.73
+MKT-7007,2026-10-23,YouTube Ads,Brand Awareness Q4,Pemilik UMKM,40259,1167,3078546,42,10972500,3.56
+MKT-7010,2026-10-23,TikTok Ads,Retargeting Keranjang,Pekerja Kantoran,55385,819,3231774,24,4095000,1.27
+MKT-7129,2026-10-23,Google Search,Flash Sale Akhir Pekan,Pekerja Kantoran,52919,2460,10373820,206,51721038,4.99
+MKT-7048,2026-10-23,TikTok Ads,Promo Gajian Oktober,Pekerja Kantoran,24086,1014,3793374,56,15257480,4.02
+MKT-7072,2026-10-23,Google Search,Flash Sale Akhir Pekan,Pekerja Kantoran,52932,2445,7784880,164,49207216,6.32
+MKT-7079,2026-10-23,YouTube Ads,Retargeting Keranjang,Pekerja Kantoran,14785,242,927344,8,1198128,1.29
+MKT-7054,2026-10-24,Google Search,Flash Sale Akhir Pekan,Pekerja Kantoran,36961,883,3088734,22,5729966,1.86
+MKT-7057,2026-10-24,YouTube Ads,Promo Gajian Oktober,Pekerja Kantoran,55335,1444,6742036,72,19139616,2.84
+MKT-7152,2026-10-24,Instagram Ads,Promo Gajian Oktober,Pekerja Kantoran,14180,670,1391590,49,12208938,8.77
+MKT-7165,2026-10-24,TikTok Ads,Promo Gajian Oktober,Pemilik UMKM,41168,633,3027639,21,4112535,1.36
+MKT-7082,2026-10-24,Instagram Ads,Brand Awareness Q4,Pekerja Kantoran,17450,488,2319464,28,6538840,2.82
+MKT-7017,2026-10-24,TikTok Ads,Flash Sale Akhir Pekan,Pemilik UMKM,25353,570,1129170,47,12786867,11.32
+MKT-7119,2026-10-24,TikTok Ads,Flash Sale Akhir Pekan,Mahasiswa & Fresh Grad,25465,351,1089504,17,3784999,3.47
+MKT-7042,2026-10-25,Instagram Ads,Flash Sale Akhir Pekan,Mahasiswa & Fresh Grad,41980,520,2588040,25,6243150,2.41
+MKT-7051,2026-10-25,Instagram Ads,Brand Awareness Q4,Keluarga Muda,20572,314,1504374,15,4078110,2.71
+MKT-7123,2026-10-25,YouTube Ads,Flash Sale Akhir Pekan,Pemilik UMKM,47116,1069,3420800,70,16248330,4.75
+MKT-7175,2026-10-25,Instagram Ads,Brand Awareness Q4,Keluarga Muda,60372,784,2773008,44,6775604,2.44
+MKT-7067,2026-10-26,Instagram Ads,Promo Gajian Oktober,Pemilik UMKM,26206,508,1735328,16,4201920,2.42
+MKT-7156,2026-10-26,Google Search,Promo Gajian Oktober,Keluarga Muda,13636,578,1122476,20,5095200,4.54
+MKT-7155,2026-10-26,Instagram Ads,Retargeting Keranjang,Pekerja Kantoran,25862,486,983178,29,4217238,4.29
+MKT-7169,2026-10-27,Instagram Ads,Retargeting Keranjang,Keluarga Muda,10514,474,2227800,20,6189400,2.78
+MKT-7050,2026-10-27,Instagram Ads,Flash Sale Akhir Pekan,Keluarga Muda,63227,1884,5075496,131,39058698,7.7
+MKT-7036,2026-10-27,Instagram Ads,Brand Awareness Q4,Pemilik UMKM,13703,612,2345184,33,9571122,4.08
+MKT-7021,2026-10-27,YouTube Ads,Brand Awareness Q4,Pemilik UMKM,34807,817,2836624,62,11865312,4.18
+MKT-7110,2026-10-27,YouTube Ads,Brand Awareness Q4,Pemilik UMKM,36081,768,2585088,47,11407887,4.41
+MKT-7179,2026-10-27,Instagram Ads,Brand Awareness Q4,Pekerja Kantoran,10257,407,1417174,23,6164621,4.35
+MKT-7075,2026-10-27,Google Search,Promo Gajian Oktober,Mahasiswa & Fresh Grad,55163,1748,6595204,120,25568160,3.88
+MKT-7073,2026-10-27,TikTok Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,16716,499,1932627,20,4627180,2.39
+MKT-7055,2026-10-28,Google Search,Retargeting Keranjang,Mahasiswa & Fresh Grad,48162,1468,5058728,112,19275760,3.81
+MKT-7101,2026-10-28,Google Search,Brand Awareness Q4,Keluarga Muda,41424,977,4812702,77,11244156,2.34
+MKT-7122,2026-10-28,YouTube Ads,Retargeting Keranjang,Pekerja Kantoran,16027,549,1927539,28,8517040,4.42
+MKT-7180,2026-10-28,Instagram Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,60007,744,2225304,26,6474572,2.91
+MKT-7047,2026-10-28,Google Search,Retargeting Keranjang,Keluarga Muda,52711,2277,10824858,180,38651400,3.57
+MKT-7034,2026-10-29,Instagram Ads,Brand Awareness Q4,Keluarga Muda,23062,811,3130460,35,5489750,1.75
+MKT-7032,2026-10-29,TikTok Ads,Promo Gajian Oktober,Mahasiswa & Fresh Grad,46750,1257,3266943,36,11200536,3.43
+MKT-7120,2026-10-29,Instagram Ads,Promo Gajian Oktober,Keluarga Muda,25733,432,2160000,15,3857820,1.79
+MKT-7092,2026-10-29,TikTok Ads,Retargeting Keranjang,Pekerja Kantoran,45190,1391,6470932,73,19136804,2.96
+MKT-7089,2026-10-29,TikTok Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,49802,587,1426410,49,12186839,8.54
+MKT-7074,2026-10-30,TikTok Ads,Retargeting Keranjang,Pekerja Kantoran,54188,2237,7276961,172,41666656,5.73
+MKT-7030,2026-10-30,Google Search,Promo Gajian Oktober,Pemilik UMKM,29107,1143,2705481,69,20789700,7.68
+MKT-7105,2026-10-30,Instagram Ads,Promo Gajian Oktober,Mahasiswa & Fresh Grad,16621,668,2156304,48,14459808,6.71
+MKT-7059,2026-10-30,Google Search,Promo Gajian Oktober,Pekerja Kantoran,28427,707,3471370,59,13205675,3.8
+MKT-7111,2026-10-31,Instagram Ads,Flash Sale Akhir Pekan,Pekerja Kantoran,64571,1220,5385080,63,17728074,3.29
+MKT-7091,2026-10-31,YouTube Ads,Flash Sale Akhir Pekan,Pemilik UMKM,8177,228,777252,12,2870784,3.69
+MKT-7084,2026-10-31,YouTube Ads,Retargeting Keranjang,Pekerja Kantoran,53571,1435,6634005,59,12864065,1.94
+MKT-7068,2026-10-31,Google Search,Flash Sale Akhir Pekan,Keluarga Muda,15503,297,1027917,8,2499824,2.43
+MKT-7131,2026-10-31,Google Search,Flash Sale Akhir Pekan,Pekerja Kantoran,63028,1166,5523342,88,24376880,4.41
+MKT-7132,2026-10-31,Instagram Ads,Brand Awareness Q4,Pemilik UMKM,52002,2007,8172504,127,37336222,4.57
+MKT-7151,2026-10-31,Google Search,Retargeting Keranjang,Pekerja Kantoran,48126,1063,2917935,58,12405678,4.25
+MKT-7136,2026-10-31,YouTube Ads,Promo Gajian Oktober,Pemilik UMKM,31946,1012,4954752,77,11428109,2.31
+MKT-7144,2026-10-31,TikTok Ads,Brand Awareness Q4,Mahasiswa & Fresh Grad,36577,1737,8011044,125,39088625,4.88
+MKT-7167,2026-10-31,Instagram Ads,Promo Gajian Oktober,Pemilik UMKM,11316,468,1291212,32,4743744,3.67

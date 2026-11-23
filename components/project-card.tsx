@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight, BarChart3, CheckCircle2, FolderKanban, LineChart } from "lucide-react"
@@ -16,6 +17,7 @@ export interface ProjectItem {
   highlights?: string[]
   technologies: string[]
   featured?: boolean
+  href?: string
 }
 
 interface ProjectCardProps {
@@ -41,16 +43,29 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
     <div className="group h-full flex flex-col justify-between rounded-2xl border border-border overflow-hidden hover:border-primary/50 transition-all hover:-translate-y-1.5 bg-card/60 hover:bg-card">
       <div>
         {/* Gambar Dashboard */}
-        <div
-          onClick={() => onSelect(project)}
-          className="relative w-full h-48 overflow-hidden bg-muted border-b border-border/50 cursor-pointer"
-        >
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-          />
-        </div>
+        {project.href ? (
+          <Link
+            href={project.href}
+            className="block relative w-full h-48 overflow-hidden bg-muted border-b border-border/50 cursor-pointer"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+            />
+          </Link>
+        ) : (
+          <div
+            onClick={() => onSelect(project)}
+            className="relative w-full h-48 overflow-hidden bg-muted border-b border-border/50 cursor-pointer"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        )}
 
         <div className="p-6 space-y-4">
           {/* Category & Period */}
@@ -92,7 +107,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
         </div>
       </div>
 
-      {/* Technologies & Detail Button */}
+      {/* Technologies & Detail / Live Demo Button */}
       <div className="px-6 pb-6 pt-4 mt-2 border-t border-border/50 space-y-4">
         <div className="flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
@@ -102,16 +117,30 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
           ))}
         </div>
 
-        <Button
-          type="button"
-          variant="outline"
-          size="sm"
-          onClick={() => onSelect(project)}
-          className="w-full justify-between rounded-xl border-border/70 hover:border-primary/50 hover:bg-primary/5"
-        >
-          <span>Lihat Detail Proyek</span>
-          <ArrowUpRight className="w-4 h-4" />
-        </Button>
+        {project.href ? (
+          <Button
+            asChild
+            variant="default"
+            size="sm"
+            className="w-full justify-between rounded-xl"
+          >
+            <Link href={project.href}>
+              <span>Coba Live Dashboard</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
+          </Button>
+        ) : (
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            onClick={() => onSelect(project)}
+            className="w-full justify-between rounded-xl border-border/70 hover:border-primary/50 hover:bg-primary/5"
+          >
+            <span>Lihat Detail Proyek</span>
+            <ArrowUpRight className="w-4 h-4" />
+          </Button>
+        )}
       </div>
     </div>
   )
