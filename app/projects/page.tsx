@@ -135,6 +135,25 @@ const projectsData: ProjectItem[] = [
     featured: true,
     href: "/projects/bi-playground",
   },
+  {
+    id: 8,
+    title: "SQL & Python — Retail Customer Segmentation (RFM) & Profit Analysis",
+    category: "Analytics & Research",
+    role: "Data Analyst • SQL & Python Case Study",
+    period: "2026 • BigQuery SQL & Pandas",
+    image: "/images/projects/project-8-sql-python.jpg",
+    shortDescription:
+      "Studi kasus data cleaning, agregasi CTE/Window Function SQL, dan RFM scoring Python (Pandas) untuk strategi retensi pelanggan ritel",
+    description:
+      "Mengolah data transaksi ritel menggunakan SQL dan Python (Pandas) untuk membersihkan anomali data, menghitung margin bersih, serta mengelompokkan 1.700 pelanggan ke 5 segmen RFM beserta rekomendasi aksi retensi.",
+    highlights: [
+      "Menampilkan kode SQL (CTE & NTILE Window Function) dan Python (Pandas qcut) interaktif yang dapat disalin langsung",
+      "Simulasi output 5 segmen RFM (Champions, Loyal, Potential Loyalist, At Risk, Hibernating) lengkap dengan strategi bisnisnya",
+    ],
+    technologies: ["SQL", "BigQuery", "Python", "Pandas", "RFM Analysis"],
+    featured: true,
+    href: "/projects/sql-python-case",
+  },
 ]
 
 const categories = ["All", "BI & Dashboard", "Operations & Data", "Analytics & Research"] as const
