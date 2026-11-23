@@ -36,10 +36,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 hover-scale group">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:shadow-lg transition-all">
-              <span className="text-primary-foreground font-bold text-base">Y</span>
+              <span className="text-primary-foreground font-bold text-base">R</span>
             </div>
             <span className="font-bold text-lg text-foreground hidden sm:inline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Yilzi
+              Rakhan Fahrezi Aritonang
             </span>
           </Link>
 

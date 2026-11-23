@@ -1,111 +1,97 @@
 {
   "personal": {
-    "name": "Yilzi",
-    "title": "Full Stack Developer",
-    "bio": "Crafting elegant solutions to complex problems. Passionate about building web experiences that blend thoughtful design with robust engineering.",
-    "email": "yilzi@owner.com",
-    "phone": "+62-813-5912-3789",
-    "location": "Malang, East Java, Indonesia",
-    "tagline": "Developer, Designer, Problem Solver",
+    "name": "Rakhan Fahrezi Aritonang",
+    "title": "Data Analyst & Business Intelligence",
+    "bio": "Lulusan S1 Sistem Informasi peminatan Business Intelligence Universitas Mercu Buana dengan pengalaman analisis data, dasbor Metabase, SQL, Python, R, serta koordinasi operasional berbasis data.",
+    "email": "fahrezirakhan@gmail.com",
+    "phone": "085609841374",
+    "location": "Jakarta Barat, Indonesia",
     "avatar": "/images/profile.jpg"
   },
   "socialMedia": {
-    "instagram": {
-      "username": "Yilzi_dominan",
-      "url": "https://instagram.com/Yilzi_dominan",
-      "icon": "Instagram"
-    },
-    "tiktok": {
-      "username": "Yilziii",
-      "url": "https://tiktok.com/@Yilziii",
-      "icon": "Music"
-    },
-    "telegram": {
-      "username": "Yilziii",
-      "url": "https://t.me/Yilziii",
-      "icon": "Send"
-    },
+   
+    
     "whatsapp": {
-      "phone": "6281359123789",
-      "url": "https://wa.me/6281359123789",
+      "username": "085609841374",
+      "phone": "6285609841374",
+      "url": "https://wa.me/6285609841374",
       "icon": "MessageCircle"
     },
-    "github": {
-      "username": "YilziiHCT",
-      "url": "https://github.com/YilziiHCT",
-      "icon": "Github"
+    "instagram": {
+      "username": "rakhanfahrezi",
+      "url": "https://instagram.com/rakhanfahrezi",
+      "icon": "Instagram"
     }
   },
   "techStack": [
     {
-      "name": "React",
-      "category": "Frontend",
-      "level": "Expert",
-      "icon": "⚛️"
-    },
-    {
-      "name": "Next.js",
-      "category": "Frontend",
-      "level": "Expert",
-      "icon": "▲"
-    },
-    {
-      "name": "TypeScript",
-      "category": "Language",
+      "name": "SQL (PostgreSQL, SQLite & BigQuery)",
+      "category": "Database & Querying",
       "level": "Advanced",
-      "icon": "🔷"
+      "icon": "🗄️"
     },
     {
-      "name": "Tailwind CSS",
-      "category": "Styling",
-      "level": "Expert",
-      "icon": "🎨"
-    },
-    {
-      "name": "Node.js",
-      "category": "Backend",
+      "name": "Python & R",
+      "category": "Data Analysis & Modeling",
       "level": "Advanced",
-      "icon": "🟢"
+      "icon": "🐍"
     },
     {
-      "name": "PostgreSQL",
-      "category": "Database",
+      "name": "Metabase, Power BI & Tableau",
+      "category": "BI & Visualization",
       "level": "Advanced",
-      "icon": "🐘"
+      "icon": "📊"
+    },
+    {
+      "name": "Microsoft Excel",
+      "category": "Spreadsheet & Reporting",
+      "level": "Advanced",
+      "icon": "📈"
     }
   ],
   "projects": [
     {
       "id": 1,
-      "title": "E-Commerce Platform",
-      "description": "A modern e-commerce platform with real-time inventory management and payment integration",
-      "shortDescription": "Full-stack e-commerce with real-time updates",
+      "title": "Starlite Wi-Fi Operational Dashboard",
+      "description": "Merancang dan mengembangkan dasbor interaktif di Metabase selama magang Data Analyst di PT Integrasi Jaringan Ekosistem (WEAVE) untuk memantau registrasi pelanggan, metrik operasional, dan pendapatan layanan Starlite Wi-Fi.",
+      "shortDescription": "Dasbor pemantauan operasional & pendapatan Starlite Wi-Fi di Metabase",
       "image": "/images/projects/project.jpg",
-      "technologies": ["React", "Node.js", "PostgreSQL", "Stripe"],
-      "demo": "https://example.com",
-      "github": "https://github.com/YilziiHCT",
+      "technologies": ["Metabase", "SQL", "Operational Metrics", "BI Reporting"],
+      "demo": "",
+      "github": "https://github.com/RakhanFahrezi1",
       "featured": true
     },
     {
       "id": 2,
-      "title": "Task Management App",
-      "description": "Collaborative task management tool with real-time synchronization",
-      "shortDescription": "Collaborative task management solution",
+      "title": "Uih Ka Imah Operational & Data Tracking",
+      "description": "Mengelola inventori harian, penjadwalan tim operasional, sistem POS, serta pemantauan dan pelaporan data penjualan di Warung Uih Ka Imah untuk mendukung pengambilan keputusan operasional.",
+      "shortDescription": "Pengelolaan inventori, jadwal tim, POS, dan pelaporan data penjualan F&B",
       "image": "/images/projects/project.jpg",
-      "technologies": ["Next.js", "TypeScript", "Supabase"],
-      "demo": "https://example.com",
-      "github": "https://github.com/YilziiHCT",
+      "technologies": ["Microsoft Excel", "POS Data", "Inventory Control", "Operations"],
+      "demo": "",
+      "github": "https://github.com/RakhanFahrezi1",
       "featured": true
     },
     {
       "id": 3,
-      "title": "Design System",
-      "description": "Comprehensive design system and component library",
-      "shortDescription": "Scalable component library",
+      "title": "Indonesia Anemia Trends Dashboard (Gemastik)",
+      "description": "Mengolah dataset kesehatan regional dan membangun dasbor visualisasi data interaktif untuk memetakan tren penyakit anemia di seluruh provinsi Indonesia pada kompetisi Gemastik.",
+      "shortDescription": "Dasbor visualisasi data tren anemia regional di Indonesia",
       "image": "/images/projects/project.jpg",
-      "technologies": ["React", "Storybook", "TypeScript"],
-      "demo": "https://example.com",
-      "github": "https://github.com/YilziiHCT",
+      "technologies": ["Data Visualization", "Data Cleaning", "Health Dataset", "Analytics"],
+      "demo": "",
+      "github": "https://github.com/RakhanFahrezi1",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Mental Care Mobile Prototype (PKM)",
+      "description": "Memimpin tim lintas fungsi dalam merancang dan mengembangkan prototipe aplikasi mobile 'Mental Care' dari tahap ideasi hingga high-fidelity prototyping pada Program Kreativitas Mahasiswa Universitas Mercu Buana.",
+      "shortDescription": "Prototipe aplikasi mobile layanan kesehatan mental (PKM Team Leader)",
+      "image": "/images/projects/project.jpg",
+      "technologies": ["Project Leadership", "UI/UX Prototyping", "Product Design"],
+      "demo": "",
+      "github": "https://github.com/RakhanFahrezi1",
       "featured": false
     }
   ],
@@ -119,15 +105,15 @@
         "social": "Social"
       },
       "hero": {
-        "greeting": "Hello, I'm Yilzi",
-        "tagline": "Full Stack Developer & Creative Problem Solver",
+        "greeting": "Hello, I'm Rakhan Fahrezi Aritonang",
+        "tagline": "Data Analyst & Business Intelligence Specialist",
         "cta": "Let's Work Together"
       },
       "about": {
         "title": "About Me",
-        "description": "I'm a passionate developer from Malang with 5+ years of experience building web applications. I specialize in creating scalable, user-friendly solutions that solve real problems."
+        "description": "Information Systems graduate specializing in Business Intelligence from Universitas Mercu Buana, experienced in Metabase dashboards, SQL, Python, R, and data-driven operational coordination."
       },
-      "footer": "© 2025 Yilzi. All rights reserved."
+      "footer": "© 2026 Rakhan Fahrezi Aritonang. All rights reserved."
     },
     "id": {
       "nav": {
@@ -138,15 +124,15 @@
         "social": "Sosial"
       },
       "hero": {
-        "greeting": "Halo, Saya Yilzi",
-        "tagline": "Developer Full Stack & Problem Solver Kreatif",
+        "greeting": "Halo, Saya Rakhan Fahrezi Aritonang",
+        "tagline": "Data Analyst & Business Intelligence Specialist",
         "cta": "Mari Berkolaborasi"
       },
       "about": {
         "title": "Tentang Saya",
-        "description": "Saya adalah developer bersemangat dari Malang dengan pengalaman 5+ tahun membangun aplikasi web. Saya spesialis menciptakan solusi yang scalable dan user-friendly."
+        "description": "Lulusan S1 Sistem Informasi peminatan Business Intelligence Universitas Mercu Buana dengan pengalaman membangun dasbor Metabase, analisis SQL, Python, R, serta pengelolaan data operasional."
       },
-      "footer": "© 2025 Yilzi. Semua hak dilindungi."
+      "footer": "© 2026 Rakhan Fahrezi Aritonang. Semua hak dilindungi."
     }
   },
   "theme": {

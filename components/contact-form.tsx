@@ -1,11 +1,14 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { MessageCircle, Mail } from "lucide-react"
+
+const WHATSAPP_NUMBER = "6285609841374"
+const CONTACT_EMAIL = "rakhanfahrezi@gmail.com"
 
 export default function ContactForm() {
   const [formState, setFormState] = useState({
@@ -25,64 +28,83 @@ export default function ContactForm() {
     }))
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const formatMessageBody = () => {
+    return [
+      `Halo Rakhan, saya *${formState.name}* (${formState.email}).`,
+      `*Subjek:* ${formState.subject}`,
+      "",
+      formState.message,
+    ].join("\n")
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
     try {
-      // Simulate form submission
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-      setSubmitMessage("Thanks for reaching out! I'll get back to you soon.")
+      const encodedText = encodeURIComponent(formatMessageBody())
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`, "_blank", "noopener,noreferrer")
+      setSubmitMessage("Mengarahkan ke WhatsApp... Terima kasih telah menghubungi!")
       setFormState({ name: "", email: "", subject: "", message: "" })
       setTimeout(() => setSubmitMessage(""), 5000)
-    } catch (error) {
-      setSubmitMessage("Something went wrong. Please try again.")
+    } catch {
+      setSubmitMessage("Terjadi kendala saat membuka WhatsApp. Silakan coba kirim melalui Email.")
     } finally {
       setIsSubmitting(false)
     }
   }
 
-  return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="space-y-2">
-        <label htmlFor="name" className="text-sm font-medium text-foreground">
-          Name
-        </label>
-        <Input
-          id="name"
-          name="name"
-          placeholder="Your name"
-          value={formState.name}
-          onChange={handleChange}
-          required
-          className="bg-card border-border"
-        />
-      </div>
+  const handleEmailFallback = () => {
+    const subject = encodeURIComponent(formState.subject || "Kontak dari Portofolio")
+    const body = encodeURIComponent(
+      `Nama: ${formState.name || "-"}\nEmail: ${formState.email || "-"}\n\n${formState.message || ""}`
+    )
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`
+  }
 
-      <div className="space-y-2">
-        <label htmlFor="email" className="text-sm font-medium text-foreground">
-          Email
-        </label>
-        <Input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="your.email@example.com"
-          value={formState.email}
-          onChange={handleChange}
-          required
-          className="bg-card border-border"
-        />
+  return (
+    <form onSubmit={handleSubmit} className="space-y-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div className="space-y-2">
+          <label htmlFor="name" className="text-sm font-medium text-foreground">
+            Nama Lengkap
+          </label>
+          <Input
+            id="name"
+            name="name"
+            placeholder="Masukkan nama Anda"
+            value={formState.name}
+            onChange={handleChange}
+            required
+            className="bg-card border-border"
+          />
+        </div>
+
+        <div className="space-y-2">
+          <label htmlFor="email" className="text-sm font-medium text-foreground">
+            Alamat Email
+          </label>
+          <Input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="nama@perusahaan.com"
+            value={formState.email}
+            onChange={handleChange}
+            required
+            className="bg-card border-border"
+          />
+        </div>
       </div>
 
       <div className="space-y-2">
         <label htmlFor="subject" className="text-sm font-medium text-foreground">
-          Subject
+          Subjek
         </label>
         <Input
           id="subject"
           name="subject"
-          placeholder="What's this about?"
+          placeholder="Contoh: Peluang Data Analyst / BI / Kolaborasi Proyek"
           value={formState.subject}
           onChange={handleChange}
           required
@@ -92,33 +114,46 @@ export default function ContactForm() {
 
       <div className="space-y-2">
         <label htmlFor="message" className="text-sm font-medium text-foreground">
-          Message
+          Pesan
         </label>
         <Textarea
           id="message"
           name="message"
-          placeholder="Tell me about your project or inquiry..."
+          placeholder="Tuliskan detail kebutuhan, posisi, atau proyek data yang ingin didiskusikan..."
           value={formState.message}
           onChange={handleChange}
           required
-          rows={6}
+          rows={5}
           className="bg-card border-border resize-none"
         />
       </div>
 
       {submitMessage && (
-        <div className="p-4 rounded-lg bg-accent/10 border border-accent/20 text-accent-foreground text-sm">
+        <div className="p-4 rounded-xl bg-primary/10 border border-primary/30 text-foreground text-sm">
           {submitMessage}
         </div>
       )}
 
-      <Button
-        type="submit"
-        disabled={isSubmitting}
-        className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-      >
-        {isSubmitting ? "Sending..." : "Send Message"}
-      </Button>
+      <div className="flex flex-col sm:flex-row gap-3 pt-1">
+        <Button
+          type="submit"
+          disabled={isSubmitting}
+          className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground h-11 font-semibold"
+        >
+          <MessageCircle className="w-4 h-4 mr-2" />
+          {isSubmitting ? "Membuka WhatsApp..." : "Kirim via WhatsApp"}
+        </Button>
+
+        <Button
+          type="button"
+          variant="outline"
+          onClick={handleEmailFallback}
+          className="sm:w-auto h-11 border-border hover:bg-accent/10 font-medium"
+        >
+          <Mail className="w-4 h-4 mr-2" />
+          Kirim via Email
+        </Button>
+      </div>
     </form>
   )
 }

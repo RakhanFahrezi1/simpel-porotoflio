@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Yilzi - Full Stack Developer Portfolio",
   description:
-    "Full Stack Developer from Malang, Indonesia. Specialized in building modern web applications with React, Next.js, and TypeScript.",
+    ", Indonesia. Specialized in building modern web applications with React, Next.js, and TypeScript.",
   generator: "v0.app",
   keywords: ["developer", "portfolio", "next.js", "react", "malang"],
   authors: [{ name: "Yilzi" }],
