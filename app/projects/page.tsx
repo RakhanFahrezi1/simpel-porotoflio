@@ -117,7 +117,8 @@ const projectsData: ProjectItem[] = [
     category: "BI & Dashboard",
     role: "Data & BI Analyst • Portfolio Project",
     period: "2026 • Next.js & Recharts",
-    image: "/images/projects/bi-foto.jpg",    shortDescription:
+    image: "/images/projects/bi-foto.jpg",    
+    shortDescription:
       "Dashboard BI interaktif berbasis web untuk mengeksplorasi dataset E-Commerce Indonesia dan Digital Marketing (ROAS) dalam Rupiah, lengkap dengan filter dan upload CSV mandiri.",
     description:
       "Membangun halaman BI Playground interaktif di Next.js untuk mendemonstrasikan analisis KPI penjualan e-commerce dan efisiensi kampanye digital secara langsung bagi HRD maupun hiring manager.",
