@@ -175,7 +175,7 @@ export default function Home() {
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                 Informasi peminatan Business Intelligence Universitas Mercu Buana dengan sertifikasi BNSP. Memiliki pemahaman kuat di bidang analisis data, perancangan database, dan visualisasi Business Intelligence, didukung pengalaman magang Data Analyst di PT Integrasi Jaringan Ekosistem (WEAVE) serta pengelolaan operasional dan data penjualan di Warung Uih Ka Imah. Terbiasa mengolah data menggunakan SQL, Python, R, Excel, Metabase, Power BI, dan Tableau secara teliti, serta siap berkontribusi dan berkembang di bidang Data Analyst maupun Business Intelligence.
+                Lulusan S1 Sistem Informasi peminatan Business Intelligence Universitas Mercu Buana dengan sertifikasi BNSP. Memiliki pemahaman kuat di bidang analisis data, perancangan database, dan visualisasi Business Intelligence, didukung pengalaman magang Data Analyst di PT Integrasi Jaringan Ekosistem (WEAVE) serta pengelolaan operasional dan data penjualan di Warung Uih Ka Imah. Terbiasa mengolah data menggunakan SQL, Python, R, Excel, Metabase, Power BI, dan Tableau secara teliti, serta siap berkontribusi dan berkembang di bidang Data Analyst maupun Business Intelligence.
               </p>
 
               <div className="flex flex-wrap gap-3 sm:gap-4 justify-center items-center pt-4">
