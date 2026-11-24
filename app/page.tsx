@@ -48,7 +48,6 @@ const certificatesData = [
     title: "Sertifikat Visualize Data Like a Pro — Smartpath",
     image: "/images/certificates/smartpath.png",
   },
-  
   {
     title: "Oracle Academy — Java Fundamentals",
     image: "/images/certificates/java-fundamental.png",
@@ -73,32 +72,32 @@ export default function Home() {
       icon: Database,
       title: "SQL & Data Modeling",
       description: "Querying, Star Schema, ERD, SQLite, DBeaver, serta Google BigQuery",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-blue-600 to-cyan-600",
     },
     {
       icon: BarChart3,
       title: "Business Intelligence",
-      description: "Dashboard interaktif dan metrik operasional di Metabase, Power BI, Tableau, dan Excel",
-      color: "from-green-500 to-emerald-500",
+      description: "Dashboard interaktif dan metrik operasional di Metabase, Power BI, Looker Studio, dan Tableau",
+      color: "from-emerald-600 to-teal-600",
     },
     {
       icon: LineChart,
       title: "Python & Statistical Analysis",
-      description: "Pengolahan dan pemodelan data menggunakan Python (Pandas, NumPy, SciPy, Streamlit)",
-      color: "from-purple-500 to-pink-500",
+      description: "Pengolahan, segmentasi, dan pemodelan data menggunakan Python (Pandas, NumPy, SciPy) serta Excel",
+      color: "from-violet-600 to-indigo-600",
     },
     {
       icon: Layers,
       title: "Operational Analytics",
-      description: "Menghubungkan data transaksi, stok, dan alur kerja harian dengan keputusan operasional yang terukur",
-      color: "from-orange-500 to-red-500",
+      description: "Menghubungkan data transaksi, stok, dan pengeluaran harian dengan keputusan operasional yang terukur",
+      color: "from-amber-600 to-orange-600",
     },
   ]
 
   const stats = [
-    { number: "S1", label: "Sistem Informasi (BI)" },
-    { number: "SQL & BI", label: "BigQuery, Dbver, Metabase, Power BI" },
-    { number: "Python", label: "Analytics & Modeling" },
+    { number: "S1", label: "Sistem Informasi (BNSP Certified)" },
+    { number: "SQL & BI", label: "BigQuery, DBeaver, Metabase, Power BI" },
+    { number: "Python", label: "Pandas, NumPy & Data Analytics" },
     { number: "Jakarta", label: "Mercu Buana & Operasional" },
   ]
 
@@ -107,29 +106,45 @@ export default function Home() {
       title: "Starlite Wi-Fi Operational Dashboard",
       context: "Data Analyst Intern • PT Integrasi Jaringan Ekosistem (WEAVE)",
       summary:
-        "Merancang dashboard interaktif di Metabase untuk memantau metrik operasional, registrasi pelanggan, dan pendapatan layanan Starlite Wi-Fi dengan data >20.000 row.",
-      stack: "Metabase • Operational Metrics • Reporting",
+        "Merancang dashboard monitoring layanan internet di Metabase untuk memantau registrasi pelanggan, permintaan coverage, performa mitra sales, dan pendapatan.",
+      stack: "Metabase • SQL • Operational Metrics",
     },
     {
-      title: "Uih Ka Imah Operational & Data Tracking",
-      context: "Operational & Data Coordinator • Jakarta",
+      title: "Uih Ka Imah Operational & Cost Tracking",
+      context: "Koordinator Operasional & Data • Warung Uih Ka Imah",
       summary:
-        "Mengelola inventori harian, jadwal operasional tim, alur POS, dan pemantauan data penjualan restoran Sunda untuk menjaga kelancaran operasional.",
-      stack: "POS & Inventory • Excel • Daily Ops",
+        "Mengelola operasional harian, jadwal tim, stok, serta dashboard pengeluaran dan pembelian bahan baku di Looker Studio untuk efisiensi biaya.",
+      stack: "Looker Studio • Excel • Cost & Inventory Ops",
     },
     {
-      title: "Program Kreativitas Mahasiswa (PKM) — Mental Care",
-      context: "Team Leader • Universitas Mercu Buana",
+      title: "RFM Segmentation & Demand Simulator",
+      context: "Data & BI Analytics • SQL, Python & Next.js",
       summary:
-        "Memimpin tim lintas fungsi dalam merancang dan mengembangkan prototipe aplikasi mobile Mental Care",
-      stack: "Project Leadership • UI/UX Prototyping • Product Design",
+        "Menerapkan segmentasi pelanggan RFM berbasis SQL & Python serta simulator proyeksi permintaan dan Reorder Point untuk mendukung keputusan bisnis.",
+      stack: "SQL • Python (Pandas) • Forecasting & ROP",
+    },
+  ]
+
+  const workflowSteps = [
+    {
+      step: "01",
+      title: "Problem & Metric Framing",
+      desc: "Menentukan KPI, tujuan bisnis, dan definisi metrik yang jelas",
     },
     {
-      title: "Gemastik — Indonesia Anemia Trends Dashboard",
-      context: "Team Member • Universitas Mercu Buana",
-      summary:
-        "Mengolah dataset kesehatan regional dan membangun dashboard visualisasi data interaktif untuk memetakan tren penyakit anemia di seluruh Indonesia.",
-      stack: "Data Visualization • Health Dataset • Visual Reporting",
+      step: "02",
+      title: "Extraction & Cleaning",
+      desc: "Menarik, merapikan, dan menyusun skema data di SQL, Python, atau Excel",
+    },
+    {
+      step: "03",
+      title: "Analysis & Modeling",
+      desc: "Menggali tren, segmentasi, dan pola statistik menggunakan SQL, Python, dan Excel",
+    },
+    {
+      step: "04",
+      title: "BI Dashboard & Action",
+      desc: "Menyajikan visualisasi di Metabase, Power BI, Looker Studio, atau Tableau untuk tindakan nyata",
     },
   ]
 
@@ -138,24 +153,24 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         {/* Enhanced Hero Section */}
-        <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-16">
           <div className="absolute inset-0 -z-10">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/30 rounded-full blur-3xl opacity-40 animate-pulse" />
-            <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl opacity-30 animate-pulse delay-1000" />
-            <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-green-500/20 rounded-full blur-3xl opacity-20 animate-pulse delay-500" />
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl opacity-35" />
+            <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-accent/15 rounded-full blur-3xl opacity-30" />
+            <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl opacity-25" />
           </div>
 
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl text-center">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="space-y-8"
+              transition={{ duration: 0.7 }}
+              className="space-y-7"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10">
                 <Sparkles className="w-4 h-4 text-primary" />
                 <span className="text-sm font-semibold text-primary">
-                  S1 Sistem Informasi (BI) • Universitas Mercu Buana
+                  S1 Sistem Informasi (BI) • BNSP Certified • Universitas Mercu Buana
                 </span>
               </div>
 
@@ -174,11 +189,16 @@ export default function Home() {
                 <span className="block gradient-text">Data &amp; BI Analyst</span>
               </h1>
 
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Lulusan S1 Sistem Informasi peminatan Business Intelligence Universitas Mercu Buana dengan sertifikasi BNSP. Memiliki pemahaman kuat di bidang analisis data, perancangan database, dan visualisasi Business Intelligence, didukung pengalaman magang Data Analyst di PT Integrasi Jaringan Ekosistem (WEAVE) serta pengelolaan operasional dan data penjualan di Warung Uih Ka Imah. Terbiasa mengolah data menggunakan SQL, Python, R, Excel, Metabase, Power BI, dan Tableau secara teliti, serta siap berkontribusi dan berkembang di bidang Data Analyst maupun Business Intelligence.
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Lulusan S1 Sistem Informasi (Universitas Mercu Buana) bersertifikasi BNSP dengan
+                spesialisasi Business Intelligence dan Operational Analytics. Berpengalaman membangun
+                dashboard monitoring layanan internet di PT Integrasi Jaringan Ekosistem (WEAVE)
+                menggunakan Metabase serta mengelola data operasional dan efisiensi biaya di Warung Uih
+                Ka Imah. Terbiasa mengolah data menggunakan SQL, Python, Excel, Power BI, Looker Studio,
+                dan Tableau untuk menghasilkan insight bisnis yang terukur.
               </p>
 
-              <div className="flex flex-wrap gap-3 sm:gap-4 justify-center items-center pt-4">
+              <div className="flex flex-wrap gap-3 sm:gap-4 justify-center items-center pt-2">
                 <motion.a
                   href="/projects"
                   whileHover={{ scale: 1.03 }}
@@ -193,7 +213,7 @@ export default function Home() {
                   href="/about"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 border border-primary/40 text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:bg-primary/10 transition-all"
+                  className="group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 border border-primary/40 bg-card text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:bg-primary/10 transition-all"
                 >
                   Profil &amp; Keahlian
                 </motion.a>
@@ -203,7 +223,7 @@ export default function Home() {
                   download
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-border bg-card/70 text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:border-primary/50 hover:bg-card transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-border bg-card text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:border-primary/50 transition-all"
                 >
                   <Download className="w-4 h-4 text-primary" />
                   <span>Unduh CV</span>
@@ -217,7 +237,7 @@ export default function Home() {
                   }}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-border bg-card/70 text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:border-primary/50 hover:bg-card transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-border bg-card text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:border-primary/50 transition-all"
                 >
                   <Award className="w-4 h-4 text-primary" />
                   <span>Sertifikat</span>
@@ -228,21 +248,22 @@ export default function Home() {
         </section>
 
         {/* Stats Section */}
-        <section className="py-20 border-y border-border bg-gradient-to-b from-background to-card/30">
+        <section className="py-20 border-y border-border bg-card/40">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {stats.map((stat, index) => (
                 <motion.div
                   key={stat.label}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="text-center group"
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.08 }}
+                  className="text-center rounded-2xl border border-border bg-card p-6 group"
                 >
-                  <div className="text-4xl md:text-5xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text mb-2 group-hover:scale-105 transition-transform">
                     {stat.number}
                   </div>
-                  <div className="text-sm md:text-base text-muted-foreground font-medium">
+                  <div className="text-sm md:text-base text-foreground/90 font-medium">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -255,15 +276,16 @@ export default function Home() {
         <section className="py-24 md:py-32">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
               className="text-center mb-16"
             >
-              <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6">
                 Core <span className="gradient-text">Analytics Stack</span>
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Kombinasi SQL, Business Intelligence, pemrograman analitik, dan pemahaman proses bisnis operasional
               </p>
             </motion.div>
@@ -274,18 +296,19 @@ export default function Home() {
                 return (
                   <motion.div
                     key={feature.title}
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 24 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.2 }}
-                    whileHover={{ y: -10 }}
-                    className="group p-8 rounded-3xl border border-border/50 bg-gradient-to-br from-card to-card/50 hover:from-card/80 hover:to-card/60 transition-all hover:shadow-2xl"
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ y: -8 }}
+                    className="group p-8 rounded-3xl border border-border bg-card hover:border-primary/40 transition-all hover:shadow-xl"
                   >
                     <div
-                      className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${feature.color} mb-6 group-hover:scale-110 transition-transform`}
+                      className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${feature.color} mb-6 group-hover:scale-105 transition-transform shadow-md`}
                     >
                       <Icon className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-4">{feature.title}</h3>
+                    <h3 className="text-xl font-bold text-foreground mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
                   </motion.div>
                 )
@@ -295,41 +318,38 @@ export default function Home() {
         </section>
 
         {/* Process Section */}
-        <section className="py-24 md:py-32 border-y border-border bg-gradient-to-b from-card/30 to-background">
+        <section className="py-24 md:py-32 border-y border-border bg-card/40">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
               className="text-center mb-16"
             >
-              <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6">
                 Analytics <span className="gradient-text">Workflow</span>
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Pendekatan sistematis dari kebutuhan masalah bisnis hingga dashboard dan insight siap pakai
               </p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                { step: "01", title: "Problem & Metric Framing", desc: "Menentukan KPI, tujuan bisnis, dan definisi metrik yang jelas" },
-                { step: "02", title: "Extraction & Cleaning", desc: "Menarik, merapikan, dan menyusun skema data di SQL, Python, atau Excel" },
-                { step: "03", title: "Analysis & Modeling", desc: "Menggali tren, segmentasi, dan pola statistik menggunakan SQL, Python" },
-                { step: "04", title: "BI Dashboard & Action", desc: "Menyajikan visualisasi di Metabase, Power BI, atau Tableau untuk tindakan nyata" },
-              ].map((process, index) => (
+              {workflowSteps.map((process, index) => (
                 <motion.div
                   key={process.step}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                  className="text-center group"
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="rounded-3xl border border-border bg-card p-6 text-center group"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-xl mb-6 mx-auto group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-xl mb-6 mx-auto group-hover:scale-105 transition-transform shadow-md">
                     {process.step}
                   </div>
                   <h3 className="text-lg font-bold text-foreground mb-3">{process.title}</h3>
-                  <p className="text-muted-foreground text-sm">{process.desc}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{process.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -340,16 +360,17 @@ export default function Home() {
         <section className="py-24 md:py-32">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
               className="text-center mb-16"
             >
-              <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6">
                 Experience &amp; <span className="gradient-text">Case Highlights</span>
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Ringkasan pengalaman analitik, operasional, dan proyek data yang pernah dikerjakan
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+                Ringkasan pengalaman analitik, operasional, dan studi kasus data yang pernah dikerjakan
               </p>
             </motion.div>
 
@@ -357,20 +378,21 @@ export default function Home() {
               {highlights.map((item, index) => (
                 <motion.div
                   key={item.title}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                  className="p-8 rounded-3xl border border-border/50 bg-gradient-to-br from-card to-card/50 hover:shadow-2xl transition-all group flex flex-col justify-between"
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="p-8 rounded-3xl border border-border bg-card hover:border-primary/40 hover:shadow-xl transition-all group flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-center gap-2 text-primary text-sm font-semibold mb-3">
-                      <CheckCircle2 className="w-4 h-4" />
+                      <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                       <span>{item.context}</span>
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-4">{item.title}</h3>
-                    <p className="text-foreground/90 mb-6 leading-relaxed">{item.summary}</p>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">{item.summary}</p>
                   </div>
-                  <div className="text-sm text-muted-foreground font-medium pt-4 border-t border-border/50">
+                  <div className="text-sm text-foreground/85 font-medium pt-4 border-t border-border">
                     {item.stack}
                   </div>
                 </motion.div>
@@ -383,17 +405,18 @@ export default function Home() {
         <section className="py-24 md:py-32 border-t border-border relative overflow-hidden">
           <div className="absolute inset-0 -z-10">
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/10 via-accent/5 to-background" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl opacity-40" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl opacity-35" />
           </div>
 
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
               className="space-y-8"
             >
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
                 <motion.a
                   href="/contact"
                   whileHover={{ scale: 1.05 }}

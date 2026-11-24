@@ -5,65 +5,123 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MessageCircle, Mail } from "lucide-react"
+import { MessageCircle, Mail, CheckCircle2, AlertCircle } from "lucide-react"
 
 const WHATSAPP_NUMBER = "6285609841374"
 const CONTACT_EMAIL = "rakhanfahrezi@gmail.com"
 
-export default function ContactForm() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitMessage, setSubmitMessage] = useState("")
+interface FormState {
+  name: string
+  email: string
+  subject: string
+  message: string
+}
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+const INITIAL_FORM_STATE: FormState = {
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+}
+
+export default function ContactForm() {
+  const [formState, setFormState] = useState<FormState>(INITIAL_FORM_STATE)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [status, setStatus] = useState<{
+    type: "success" | "error" | null
+    text: string
+  }>({ type: null, text: "" })
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target
     setFormState((prev) => ({
       ...prev,
       [name]: value,
     }))
+    if (status.type) {
+      setStatus({ type: null, text: "" })
+    }
   }
 
-  const formatMessageBody = () => {
+  const formatWhatsAppBody = () => {
     return [
-      `Halo Rakhan, saya *${formState.name}* (${formState.email}).`,
-      `*Subjek:* ${formState.subject}`,
+      `Halo Rakhan, saya *${formState.name.trim()}* (${formState.email.trim()}).`,
+      `*Subjek:* ${formState.subject.trim()}`,
       "",
-      formState.message,
+      formState.message.trim(),
+    ].join("\n")
+  }
+
+  const formatEmailBody = () => {
+    return [
+      `Nama: ${formState.name.trim() || "-"}`,
+      `Email: ${formState.email.trim() || "-"}`,
+      "",
+      formState.message.trim() || "",
     ].join("\n")
   }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+
+    const name = formState.name.trim()
+    const email = formState.email.trim()
+    const subject = formState.subject.trim()
+    const message = formState.message.trim()
+
+    if (!name || !email || !subject || !message) {
+      setStatus({
+        type: "error",
+        text: "Mohon lengkapi semua kolom sebelum mengirim pesan.",
+      })
+      return
+    }
+
     setIsSubmitting(true)
 
     try {
-      const encodedText = encodeURIComponent(formatMessageBody())
-      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`, "_blank", "noopener,noreferrer")
-      setSubmitMessage("Mengarahkan ke WhatsApp... Terima kasih telah menghubungi!")
-      setFormState({ name: "", email: "", subject: "", message: "" })
-      setTimeout(() => setSubmitMessage(""), 5000)
+      const encodedText = encodeURIComponent(formatWhatsAppBody())
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`
+      const newWindow = window.open(waUrl, "_blank", "noopener,noreferrer")
+
+      if (!newWindow) {
+        setStatus({
+          type: "error",
+          text: "Pop-up diblokir browser. Izinkan pop-up atau gunakan tombol Kirim via Email.",
+        })
+        return
+      }
+
+      setStatus({
+        type: "success",
+        text: "Tab WhatsApp telah dibuka. Silakan tekan Kirim di WhatsApp untuk menyelesaikan pesan.",
+      })
+
+      setTimeout(() => {
+        setFormState(INITIAL_FORM_STATE)
+      }, 1500)
     } catch {
-      setSubmitMessage("Terjadi kendala saat membuka WhatsApp. Silakan coba kirim melalui Email.")
+      setStatus({
+        type: "error",
+        text: "Terjadi kendala saat membuka WhatsApp. Silakan coba kirim melalui Email.",
+      })
     } finally {
       setIsSubmitting(false)
     }
   }
 
   const handleEmailFallback = () => {
-    const subject = encodeURIComponent(formState.subject || "Kontak dari Portofolio")
-    const body = encodeURIComponent(
-      `Nama: ${formState.name || "-"}\nEmail: ${formState.email || "-"}\n\n${formState.message || ""}`
+    const subject = encodeURIComponent(
+      formState.subject.trim() || "Kontak dari Portofolio Rakhan Fahrezi"
     )
+    const body = encodeURIComponent(formatEmailBody())
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-5" noValidate>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div className="space-y-2">
           <label htmlFor="name" className="text-sm font-medium text-foreground">
@@ -72,6 +130,8 @@ export default function ContactForm() {
           <Input
             id="name"
             name="name"
+            type="text"
+            autoComplete="name"
             placeholder="Masukkan nama Anda"
             value={formState.name}
             onChange={handleChange}
@@ -88,6 +148,7 @@ export default function ContactForm() {
             id="email"
             name="email"
             type="email"
+            autoComplete="email"
             placeholder="nama@perusahaan.com"
             value={formState.email}
             onChange={handleChange}
@@ -104,6 +165,7 @@ export default function ContactForm() {
         <Input
           id="subject"
           name="subject"
+          type="text"
           placeholder="Contoh: Peluang Data Analyst / BI / Kolaborasi Proyek"
           value={formState.subject}
           onChange={handleChange}
@@ -128,9 +190,21 @@ export default function ContactForm() {
         />
       </div>
 
-      {submitMessage && (
-        <div className="p-4 rounded-xl bg-primary/10 border border-primary/30 text-foreground text-sm">
-          {submitMessage}
+      {status.type && (
+        <div
+          role="alert"
+          className={`p-4 rounded-xl border text-sm flex items-start gap-2.5 ${
+            status.type === "success"
+              ? "bg-primary/10 border-primary/30 text-foreground"
+              : "bg-destructive/10 border-destructive/30 text-destructive"
+          }`}
+        >
+          {status.type === "success" ? (
+            <CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0 text-primary" />
+          ) : (
+            <AlertCircle className="w-4 h-4 mt-0.5 shrink-0 text-destructive" />
+          )}
+          <span>{status.text}</span>
         </div>
       )}
 

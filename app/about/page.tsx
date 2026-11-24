@@ -29,7 +29,7 @@ export default function AboutPage() {
       value: "S1",
       icon: GraduationCap,
       color: "from-orange-600 to-orange-400",
-      desc: "Sistem Informasi (BI)",
+      desc: "Sistem Informasi (BI) • Lulus 2026",
     },
     {
       label: "Magang BI",
@@ -43,28 +43,28 @@ export default function AboutPage() {
       value: "Uih Ka Imah",
       icon: Layers,
       color: "from-green-600 to-green-400",
-      desc: "Stok, Jadwal, POS & Data",
+      desc: "2+ Tahun • Stok, Jadwal & Biaya",
     },
     {
       label: "BI & Visualisasi",
       value: "4+ Tools",
       icon: BarChart3,
       color: "from-purple-600 to-purple-400",
-      desc: "Metabase, Power BI, Tableau, Excel",
+      desc: "Metabase, Power BI, Looker, Tableau",
     },
     {
       label: "Data & Modeling",
       value: "SQL • Py • R",
       icon: Database,
       color: "from-red-600 to-red-400",
-      desc: "BigQuery, Postgres, SQLite",
+      desc: "BigQuery, SQLite, DBeaver, Excel",
     },
     {
       label: "Kompetisi & Riset",
       value: "PKM & Gemastik",
       icon: Award,
       color: "from-yellow-600 to-yellow-400",
-      desc: "Mental Care & Anemia BI",
+      desc: "Mental Care, Skripsi & Anemia BI",
     },
   ]
 
@@ -83,8 +83,8 @@ export default function AboutPage() {
       icon: BarChart3,
       title: "Business Intelligence & Dashboarding",
       description:
-        "Merancang dasbor operasional dan metrik kinerja yang jelas menggunakan Metabase, Power BI, dan Tableau",
-      skills: ["Metabase", "Power BI", "Tableau", "KPI Tracking", "Operational Metrics"],
+        "Merancang dasbor operasional dan metrik kinerja yang jelas menggunakan Metabase, Power BI, Looker Studio, dan Tableau",
+      skills: ["Metabase", "Power BI", "Looker Studio", "Tableau", "KPI Tracking", "Operational Metrics"],
       level: 92,
       focusArea: "Reporting",
       color: "from-green-500 to-emerald-500",
@@ -113,8 +113,8 @@ export default function AboutPage() {
       icon: Layers,
       title: "Operational & POS Coordination",
       description:
-        "Menghubungkan data transaksi, stok harian, jadwal operasional tim, dan alur POS dengan eksekusi lapangan",
-      skills: ["Inventory Control", "Staff Scheduling", "POS Workflow", "Daily Operations"],
+        "Menghubungkan data transaksi, stok harian, jadwal operasional tim, dan pengeluaran bahan baku dengan eksekusi lapangan",
+      skills: ["Inventory Control", "Staff Scheduling", "Cost & Vendor Tracking", "Daily Operations"],
       level: 88,
       focusArea: "Operations",
       color: "from-indigo-500 to-blue-500",
@@ -137,20 +137,20 @@ export default function AboutPage() {
       { name: "Google BigQuery", detail: "Cloud Data Pipeline", badgeColor: "#4285F4" },
       { name: "DBeaver", detail: "DB & ERD Client", badgeColor: "#382923" },
     ],
-    "Bussines Intelegence": [
+    "Business Intelligence": [
       { name: "Metabase", detail: "Starlite Wi-Fi Dashboard", badgeColor: "#509EE3" },
       { name: "Power BI", detail: "Interactive BI Reports", badgeColor: "#F2C811" },
-      { name: "Tableau", detail: "Data Visualization", badgeColor: "#E97627" },
+      { name: "Looker Studio & Tableau", detail: "Cost & Geo Dashboards", badgeColor: "#E97627" },
       { name: "Microsoft Excel", detail: "Data Processing & Ops", badgeColor: "#217346" },
     ],
-    "Python": [
+    Python: [
       { name: "Python", detail: "Pandas, NumPy, SciPy", badgeColor: "#3776AB" },
       { name: "Streamlit & Scrapy", detail: "Apps & Data Scraping", badgeColor: "#FF4B4B" },
       { name: "Data Validation", detail: "Cleaning & Quality Check", badgeColor: "#10B981" },
     ],
     "Domain & Workflow": [
       { name: "WEAVE (Starlite Wi-Fi)", detail: "Data Analyst Intern", badgeColor: "#6366F1" },
-      { name: "Uih Ka Imah", detail: "Ops, Stok, Jadwal & POS", badgeColor: "#F97316" },
+      { name: "Uih Ka Imah", detail: "Ops, Stok, Jadwal & Biaya", badgeColor: "#F97316" },
       { name: "PKM Mental Care", detail: "Team Leader", badgeColor: "#EC4899" },
       { name: "Gemastik Anemia", detail: "Data Visualization", badgeColor: "#14B8A6" },
     ],
@@ -158,47 +158,63 @@ export default function AboutPage() {
 
   const timeline = [
     {
-      year: "Apr 2023",
-      title: "Gemastik — Anemia Data Visualization Dashboard",
-      desc: "Berperan sebagai Team Member dalam mengolah dataset kesehatan regional dan membangun dasbor visualisasi data untuk memantau tren penyakit anemia di Indonesia.",
-      icon: BarChart3,
-      achievements: ["Team Member", "Health Dataset", "Interactive Dashboard"],
+      category: "Work Experience",
+      year: "2024 – 2026",
+      title: "Koordinator Operasional & Data — Warung Uih Ka Imah",
+      desc: "Mengelola operasional harian, penjadwalan shift tim, rekonsiliasi stok, pembelian bahan baku, serta pelaporan pengeluaran dan efisiensi biaya di Looker Studio.",
+      icon: Layers,
+      achievements: ["2+ Tahun Operasional", "Cost & Vendor Tracking", "Staff & Stock Ops"],
     },
     {
-      year: "Nov 2024",
-      title: "Program Kreativitas Mahasiswa (PKM) — Mental Care",
-      desc: "Memimpin tim lintas fungsi sebagai Team Leader di Universitas Mercu Buana dalam merancang dan mengembangkan prototipe aplikasi mobile 'Mental Care' dari ideasi hingga high-fidelity prototyping.",
-      icon: FolderKanban,
-      achievements: ["Team Leader", "Universitas Mercu Buana", "Mental Care Prototype"],
-    },
-    {
-      year: "Internship",
+      category: "Internship",
+      year: "2025",
       title: "Data Analyst Intern — PT Integrasi Jaringan Ekosistem (WEAVE)",
-      desc: "Merancang dan mengembangkan dasbor interaktif di Metabase untuk memantau metrik operasional, registrasi pelanggan, dan pendapatan layanan Starlite Wi-Fi.",
+      desc: "Merancang dan mengembangkan dasbor interaktif di Metabase untuk memantau registrasi pelanggan, permintaan coverage, performa sales, dan pendapatan layanan Starlite Wi-Fi.",
       icon: Briefcase,
       achievements: ["Metabase Dashboard", "Starlite Wi-Fi", "Operational & Revenue Metrics"],
     },
     {
-      year: "Operational",
-      title: "Operational & Data Coordinator — Uih Ka Imah",
-      desc: "Mengelola inventori harian, penjadwalan operasional tim, sistem POS, serta pemantauan dan pelaporan data penjualan restoran Sunda.",
-      icon: Layers,
-      achievements: ["Daily Inventory", "Staff Scheduling", "POS & Sales Data"],
+      category: "Academic / PKM Project",
+      year: "Nov 2024",
+      title: "Program Kreativitas Mahasiswa (PKM) — Mental Care",
+      desc: "Memimpin tim lintas fungsi sebagai Team Leader di Universitas Mercu Buana dalam merancang alur dan prototipe aplikasi mobile layanan konseling kesehatan mental.",
+      icon: FolderKanban,
+      achievements: ["Academic / PKM Project", "Team Leader", "Mental Care Prototype"],
+    },
+    {
+      category: "Academic / PKM Project",
+      year: "Apr 2023",
+      title: "Gemastik — Anemia Data Visualization Dashboard",
+      desc: "Berperan sebagai anggota tim dalam mengolah dataset kesehatan regional dan membangun dasbor visualisasi data untuk memetakan tren anemia di Indonesia.",
+      icon: BarChart3,
+      achievements: ["Academic / PKM Project", "Health Dataset", "Interactive Dashboard"],
     },
   ]
 
   const corePillars = [
-    { number: "S1", text: "Sistem Informasi (BI)" },
-    { number: "SQL", text: "Postgres • SQLite • BigQuery" },
-    { number: "BI", text: "Metabase • Power BI • Tableau" },
-    { number: "Py & R", text: "Pandas • R • Excel" },
+    {
+      title: "S1 Sistem Informasi — Fokus Business Intelligence",
+      detail: "Universitas Mercu Buana • Lulus 2026",
+    },
+    {
+      title: "BNSP Certified — Bussiness Intelligence",
+      detail: "Sertifikasi kompetensi terverifikasi",
+    },
+    {
+      title: "1+ Tahun Operasional & Data",
+      detail: "Koordinator Operasional & Data (Warung Uih Ka Imah)",
+    },
+    {
+      title: "End-to-End BI Stack",
+      detail: "SQL, Python, Metabase, Power BI, Looker Studio",
+    },
   ]
 
   const favoriteStack = [
-    { name: "SQL", sub: "BigQuery & Postgres" },
-    { name: "Python", sub: "Pandas & SciPy" },
+    { name: "SQL", sub: "BigQuery & SQLite" },
+    { name: "Python", sub: "Pandas, NumPy & SciPy" },
     { name: "Metabase", sub: "Operational BI" },
-    { name: "Power BI", sub: "Interactive Dashboards" },
+    { name: "Power BI & Looker", sub: "Interactive Dashboards" },
     { name: "Excel", sub: "Data & Ops Reporting" },
   ]
 
@@ -209,9 +225,9 @@ export default function AboutPage() {
         {/* Hero / Profile Section */}
         <section className="py-24 md:py-32 border-b border-border relative overflow-hidden">
           <div className="absolute inset-0 -z-10">
-            <div className="absolute top-0 left-0 w-96 h-96 bg-primary/40 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-            <div className="absolute top-1/3 right-0 w-96 h-96 bg-accent/30 rounded-full blur-3xl opacity-25 animate-pulse delay-1000"></div>
-            <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-green-500/20 rounded-full blur-3xl opacity-20 animate-pulse delay-500"></div>
+            <div className="absolute top-0 left-0 w-96 h-96 bg-primary/40 rounded-full blur-3xl opacity-30 animate-pulse" />
+            <div className="absolute top-1/3 right-0 w-96 h-96 bg-accent/30 rounded-full blur-3xl opacity-25 animate-pulse delay-1000" />
+            <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-green-500/20 rounded-full blur-3xl opacity-20 animate-pulse delay-500" />
           </div>
 
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
@@ -230,37 +246,46 @@ export default function AboutPage() {
                   <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-primary to-accent text-white px-5 py-3 rounded-2xl shadow-lg">
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-green-300" />
-                      <span className="text-sm font-bold">Data & BI Analyst</span>
+                      <span className="text-sm font-bold">Data &amp; BI Analyst</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="space-y-6 animate-fade-in">
-                <div className="inline-flex px-4 py-2 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm">
+                <div className="inline-flex px-4 py-2 rounded-full border border-primary/30 bg-primary/10">
                   <span className="text-sm font-semibold text-primary">
                     Rakhan Fahrezi Aritonang • Universitas Mercu Buana
                   </span>
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-                  <span className="text-foreground">Data Analyst &</span>
+                  <span className="text-foreground">Data Analyst &amp;</span>
                   <span className="gradient-text block">Business Intelligence</span>
                   <span className="text-foreground text-xl sm:text-2xl mt-3 block font-semibold">
-                    S1 Sistem Informasi • Jakarta
+                    S1 Sistem Informasi • Jakarta Barat
                   </span>
                 </h1>
 
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Lulusan S1 Sistem Informasi peminatan Business Intelligence Universitas Mercu Buana dengan sertifikasi BNSP. Memiliki pemahaman kuat di bidang analisis data, perancangan database, dan visualisasi Business Intelligence, didukung pengalaman magang Data Analyst di PT Integrasi Jaringan Ekosistem (WEAVE) serta pengelolaan operasional dan data penjualan di Warung Uih Ka Imah. Terbiasa mengolah data menggunakan SQL, Python, R, Excel, Metabase, Power BI, dan Tableau secara teliti, serta siap berkontribusi dan berkembang di bidang Data Analyst maupun Business Intelligence.
-                  </p>
-                
+                  Lulusan S1 Sistem Informasi peminatan Business Intelligence Universitas Mercu Buana
+                  (2026) dengan sertifikasi BNSP. Memiliki pengalaman magang Data Analyst di PT
+                  Integrasi Jaringan Ekosistem (WEAVE) menggunakan Metabase serta pengelolaan
+                  operasional, stok, dan biaya di Warung Uih Ka Imah, didukung keahlian SQL,
+                  Python, Excel, Power BI, Looker Studio, dan Tableau.
+                </p>
 
-                <div className="grid grid-cols-2 gap-4 pt-2">
+                {/* 4 Kotak Highlight Utama */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   {corePillars.map((pillar, i) => (
-                    <div key={i} className="p-4 rounded-xl bg-card/60 border border-border/50">
-                      <div className="text-xl font-bold gradient-text">{pillar.number}</div>
-                      <div className="text-xs text-muted-foreground mt-1">{pillar.text}</div>
+                    <div
+                      key={i}
+                      className="p-4 rounded-2xl bg-card border border-border hover:border-primary/40 transition-colors"
+                    >
+                      <div className="text-sm sm:text-base font-bold text-foreground leading-snug">
+                        {pillar.title}
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-1.5">{pillar.detail}</div>
                     </div>
                   ))}
                 </div>
@@ -278,7 +303,7 @@ export default function AboutPage() {
                 return (
                   <div
                     key={i}
-                    className="p-6 rounded-2xl border border-border/50 bg-card/50 hover:border-primary/50 hover:bg-card transition-all text-center group backdrop-blur-sm"
+                    className="p-6 rounded-2xl border border-border bg-card hover:border-primary/50 transition-all text-center group"
                   >
                     <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform">
                       <div className={`p-3 rounded-xl bg-gradient-to-br ${stat.color} shadow-lg`}>
@@ -313,7 +338,7 @@ export default function AboutPage() {
                 return (
                   <div
                     key={i}
-                    className="p-8 rounded-3xl border border-border/50 bg-gradient-to-br from-card to-card/50 hover:border-primary/50 transition-all group"
+                    className="p-8 rounded-3xl border border-border bg-card hover:border-primary/50 transition-all group"
                   >
                     <div className="flex items-center gap-4 mb-6">
                       <div
@@ -338,7 +363,7 @@ export default function AboutPage() {
                       <div
                         className={`h-2 rounded-full bg-gradient-to-r ${exp.color}`}
                         style={{ width: `${exp.level}%` }}
-                      ></div>
+                      />
                     </div>
 
                     <div className="flex flex-wrap gap-2">
@@ -363,7 +388,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="mb-16 text-center">
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6">
-                Tools & <span className="gradient-text">Tech Stack</span>
+                Tools &amp; <span className="gradient-text">Tech Stack</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground">
                 Perangkat analisis data, business intelligence, database, dan koordinasi operasional
@@ -374,17 +399,17 @@ export default function AboutPage() {
               {Object.entries(skillGroups).map(([category, items]) => (
                 <div
                   key={category}
-                  className="p-6 rounded-2xl border border-border/50 bg-card/50 hover:border-primary/50 transition-all group"
+                  className="p-6 rounded-2xl border border-border bg-card hover:border-primary/50 transition-all group"
                 >
                   <h3 className="text-lg font-bold text-foreground mb-6 flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full" />
                     {category}
                   </h3>
                   <div className="space-y-4">
                     {items.map((item) => (
                       <div
                         key={item.name}
-                        className="flex items-center gap-3 p-4 rounded-xl bg-background/60 border border-border/30 hover:border-primary/30 transition-all"
+                        className="flex items-center gap-3 p-4 rounded-xl bg-background/70 border border-border/60 hover:border-primary/30 transition-all"
                       >
                         <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center flex-shrink-0">
                           <Cpu className="w-5 h-5 text-primary" />
@@ -396,7 +421,7 @@ export default function AboutPage() {
                         <div
                           className="w-3 h-3 rounded-full flex-shrink-0"
                           style={{ backgroundColor: item.badgeColor }}
-                        ></div>
+                        />
                       </div>
                     ))}
                   </div>
@@ -410,7 +435,7 @@ export default function AboutPage() {
                 {favoriteStack.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex flex-col items-center gap-2 px-5 py-4 rounded-2xl bg-card/80 border border-border/50 shadow-sm min-w-[140px]"
+                    className="flex flex-col items-center gap-2 px-5 py-4 rounded-2xl bg-card border border-border shadow-sm min-w-[140px]"
                   >
                     <span className="text-base font-bold gradient-text">{tech.name}</span>
                     <span className="text-xs text-muted-foreground text-center">{tech.sub}</span>
@@ -426,20 +451,21 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <div className="mb-16 text-center">
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6">
-                Experience & <span className="gradient-text">Milestones</span>
+                Experience &amp; <span className="gradient-text">Milestones</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground">
-                Pengalaman magang, koordinasi operasional, kompetisi, dan proyek data
+                Pemisahan jelas antara pengalaman kerja, magang industri, serta proyek akademik / PKM
               </p>
             </div>
 
             <div className="relative">
-              <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-green-500 rounded-full transform -translate-x-1/2 z-0 hidden md:block"></div>
+              <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-green-500 rounded-full transform -translate-x-1/2 z-0 hidden md:block" />
 
               <div className="space-y-8 relative z-10">
                 {timeline.map((item, i) => {
                   const Icon = item.icon
                   const isEven = i % 2 === 0
+                  const isAcademic = item.category === "Academic / PKM Project"
 
                   return (
                     <div
@@ -454,7 +480,20 @@ export default function AboutPage() {
                       </div>
 
                       <div className="flex-1">
-                        <div className="p-8 rounded-3xl border border-border/50 bg-card/50 hover:bg-card/80 transition-all group">
+                        <div className="p-8 rounded-3xl border border-border bg-card hover:border-primary/40 transition-all group">
+                          <div className="flex flex-wrap items-center gap-2 mb-3">
+                            <span
+                              className={
+                                isAcademic
+                                  ? "px-3 py-1 rounded-full text-xs font-semibold bg-muted text-foreground border border-border"
+                                  : "px-3 py-1 rounded-full text-xs font-semibold bg-primary/15 text-primary border border-primary/30"
+                              }
+                            >
+                              {item.category}
+                            </span>
+                            <span className="text-xs text-muted-foreground">{item.year}</span>
+                          </div>
+
                           <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                             {item.title}
                           </h3>
