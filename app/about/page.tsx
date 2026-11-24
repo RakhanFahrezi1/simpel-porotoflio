@@ -204,7 +204,7 @@ export default function AboutPage() {
     },
     {
       tag: "Pengalaman",
-      title: "2+ Tahun Operasional & Data",
+      title: "1+ Tahun Operasional & Data",
       detail: "Koordinator Operasional & Data (Warung Uih Ka Imah)",
     },
     {
