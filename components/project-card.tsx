@@ -3,17 +3,30 @@
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ArrowUpRight, BarChart3, CheckCircle2, FolderKanban, LineChart } from "lucide-react"
+import { ArrowUpRight, BarChart3, CheckCircle2, FolderKanban, Layers, LineChart } from "lucide-react"
+
+export type ProjectCategory =
+  | "BI & Dashboard"
+  | "Operations & Data"
+  | "Analytics & Research"
+  | "Product & UI/UX"
 
 export interface ProjectItem {
   id: number
   title: string
-  category: "BI & Dashboard" | "Operations & Data" | "Analytics & Research"
+  category: ProjectCategory
   role: string
   period: string
   image: string
   shortDescription: string
   description: string
+  businessContext: string
+  technicalAction: string
+  businessImpact: string
+  dataSource: string
+  keyKpis: string[]
+  keyInsights: string[]
+  businessRecommendations: string[]
   highlights?: string[]
   technologies: string[]
   featured?: boolean
@@ -32,6 +45,8 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
         return BarChart3
       case "Operations & Data":
         return FolderKanban
+      case "Product & UI/UX":
+        return Layers
       default:
         return LineChart
     }
@@ -117,19 +132,21 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
           ))}
         </div>
 
-        {project.href ? (
-          <Button
-            asChild
-            variant="default"
-            size="sm"
-            className="w-full justify-between rounded-xl"
-          >
-            <Link href={project.href}>
-              <span>Coba Live Dashboard</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          </Button>
-        ) : (
+        <div className="flex flex-col gap-2">
+          {project.href && (
+            <Button
+              asChild
+              variant="default"
+              size="sm"
+              className="w-full justify-between rounded-xl"
+            >
+              <Link href={project.href}>
+                <span>Coba Live Dashboard</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
+            </Button>
+          )}
+
           <Button
             type="button"
             variant="outline"
@@ -140,7 +157,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
             <span>Lihat Detail Proyek</span>
             <ArrowUpRight className="w-4 h-4" />
           </Button>
-        )}
+        </div>
       </div>
     </div>
   )
