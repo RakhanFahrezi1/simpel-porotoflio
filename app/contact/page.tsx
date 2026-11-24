@@ -60,15 +60,7 @@ export default function ContactPage() {
       href: "https://www.linkedin.com",
       external: true,
     },
-    // {
-    //   icon: Github,
-    //   label: "GitHub",
-    //   value: "github.com/rakhanfahrezi",
-    //   helper: "Kode proyek, skrip analisis & eksperimen data",
-    //   href: "https://github.com",
-    //   external: true,
-    // },
-  ]
+      ]
 
   return (
     <div className="min-h-screen flex flex-col bg-background">

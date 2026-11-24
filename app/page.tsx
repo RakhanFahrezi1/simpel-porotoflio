@@ -71,25 +71,25 @@ export default function Home() {
     {
       icon: Database,
       title: "SQL & Data Modeling",
-      description: "Querying, Star Schema, ERD, SQLite, DBeaver, serta Google BigQuery",
+      description: "Querying, Star Schema, ERD, SQLite, DBeaver, serta Google BigQuery.",
       color: "from-blue-600 to-cyan-600",
     },
     {
       icon: BarChart3,
       title: "Business Intelligence",
-      description: "Dashboard interaktif dan metrik operasional di Metabase, Power BI, Looker Studio, dan Tableau",
+      description: "Dashboard interaktif dan metrik operasional di Metabase, Power BI, Looker Studio, dan Tableau.",
       color: "from-emerald-600 to-teal-600",
     },
     {
       icon: LineChart,
       title: "Python & Statistical Analysis",
-      description: "Pengolahan, segmentasi, dan pemodelan data menggunakan Python (Pandas, NumPy, SciPy) serta Excel",
+      description: "Pengolahan, segmentasi, dan pemodelan data menggunakan Python (Pandas, NumPy, SciPy) serta Excel.",
       color: "from-violet-600 to-indigo-600",
     },
     {
       icon: Layers,
       title: "Operational Analytics",
-      description: "Menghubungkan data transaksi, stok, dan pengeluaran harian dengan keputusan operasional yang terukur",
+      description: "Menghubungkan data transaksi, stok, dan pengeluaran harian dengan keputusan operasional terukur.",
       color: "from-amber-600 to-orange-600",
     },
   ]
@@ -99,6 +99,29 @@ export default function Home() {
     { number: "SQL & BI", label: "BigQuery, DBeaver, Metabase, Power BI" },
     { number: "Python", label: "Pandas, NumPy & Data Analytics" },
     { number: "Jakarta", label: "Mercu Buana & Operasional" },
+  ]
+
+  const workflowSteps = [
+    {
+      step: "01",
+      title: "Problem & Metric Framing",
+      desc: "Menentukan KPI, tujuan bisnis, dan definisi metrik yang jelas.",
+    },
+    {
+      step: "02",
+      title: "Extraction & Cleaning",
+      desc: "Menarik, merapikan, dan menyusun skema data di SQL, Python, atau Excel.",
+    },
+    {
+      step: "03",
+      title: "Analysis & Modeling",
+      desc: "Menggali tren, segmentasi, dan pola statistik menggunakan SQL, Python, dan Excel.",
+    },
+    {
+      step: "04",
+      title: "BI Dashboard & Action",
+      desc: "Menyajikan visualisasi di Metabase, Power BI, Looker Studio, atau Tableau untuk tindakan nyata.",
+    },
   ]
 
   const highlights = [
@@ -125,35 +148,12 @@ export default function Home() {
     },
   ]
 
-  const workflowSteps = [
-    {
-      step: "01",
-      title: "Problem & Metric Framing",
-      desc: "Menentukan KPI, tujuan bisnis, dan definisi metrik yang jelas",
-    },
-    {
-      step: "02",
-      title: "Extraction & Cleaning",
-      desc: "Menarik, merapikan, dan menyusun skema data di SQL, Python, atau Excel",
-    },
-    {
-      step: "03",
-      title: "Analysis & Modeling",
-      desc: "Menggali tren, segmentasi, dan pola statistik menggunakan SQL, Python, dan Excel",
-    },
-    {
-      step: "04",
-      title: "BI Dashboard & Action",
-      desc: "Menyajikan visualisasi di Metabase, Power BI, Looker Studio, atau Tableau untuk tindakan nyata",
-    },
-  ]
-
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       <main className="flex-1">
-        {/* Enhanced Hero Section */}
-        <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-16">
+        {/* Hero Section */}
+        <section className="min-h-[88vh] flex items-center justify-center relative overflow-hidden py-16">
           <div className="absolute inset-0 -z-10">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl opacity-35" />
             <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-accent/15 rounded-full blur-3xl opacity-30" />
@@ -162,9 +162,9 @@ export default function Home() {
 
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl text-center">
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.5 }}
               className="space-y-7"
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10">
@@ -189,7 +189,7 @@ export default function Home() {
                 <span className="block gradient-text">Data &amp; BI Analyst</span>
               </h1>
 
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-lg text-foreground/85 max-w-3xl mx-auto leading-relaxed">
                 Lulusan S1 Sistem Informasi (Universitas Mercu Buana) bersertifikasi BNSP dengan
                 spesialisasi Business Intelligence dan Operational Analytics. Berpengalaman membangun
                 dashboard monitoring layanan internet di PT Integrasi Jaringan Ekosistem (WEAVE)
@@ -199,249 +199,201 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap gap-3 sm:gap-4 justify-center items-center pt-2">
-                <motion.a
+                <a
                   href="/projects"
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
                   className="group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-2xl font-semibold text-sm sm:text-base shadow-lg hover:shadow-xl transition-all"
                 >
                   Lihat Proyek Data
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </motion.a>
+                </a>
 
-                <motion.a
+                <a
                   href="/about"
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 border border-primary/40 bg-card text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:bg-primary/10 transition-all"
+                  className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 border border-primary/40 bg-card text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:bg-primary/10 transition-all"
                 >
                   Profil &amp; Keahlian
-                </motion.a>
+                </a>
 
-                <motion.a
+                <a
                   href="/CV-Rakhan-Fahrezi-Aritonang.pdf"
                   download
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-border bg-card text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:border-primary/50 transition-all"
                 >
                   <Download className="w-4 h-4 text-primary" />
                   <span>Unduh CV</span>
-                </motion.a>
+                </a>
 
-                <motion.button
+                <button
                   type="button"
                   onClick={() => {
                     setSelectedCertIndex(null)
                     setOpenCertificates(true)
                   }}
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-border bg-card text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:border-primary/50 transition-all"
                 >
                   <Award className="w-4 h-4 text-primary" />
                   <span>Sertifikat</span>
-                </motion.button>
+                </button>
               </div>
             </motion.div>
           </div>
         </section>
 
         {/* Stats Section */}
-        <section className="py-20 border-y border-border bg-card/40">
+        <section className="py-16 border-y border-border bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-              {stats.map((stat, index) => (
-                <motion.div
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {stats.map((stat) => (
+                <div
                   key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.08 }}
-                  className="text-center rounded-2xl border border-border bg-card p-6 group"
+                  className="text-center rounded-2xl border border-border bg-card p-6 shadow-xs"
                 >
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text mb-2 group-hover:scale-105 transition-transform">
+                  <div className="text-3xl sm:text-4xl font-bold gradient-text mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-sm md:text-base text-foreground/90 font-medium">
+                  <div className="text-sm sm:text-base text-foreground font-medium leading-snug">
                     {stat.label}
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Features Section */}
-        <section className="py-24 md:py-32">
+        {/* Core Analytics Stack Section — Kontras Tinggi & Tanpa Terpotong */}
+        <section className="py-20 md:py-28">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6">
+            <div className="text-center mb-14">
+              <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
                 Core <span className="gradient-text">Analytics Stack</span>
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
                 Kombinasi SQL, Business Intelligence, pemrograman analitik, dan pemahaman proses bisnis operasional
               </p>
-            </motion.div>
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {features.map((feature, index) => {
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {features.map((feature) => {
                 const Icon = feature.icon
                 return (
-                  <motion.div
+                  <div
                     key={feature.title}
-                    initial={{ opacity: 0, y: 24 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    whileHover={{ y: -8 }}
-                    className="group p-8 rounded-3xl border border-border bg-card hover:border-primary/40 transition-all hover:shadow-xl"
+                    className="h-full flex flex-col justify-start p-7 rounded-3xl border border-border bg-card shadow-sm hover:border-primary/50 transition-all"
                   >
                     <div
-                      className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${feature.color} mb-6 group-hover:scale-105 transition-transform shadow-md`}
+                      className={`inline-flex w-fit p-3.5 rounded-2xl bg-gradient-to-br ${feature.color} mb-5 shadow-md`}
                     >
                       <Icon className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">{feature.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
-                  </motion.div>
+                    <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 leading-snug break-words">
+                      {feature.title}
+                    </h3>
+                    <p className="text-sm sm:text-base text-foreground/80 leading-relaxed break-words">
+                      {feature.description}
+                    </p>
+                  </div>
                 )
               })}
             </div>
           </div>
         </section>
 
-        {/* Process Section */}
-        <section className="py-24 md:py-32 border-y border-border bg-card/40">
+        {/* Analytics Workflow Section — Semua Langkah 01-04 Terbaca Jelas */}
+        <section className="py-20 md:py-28 border-y border-border bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6">
+            <div className="text-center mb-14">
+              <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
                 Analytics <span className="gradient-text">Workflow</span>
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-                Pendekatan sistematis dari kebutuhan masalah bisnis hingga dashboard dan insight siap pakai
+              <p className="text-base sm:text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+                Pendekatan sistematis dari perumusan masalah bisnis hingga dashboard dan insight siap pakai
               </p>
-            </motion.div>
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {workflowSteps.map((process, index) => (
-                <motion.div
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {workflowSteps.map((process) => (
+                <div
                   key={process.step}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="rounded-3xl border border-border bg-card p-6 text-center group"
+                  className="h-full flex flex-col items-center text-center rounded-3xl border border-border bg-card p-7 shadow-sm hover:border-primary/50 transition-all"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-xl mb-6 mx-auto group-hover:scale-105 transition-transform shadow-md">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-primary-foreground font-bold text-lg mb-5 shadow-md">
                     {process.step}
                   </div>
-                  <h3 className="text-lg font-bold text-foreground mb-3">{process.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{process.desc}</p>
-                </motion.div>
+                  <h3 className="text-lg font-bold text-foreground mb-2.5 leading-snug break-words">
+                    {process.title}
+                  </h3>
+                  <p className="text-sm text-foreground/80 leading-relaxed break-words">
+                    {process.desc}
+                  </p>
+                </div>
               ))}
             </div>
           </div>
         </section>
 
         {/* Highlights / Experience & Case Studies Section */}
-        <section className="py-24 md:py-32">
+        <section className="py-20 md:py-28">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6">
+            <div className="text-center mb-14">
+              <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
                 Experience &amp; <span className="gradient-text">Case Highlights</span>
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
                 Ringkasan pengalaman analitik, operasional, dan studi kasus data yang pernah dikerjakan
               </p>
-            </motion.div>
+            </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {highlights.map((item, index) => (
-                <motion.div
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {highlights.map((item) => (
+                <div
                   key={item.title}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="p-8 rounded-3xl border border-border bg-card hover:border-primary/40 hover:shadow-xl transition-all group flex flex-col justify-between"
+                  className="h-full p-7 rounded-3xl border border-border bg-card shadow-sm hover:border-primary/50 transition-all flex flex-col justify-between"
                 >
                   <div>
-                    <div className="flex items-center gap-2 text-primary text-sm font-semibold mb-3">
-                      <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
+                    <div className="flex items-start gap-2 text-primary text-sm font-semibold mb-3">
+                      <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-0.5" />
                       <span>{item.context}</span>
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-4">{item.title}</h3>
-                    <p className="text-muted-foreground mb-6 leading-relaxed">{item.summary}</p>
+                    <h3 className="text-xl font-bold text-foreground mb-3 leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm sm:text-base text-foreground/80 mb-6 leading-relaxed">
+                      {item.summary}
+                    </p>
                   </div>
-                  <div className="text-sm text-foreground/85 font-medium pt-4 border-t border-border">
+                  <div className="text-xs sm:text-sm text-foreground font-semibold pt-4 border-t border-border">
                     {item.stack}
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Enhanced CTA Section */}
-        <section className="py-24 md:py-32 border-t border-border relative overflow-hidden">
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/10 via-accent/5 to-background" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl opacity-35" />
-          </div>
-
+        {/* CTA Section */}
+        <section className="py-20 border-t border-border relative overflow-hidden bg-muted/20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="space-y-8"
-            >
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-                <motion.a
-                  href="/contact"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transition-all"
-                >
-                  Hubungi Saya
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </motion.a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="/contact"
+                className="group inline-flex items-center gap-3 px-9 py-4 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-2xl font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transition-all"
+              >
+                Hubungi Saya
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
 
-                <motion.a
-                  href="/projects"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="group inline-flex items-center gap-3 px-10 py-5 border-2 border-primary text-primary rounded-2xl font-bold text-lg hover:bg-primary hover:text-primary-foreground transition-all"
-                >
-                  Lihat Semua Proyek
-                </motion.a>
-              </div>
-            </motion.div>
+              <a
+                href="/projects"
+                className="inline-flex items-center gap-3 px-9 py-4 border-2 border-primary bg-card text-primary rounded-2xl font-bold text-base sm:text-lg hover:bg-primary hover:text-primary-foreground transition-all"
+              >
+                Lihat Semua Proyek
+              </a>
+            </div>
           </div>
         </section>
       </main>
 
-      {/* Modal Daftar Sertifikat — Gambar Baru Muncul Saat Judul Dipencet */}
+      {/* Modal Daftar Sertifikat */}
       {openCertificates && (
         <div
           onClick={handleCloseModal}
