@@ -104,7 +104,7 @@ const projectsData: ProjectItem[] = [
   },
   {
     id: 3,
-    title: "SQL & Python — Retail Customer Segmentation (RFM) & Profit Analysis",
+    title: "Analisis Profit & Segmentasi Pelanggan RFM Menggunakan SQL dan Python",
     category: "Analytics & Research",
     role: "Data Analyst • SQL & Python Case Study",
     period: "2026 • BigQuery SQL & Pandas",
@@ -147,7 +147,7 @@ const projectsData: ProjectItem[] = [
   },
   {
     id: 4,
-    title: "Interactive BI Playground — E-Commerce & Digital Marketing",
+    title: "Dashboard Eksplorasi BI Interaktif: E-Commerce & Digital Marketing",
     category: "BI & Dashboard",
     role: "Data & BI Analyst • Portfolio Project",
     period: "2026 • Next.js & Recharts",
@@ -190,7 +190,7 @@ const projectsData: ProjectItem[] = [
   },
   {
     id: 5,
-    title: "Demand Forecasting, Margin & Inventory What-If Simulator",
+    title: "Prediksi Demand, Margin & Stok Barang",
     category: "Operations & Data",
     role: "Business & Data Analyst • Decision Simulator",
     period: "2026 • Next.js & Recharts",
@@ -397,6 +397,49 @@ const projectsData: ProjectItem[] = [
     ],
     technologies: ["UI/UX Design", "Mobile Prototyping", "User Flow", "Product Design"],
     featured: false,
+  },
+  {
+    id: 10,
+    title: "Asisten Analitik Data, SQL & Insight BI Berbasis AI",
+    category: "Analytics & Research",
+    role: "Data & BI Analyst • AI Analytics Project",
+    period: "2026 • Next.js & Gemini API",
+    image: "/images/projects/ai.png",
+    shortDescription:
+      "Menggabungkan profiling kualitas data & statistik deterministik dengan Gemini API untuk menghasilkan draf SQL query, ringkasan temuan, dan rekomendasi bisnis.",
+    description:
+      "Membangun asisten analitik data interaktif di Next.js yang memproses dataset CSV melalui engine profiling kualitas data & statistik terlebih dahulu sebelum mengirim ringkasannya ke Gemini API untuk menyusun kueri SQL referensi, temuan utama, catatan kualitas data, dan rekomendasi tindakan bisnis.",
+    businessContext:
+      "Eksplorasi dataset baru dan penyusunan ringkasan analitik sering memakan waktu, sementara penggunaan AI langsung pada data mentah berisiko memunculkan angka yang tidak tervalidasi.",
+    technicalAction:
+      "Membangun alur profiling CSV (tipe kolom, missing values, min/max/rata-rata, nilai dominan) di TypeScript dan endpoint /api/analyze-insight berbasis Gemini API dengan validasi konteks statistik.",
+    businessImpact:
+      "Mempercepat eksplorasi dataset CSV dan penyusunan draf kueri SQL serta rekomendasi bisnis sambil menjaga transparansi kualitas data.",
+    dataSource:
+      "Dataset sampel E-Commerce Indonesia Sales dan Digital Marketing Campaign ID, serta file CSV yang diunggah pengguna.",
+    keyKpis: [
+      "Jumlah Baris & Kolom Terdeteksi",
+      "Tingkat Missing Values per Kolom",
+      "Draf SQL Query Referensi Terstruktur",
+      "Key Insights & Rekomendasi Bisnis Berbasis Data",
+    ],
+    keyInsights: [
+      "Memisahkan perhitungan statistik dasar dari narasi AI membantu menjaga akurasi angka dan menekan pemakaian token.",
+      "Pemeriksaan missing values dan tipe kolom di awal membantu mendeteksi kesiapan data sebelum analisis lanjutan.",
+      "Penyajian kueri SQL berdampingan dengan insight memudahkan verifikasi logika analisis.",
+    ],
+    businessRecommendations: [
+      "Selalu periksa kolom dengan missing values atau distribusi tidak seimbang sebelum mengambil keputusan bisnis.",
+      "Gunakan kueri SQL yang dihasilkan sebagai titik awal pengujian lanjutan di database atau BI tool.",
+      "Uji beberapa pertanyaan analitik spesifik agar rekomendasi yang dihasilkan lebih tajam.",
+    ],
+    highlights: [
+      "Dampak Bisnis: Mempercepat eksplorasi dataset CSV dan draf SQL query dengan rujukan statistik yang lebih terukur.",
+      "Aksi Teknis: Data profiling otomatis + route handler /api/analyze-insight (Gemini API) + halaman interaktif Next.js.",
+    ],
+    technologies: ["Next.js", "TypeScript", "Gemini API", "SQL", "Data Profiling"],
+    featured: true,
+    href: "/projects/ai-insight-assistant",
   },
 ]
 

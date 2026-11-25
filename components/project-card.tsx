@@ -38,6 +38,23 @@ interface ProjectCardProps {
   onSelect: (project: ProjectItem) => void
 }
 
+function getCardFrameClasses(project: ProjectItem) {
+  const baseHover = "hover:-translate-y-1.5 hover:shadow-lg bg-card/70 hover:bg-card"
+
+  switch (project.category) {
+    case "BI & Dashboard":
+      return `${baseHover} border-sky-500/40 hover:border-sky-500 border-t-4 border-t-sky-500`
+    case "Operations & Data":
+      return `${baseHover} border-emerald-500/40 hover:border-emerald-500 border-t-4 border-t-emerald-500`
+    case "Analytics & Research":
+      return `${baseHover} border-indigo-500/40 hover:border-indigo-500 border-t-4 border-t-indigo-500`
+    case "Product & UI/UX":
+      return `${baseHover} border-violet-500/40 hover:border-violet-500 border-t-4 border-t-violet-500`
+    default:
+      return `${baseHover} border-border hover:border-primary/50 border-t-4 border-t-primary`
+  }
+}
+
 export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
   const getCategoryIcon = () => {
     switch (project.category) {
@@ -55,7 +72,11 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
   const CategoryIcon = getCategoryIcon()
 
   return (
-    <div className="group h-full flex flex-col justify-between rounded-2xl border border-border overflow-hidden hover:border-primary/50 transition-all hover:-translate-y-1.5 bg-card/60 hover:bg-card">
+    <div
+      className={`group h-full flex flex-col justify-between rounded-2xl border overflow-hidden transition-all duration-300 ${getCardFrameClasses(
+        project
+      )}`}
+    >
       <div>
         {/* Gambar Dashboard */}
         {project.href ? (

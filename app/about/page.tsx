@@ -273,8 +273,8 @@ export default function AboutPage() {
                 <p className="text-base sm:text-lg text-foreground/85 leading-relaxed">
                   Lulusan S1 Sistem Informasi peminatan Business Intelligence Universitas Mercu Buana
                   (2026) dengan sertifikasi BNSP. Memiliki pengalaman magang Data Analyst di PT
-                  Integrasi Jaringan Ekosistem (WEAVE) menggunakan Metabase serta pengelolaan
-                  operasional, stok, dan biaya di Warung Uih Ka Imah, didukung keahlian SQL,
+                  Integrasi Jaringan Ekosistem (WEAVE) menggunakan Metabase serta mengelola
+                  operasional, stok, dan biaya di Bisnis F&B Uih Ka Imah, didukung keahlian SQL,
                   Python, Excel, Power BI, Looker Studio, dan Tableau.
                 </p>
               </div>
