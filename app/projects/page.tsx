@@ -61,48 +61,6 @@ const projectsData: ProjectItem[] = [
     featured: true,
   },
   {
-    id: 2,
-    title: "Dashboard Pengeluaran & Pembelian Bahan Baku — Warung Uih Ka Imah",
-    category: "Operations & Data",
-    role: "Koordinator Operasional & Data • Warung Uih Ka Imah",
-    period: "2024–2026 • Looker Studio",
-    image: "/images/projects/project-2-uih-ka-imah.jpg",
-    shortDescription:
-      "Menekan risiko pembengkakan HPP dan ketidaksesuaian stok melalui pelacakan pengeluaran cabang, kategori beban, dan harga vendor di Looker Studio.",
-    description:
-      "Membangun dashboard pelaporan di Looker Studio untuk mengendalikan pengeluaran operasional per cabang, memetakan proporsi kategori beban, serta mengevaluasi fluktuasi harga dan pembelian bahan baku berdasarkan vendor dan metode bayar di Warung Uih Ka Imah.",
-    businessContext:
-      "Fluktuasi harga bahan baku dan pencatatan belanja harian berisiko memicu pembengkakan HPP (Cost of Goods Sold) serta ketidaksesuaian stok operasional.",
-    technicalAction:
-      "Membangun dashboard analitik pengeluaran operasional dan pembelian vendor di Looker Studio untuk melacak tren belanja harian, proporsi kategori bahan baku, dan pergerakan harga pemasok.",
-    businessImpact:
-      "Memudahkan deteksi pos pengeluaran tertinggi, mendukung negosiasi vendor, serta menjaga efisiensi biaya operasional harian.",
-    dataSource:
-      "Catatan pembelian bahan baku harian, data vendor/pemasok, kategori pengeluaran cabang, dan metode pembayaran.",
-    keyKpis: [
-      "Total Pengeluaran Operasional & Pembelian Bahan Baku",
-      "Proporsi Biaya per Kategori & Cabang",
-      "Perbandingan Biaya & Frekuensi Belanja per Vendor",
-      "Tren Fluktuasi Harga Satuan Bahan Baku",
-    ],
-    keyInsights: [
-      "Pengeluaran harian didominasi oleh kategori bahan baku utama yang sensitif terhadap perubahan harga pasar.",
-      "Perbandingan antar-vendor dan periode membantu mengidentifikasi selisih harga satuan untuk peluang efisiensi.",
-      "Pemantauan rutin mempermudah deteksi lonjakan beban operasional sebelum memengaruhi margin bulanan.",
-    ],
-    businessRecommendations: [
-      "Evaluasi harga dan konsistensi suplai vendor utama secara berkala untuk memperkuat negosiasi harga.",
-      "Terapkan batas pemantauan khusus pada kategori bahan baku dengan porsi terbesar terhadap HPP.",
-      "Sesuaikan jadwal pembelian bahan baku dengan proyeksi permintaan harian dan hasil stok opname.",
-    ],
-    highlights: [
-      "Dampak Bisnis: Memudahkan deteksi pos pengeluaran tertinggi, mendukung negosiasi vendor, dan menjaga efisiensi biaya harian.",
-      "Aksi Teknis: Dashboard Looker Studio untuk melacak tren belanja, kategori bahan baku, dan pergerakan harga pemasok.",
-    ],
-    technologies: ["Looker Studio", "Operational Data", "Cost & Vendor Tracking", "Reporting"],
-    featured: true,
-  },
-  {
     id: 3,
     title: "Analisis Profit & Segmentasi Pelanggan RFM Menggunakan SQL dan Python",
     category: "Analytics & Research",
@@ -144,6 +102,49 @@ const projectsData: ProjectItem[] = [
     technologies: ["SQL", "BigQuery", "Python", "Pandas", "RFM Analysis"],
     featured: true,
     href: "/projects/sql-python-case",
+  },
+  {
+    id: 10,
+    title: "Asisten Analitik Data, SQL & Insight BI Berbasis AI",
+    category: "Analytics & Research",
+    role: "Data & BI Analyst • AI Analytics Project",
+    period: "2026 • Next.js & Gemini API",
+    image: "/images/projects/ai.png",
+    shortDescription:
+      "Menggabungkan profiling kualitas data & statistik deterministik dengan Gemini API untuk menghasilkan draf SQL query, ringkasan temuan, dan rekomendasi bisnis.",
+    description:
+      "Membangun asisten analitik data interaktif di Next.js yang memproses dataset CSV melalui engine profiling kualitas data & statistik terlebih dahulu sebelum mengirim ringkasannya ke Gemini API untuk menyusun kueri SQL referensi, temuan utama, catatan kualitas data, dan rekomendasi tindakan bisnis.",
+    businessContext:
+      "Eksplorasi dataset baru dan penyusunan ringkasan analitik sering memakan waktu, sementara penggunaan AI langsung pada data mentah berisiko memunculkan angka yang tidak tervalidasi.",
+    technicalAction:
+      "Membangun alur profiling CSV (tipe kolom, missing values, min/max/rata-rata, nilai dominan) di TypeScript dan endpoint /api/analyze-insight berbasis Gemini API dengan validasi konteks statistik.",
+    businessImpact:
+      "Mempercepat eksplorasi dataset CSV dan penyusunan draf kueri SQL serta rekomendasi bisnis sambil menjaga transparansi kualitas data.",
+    dataSource:
+      "Dataset sampel E-Commerce Indonesia Sales dan Digital Marketing Campaign ID, serta file CSV yang diunggah pengguna.",
+    keyKpis: [
+      "Jumlah Baris & Kolom Terdeteksi",
+      "Tingkat Missing Values per Kolom",
+      "Draf SQL Query Referensi Terstruktur",
+      "Key Insights & Rekomendasi Bisnis Berbasis Data",
+    ],
+    keyInsights: [
+      "Memisahkan perhitungan statistik dasar dari narasi AI membantu menjaga akurasi angka dan menekan pemakaian token.",
+      "Pemeriksaan missing values dan tipe kolom di awal membantu mendeteksi kesiapan data sebelum analisis lanjutan.",
+      "Penyajian kueri SQL berdampingan dengan insight memudahkan verifikasi logika analisis.",
+    ],
+    businessRecommendations: [
+      "Selalu periksa kolom dengan missing values atau distribusi tidak seimbang sebelum mengambil keputusan bisnis.",
+      "Gunakan kueri SQL yang dihasilkan sebagai titik awal pengujian lanjutan di database atau BI tool.",
+      "Uji beberapa pertanyaan analitik spesifik agar rekomendasi yang dihasilkan lebih tajam.",
+    ],
+    highlights: [
+      "Dampak Bisnis: Mempercepat eksplorasi dataset CSV dan draf SQL query dengan rujukan statistik yang lebih terukur.",
+      "Aksi Teknis: Data profiling otomatis + route handler /api/analyze-insight (Gemini API) + halaman interaktif Next.js.",
+    ],
+    technologies: ["Next.js", "TypeScript", "Gemini API", "SQL", "Data Profiling"],
+    featured: true,
+    href: "/projects/ai-insight-assistant",
   },
   {
     id: 4,
@@ -230,6 +231,48 @@ const projectsData: ProjectItem[] = [
     technologies: ["Next.js", "TypeScript", "Recharts", "Demand Forecasting", "Inventory ROP"],
     featured: true,
     href: "/projects/demand-forecast",
+  },
+  {
+    id: 2,
+    title: "Dashboard Pengeluaran & Pembelian Bahan Baku — Warung Uih Ka Imah",
+    category: "Operations & Data",
+    role: "Koordinator Operasional & Data • Warung Uih Ka Imah",
+    period: "2024–2026 • Looker Studio",
+    image: "/images/projects/project-2-uih-ka-imah.jpg",
+    shortDescription:
+      "Menekan risiko pembengkakan HPP dan ketidaksesuaian stok melalui pelacakan pengeluaran cabang, kategori beban, dan harga vendor di Looker Studio.",
+    description:
+      "Membangun dashboard pelaporan di Looker Studio untuk mengendalikan pengeluaran operasional per cabang, memetakan proporsi kategori beban, serta mengevaluasi fluktuasi harga dan pembelian bahan baku berdasarkan vendor dan metode bayar di Warung Uih Ka Imah.",
+    businessContext:
+      "Fluktuasi harga bahan baku dan pencatatan belanja harian berisiko memicu pembengkakan HPP (Cost of Goods Sold) serta ketidaksesuaian stok operasional.",
+    technicalAction:
+      "Membangun dashboard analitik pengeluaran operasional dan pembelian vendor di Looker Studio untuk melacak tren belanja harian, proporsi kategori bahan baku, dan pergerakan harga pemasok.",
+    businessImpact:
+      "Memudahkan deteksi pos pengeluaran tertinggi, mendukung negosiasi vendor, serta menjaga efisiensi biaya operasional harian.",
+    dataSource:
+      "Catatan pembelian bahan baku harian, data vendor/pemasok, kategori pengeluaran cabang, dan metode pembayaran.",
+    keyKpis: [
+      "Total Pengeluaran Operasional & Pembelian Bahan Baku",
+      "Proporsi Biaya per Kategori & Cabang",
+      "Perbandingan Biaya & Frekuensi Belanja per Vendor",
+      "Tren Fluktuasi Harga Satuan Bahan Baku",
+    ],
+    keyInsights: [
+      "Pengeluaran harian didominasi oleh kategori bahan baku utama yang sensitif terhadap perubahan harga pasar.",
+      "Perbandingan antar-vendor dan periode membantu mengidentifikasi selisih harga satuan untuk peluang efisiensi.",
+      "Pemantauan rutin mempermudah deteksi lonjakan beban operasional sebelum memengaruhi margin bulanan.",
+    ],
+    businessRecommendations: [
+      "Evaluasi harga dan konsistensi suplai vendor utama secara berkala untuk memperkuat negosiasi harga.",
+      "Terapkan batas pemantauan khusus pada kategori bahan baku dengan porsi terbesar terhadap HPP.",
+      "Sesuaikan jadwal pembelian bahan baku dengan proyeksi permintaan harian dan hasil stok opname.",
+    ],
+    highlights: [
+      "Dampak Bisnis: Memudahkan deteksi pos pengeluaran tertinggi, mendukung negosiasi vendor, dan menjaga efisiensi biaya harian.",
+      "Aksi Teknis: Dashboard Looker Studio untuk melacak tren belanja, kategori bahan baku, dan pergerakan harga pemasok.",
+    ],
+    technologies: ["Looker Studio", "Operational Data", "Cost & Vendor Tracking", "Reporting"],
+    featured: true,
   },
   {
     id: 6,
@@ -397,49 +440,6 @@ const projectsData: ProjectItem[] = [
     ],
     technologies: ["UI/UX Design", "Mobile Prototyping", "User Flow", "Product Design"],
     featured: false,
-  },
-  {
-    id: 10,
-    title: "Asisten Analitik Data, SQL & Insight BI Berbasis AI",
-    category: "Analytics & Research",
-    role: "Data & BI Analyst • AI Analytics Project",
-    period: "2026 • Next.js & Gemini API",
-    image: "/images/projects/ai.png",
-    shortDescription:
-      "Menggabungkan profiling kualitas data & statistik deterministik dengan Gemini API untuk menghasilkan draf SQL query, ringkasan temuan, dan rekomendasi bisnis.",
-    description:
-      "Membangun asisten analitik data interaktif di Next.js yang memproses dataset CSV melalui engine profiling kualitas data & statistik terlebih dahulu sebelum mengirim ringkasannya ke Gemini API untuk menyusun kueri SQL referensi, temuan utama, catatan kualitas data, dan rekomendasi tindakan bisnis.",
-    businessContext:
-      "Eksplorasi dataset baru dan penyusunan ringkasan analitik sering memakan waktu, sementara penggunaan AI langsung pada data mentah berisiko memunculkan angka yang tidak tervalidasi.",
-    technicalAction:
-      "Membangun alur profiling CSV (tipe kolom, missing values, min/max/rata-rata, nilai dominan) di TypeScript dan endpoint /api/analyze-insight berbasis Gemini API dengan validasi konteks statistik.",
-    businessImpact:
-      "Mempercepat eksplorasi dataset CSV dan penyusunan draf kueri SQL serta rekomendasi bisnis sambil menjaga transparansi kualitas data.",
-    dataSource:
-      "Dataset sampel E-Commerce Indonesia Sales dan Digital Marketing Campaign ID, serta file CSV yang diunggah pengguna.",
-    keyKpis: [
-      "Jumlah Baris & Kolom Terdeteksi",
-      "Tingkat Missing Values per Kolom",
-      "Draf SQL Query Referensi Terstruktur",
-      "Key Insights & Rekomendasi Bisnis Berbasis Data",
-    ],
-    keyInsights: [
-      "Memisahkan perhitungan statistik dasar dari narasi AI membantu menjaga akurasi angka dan menekan pemakaian token.",
-      "Pemeriksaan missing values dan tipe kolom di awal membantu mendeteksi kesiapan data sebelum analisis lanjutan.",
-      "Penyajian kueri SQL berdampingan dengan insight memudahkan verifikasi logika analisis.",
-    ],
-    businessRecommendations: [
-      "Selalu periksa kolom dengan missing values atau distribusi tidak seimbang sebelum mengambil keputusan bisnis.",
-      "Gunakan kueri SQL yang dihasilkan sebagai titik awal pengujian lanjutan di database atau BI tool.",
-      "Uji beberapa pertanyaan analitik spesifik agar rekomendasi yang dihasilkan lebih tajam.",
-    ],
-    highlights: [
-      "Dampak Bisnis: Mempercepat eksplorasi dataset CSV dan draf SQL query dengan rujukan statistik yang lebih terukur.",
-      "Aksi Teknis: Data profiling otomatis + route handler /api/analyze-insight (Gemini API) + halaman interaktif Next.js.",
-    ],
-    technologies: ["Next.js", "TypeScript", "Gemini API", "SQL", "Data Profiling"],
-    featured: true,
-    href: "/projects/ai-insight-assistant",
   },
 ]
 
