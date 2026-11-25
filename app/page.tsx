@@ -215,7 +215,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="/CV Rakhan Fahrezi Aritonang.pdf"
+                  href="/CV Rakhan Fahrezi (4).pdf"
                   download
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-border bg-card text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:border-primary/50 transition-all"
                 >
