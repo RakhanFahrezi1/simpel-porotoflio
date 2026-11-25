@@ -193,7 +193,7 @@ export default function Home() {
                 Lulusan S1 Sistem Informasi (Universitas Mercu Buana) bersertifikasi BNSP dengan
                 spesialisasi Business Intelligence dan Operational Analytics. Berpengalaman membangun
                 dashboard monitoring layanan internet di PT Integrasi Jaringan Ekosistem (WEAVE)
-                menggunakan Metabase serta mengelola data operasional dan efisiensi biaya di Warung Uih
+                menggunakan Metabase. Mengelola Data Operasional dan efisiensi biaya Bisnis F&B Uih
                 Ka Imah. Terbiasa mengolah data menggunakan SQL, Python, Excel, Power BI, Looker Studio,
                 dan Tableau untuk menghasilkan insight bisnis yang terukur.
               </p>
@@ -215,7 +215,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="/CV-Rakhan-Fahrezi-Aritonang.pdf"
+                  href="/CV Rakhan Fahrezi Aritonang.pdf"
                   download
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-border bg-card text-foreground rounded-2xl font-semibold text-sm sm:text-base hover:border-primary/50 transition-all"
                 >
