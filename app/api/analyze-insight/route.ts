@@ -13,26 +13,29 @@ async function callGeminiModel(
   model: string,
   apiKey: string,
   prompt: string
-): Promise<{ result: ExtendedInsightResponse | null; status?: number }> {
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`
+): Promise<{ result: ExtendedInsightResponse | null; status?: number; errorDetail?: string }> {
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(
+    apiKey
+  )}`
 
   const res = await fetch(endpoint, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-goog-api-key": apiKey,
     },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
       generationConfig: {
         temperature: 0.3,
+        maxOutputTokens: 900,
         responseMimeType: "application/json",
       },
     }),
   })
 
   if (!res.ok) {
-    return { result: null, status: res.status }
+    const errText = await res.text().catch(() => "")
+    return { result: null, status: res.status, errorDetail: errText.slice(0, 200) }
   }
 
   const data = await res.json()
@@ -113,9 +116,9 @@ PERTANYAAN PENGGUNA:
 
 INSTRUKSI PENJAWABAN:
 1. "directAnswer": Jawab langsung pertanyaan pengguna secara jelas dan komprehensif (2-4 kalimat).
-   - Jika pengguna bertanya soal dataset aktif, gunakan angka & nama kolom asli dari Ringkasan Statistik Dataset (jangan mengarang angka di luar data).
-   - Jika pengguna meminta kueri SQL tertentu (misalnya transaksi terbesar, CTE, Window Function, top N, cohort, filtering), jelaskan logika SQL tersebut secara ringkas di sini.
-   - Jika pengguna bertanya konsep umum Data Analytics, SQL, Statistika, atau Business Intelligence di luar isi baris CSV, jawab secara langsung berdasarkan keahlianmu dan kaitkan dengan struktur kolom dataset aktif bila relevan.
+  - Jika pengguna bertanya soal dataset aktif, gunakan angka & nama kolom asli dari Ringkasan Statistik Dataset (jangan mengarang angka di luar data).
+  - Jika pengguna meminta kueri SQL tertentu (misalnya transaksi terbesar, CTE, Window Function, top N, cohort, filtering), jelaskan logika SQL tersebut secara ringkas di sini.
+  - Jika pengguna bertanya konsep umum Data Analytics, SQL, Statistika, atau Business Intelligence di luar isi baris CSV, jawab secara langsung berdasarkan keahlianmu dan kaitkan dengan struktur kolom dataset aktif bila relevan.
 2. "sqlQuery": Tuliskan kueri SQL yang valid, rapi, dan siap pakai sesuai permintaan pengguna menggunakan nama tabel "${tableName}" dan nama kolom asli dataset.
 3. "keyInsights": Berikan 3-4 poin temuan atau penjelasan teknis terpenting yang langsung menjawab pertanyaan pengguna.
 4. "dataQualityNotes": Berikan 1-2 catatan kualitas data, asumsi kueri, atau hal yang perlu diperhatikan saat analisis.
@@ -132,22 +135,23 @@ Kembalikan HANYA objek JSON valid tanpa markdown tambahan:
 `
 
     const preferredModels = [
-      "gemini-3.1-flash-lite",
-      "gemini-3.1-flash-lite-preview",
-      "gemini-3-flash-preview",
-      "gemini-3.1-pro-preview",
+      "gemini-2.5-flash",
       "gemini-2.5-flash-lite",
+      "gemini-2.0-flash",
     ]
 
+    let lastStatus: number | undefined
+
     for (const model of preferredModels) {
-      for (let attempt = 1; attempt <= 3; attempt++) {
+      for (let attempt = 1; attempt <= 2; attempt++) {
         try {
           const { result, status } = await callGeminiModel(model, apiKey, prompt)
+          lastStatus = status
           if (result) {
             return NextResponse.json(result)
           }
-          if (status === 503 && attempt < 3) {
-            await new Promise((r) => setTimeout(r, attempt * 1500))
+          if ((status === 503 || status === 429) && attempt < 2) {
+            await new Promise((r) => setTimeout(r, 800))
             continue
           }
           break
@@ -157,11 +161,18 @@ Kembalikan HANYA objek JSON valid tanpa markdown tambahan:
       }
     }
 
+    const statusHint =
+      lastStatus === 429
+        ? "Kuota request Gemini API sedang mencapai batas sementara (429);"
+        : lastStatus === 400 || lastStatus === 403
+          ? `Konfigurasi API key perlu dicek (HTTP ${lastStatus});`
+          : "Server Gemini AI sedang padat sementara;"
+
     return NextResponse.json({
       ...fallback,
       directAnswer: fallback.keyInsights[0] || "",
       dataQualityNotes: [
-        "Server Gemini AI sedang padat sementara; menampilkan ringkasan statistik tervalidasi.",
+        `${statusHint} menampilkan ringkasan statistik tervalidasi.`,
         ...fallback.dataQualityNotes,
       ],
     })
