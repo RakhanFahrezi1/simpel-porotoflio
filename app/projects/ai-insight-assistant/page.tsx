@@ -44,6 +44,9 @@ export interface AiInsightPayload extends InsightResponse {
   directAnswer?: string
 }
 
+const DEFAULT_ANALYSIS_PROMPT =
+  "Berikan ringkasan performa utama, metrik terpenting, dan temuan dominan dari dataset ini."
+
 const PRESET_DATASETS = [
   {
     label: "E-Commerce Indonesia Sales",
@@ -61,8 +64,7 @@ const EVALUATION_SCENARIOS = [
   {
     badge: "Executive Summary",
     label: "Ringkasan Performa & Temuan Utama",
-    question:
-      "Berikan ringkasan performa utama, metrik terpenting, dan temuan dominan dari dataset ini.",
+    question: DEFAULT_ANALYSIS_PROMPT,
   },
   {
     badge: "Data Quality & Anomaly",
@@ -90,7 +92,7 @@ export default function AiInsightAssistantPage() {
   const [summary, setSummary] = useState<DatasetSummary | null>(null)
   const [loadingData, setLoadingData] = useState(true)
 
-  const [question, setQuestion] = useState(EVALUATION_SCENARIOS[0].question)
+  const [question, setQuestion] = useState("")
   const [analyzing, setAnalyzing] = useState(false)
   const [insight, setInsight] = useState<AiInsightPayload | null>(null)
   const [errorMsg, setErrorMsg] = useState<string | null>(null)
@@ -165,8 +167,7 @@ export default function AiInsightAssistantPage() {
   }
 
   const runAnalysis = async (promptText: string) => {
-    const trimmedQuestion = promptText.trim()
-    if (!trimmedQuestion) return
+    const trimmedQuestion = promptText.trim() || DEFAULT_ANALYSIS_PROMPT
 
     setAnalyzing(true)
     setErrorMsg(null)
@@ -215,8 +216,9 @@ export default function AiInsightAssistantPage() {
   }, [summary])
 
   const askedForSql = useMemo(() => {
+    const effectiveQuestion = question.trim() || DEFAULT_ANALYSIS_PROMPT
     return /\b(sql|query|kueri|select|cte|window\s+function|join|group\s+by|where|order\s+by)\b/i.test(
-      question
+      effectiveQuestion
     )
   }, [question])
 
@@ -281,7 +283,6 @@ export default function AiInsightAssistantPage() {
       <Navbar />
       <main className="flex-1 py-12 md:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl space-y-8">
-          {/* Header */}
           <div className="flex flex-wrap items-center justify-between gap-4">
             <Link
               href="/projects"
@@ -308,7 +309,6 @@ export default function AiInsightAssistantPage() {
             </p>
           </div>
 
-          {/* 1. Pilih atau Unggah Dataset CSV */}
           <div className="p-6 rounded-2xl border border-border bg-card space-y-4">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-2">
@@ -359,7 +359,6 @@ export default function AiInsightAssistantPage() {
             </div>
           )}
 
-          {/* Ringkasan KPI Dataset */}
           {loadingData ? (
             <div className="p-8 rounded-2xl border border-border bg-card text-center text-sm text-muted-foreground">
               Membaca dan memproses profil dataset...
@@ -401,7 +400,6 @@ export default function AiInsightAssistantPage() {
             </div>
           ) : null}
 
-          {/* 2. Mode Evaluasi / Skenario Bisnis Cepat & Pertanyaan AI */}
           <div className="p-6 rounded-2xl border border-border bg-card space-y-4">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div className="flex items-center gap-2">
@@ -443,12 +441,12 @@ export default function AiInsightAssistantPage() {
                 type="text"
                 value={question}
                 onChange={(e) => setQuestion(e.target.value)}
-                placeholder="Tanyakan apa saja: analisis CSV, kode SQL, konsep BI, atau topik umum..."
+                placeholder="Ketik pertanyaan analisis data, SQL, BI, atau klik skenario di atas..."
                 className="flex-1 px-4 py-2.5 rounded-xl border border-border bg-background text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40"
               />
               <Button
                 type="submit"
-                disabled={analyzing || !question.trim()}
+                disabled={analyzing || loadingData}
                 className="rounded-xl gap-2 font-semibold"
               >
                 <Sparkles className="w-4 h-4" />
@@ -457,10 +455,8 @@ export default function AiInsightAssistantPage() {
             </form>
           </div>
 
-          {/* Hasil Analisis AI */}
           {insight && (
             <div className="space-y-6">
-              {/* Kartu Jawaban Langsung & Kueri SQL */}
               <div className="p-6 rounded-2xl border border-primary/30 bg-card space-y-4">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
@@ -515,7 +511,6 @@ export default function AiInsightAssistantPage() {
                 )}
               </div>
 
-              {/* Detail Key Insights, Kualitas Data & Rekomendasi */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div className="p-6 rounded-2xl border border-border bg-card space-y-3">
                   <div className="flex items-center gap-2">
@@ -563,10 +558,8 @@ export default function AiInsightAssistantPage() {
             </div>
           )}
 
-          {/* 3. Visualisasi Grafik Dinamis (Recharts) & Pratinjau Eksekusi SQL */}
           {summary && summary.rowCount > 0 && (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Grafik Recharts */}
               <div className="p-6 rounded-2xl border border-border bg-card space-y-4">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
@@ -649,7 +642,6 @@ export default function AiInsightAssistantPage() {
                 </div>
               </div>
 
-              {/* Kueri SQL + Eksekutor Hasil */}
               <div className="p-6 rounded-2xl border border-border bg-card space-y-4">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
@@ -741,7 +733,6 @@ export default function AiInsightAssistantPage() {
             </div>
           )}
 
-          {/* 5. Tabel Profil Kolom & Kesehatan Data */}
           {summary && summary.columns.length > 0 && (
             <div className="p-6 rounded-2xl border border-border bg-card space-y-4">
               <div className="flex flex-wrap items-center justify-between gap-2">
