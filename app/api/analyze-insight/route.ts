@@ -14,14 +14,13 @@ async function callGeminiModel(
   apiKey: string,
   prompt: string
 ): Promise<{ result: ExtendedInsightResponse | null; status?: number; errorDetail?: string }> {
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(
-    apiKey
-  )}`
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`
 
   const res = await fetch(endpoint, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "x-goog-api-key": apiKey,
     },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
@@ -35,13 +34,13 @@ async function callGeminiModel(
 
   if (!res.ok) {
     const errText = await res.text().catch(() => "")
-    return { result: null, status: res.status, errorDetail: errText.slice(0, 200) }
+    return { result: null, status: res.status, errorDetail: errText.slice(0, 220) }
   }
 
   const data = await res.json()
   const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text
   if (!rawText) {
-    return { result: null }
+    return { result: null, status: res.status, errorDetail: "Empty candidate text" }
   }
 
   const cleaned = rawText.replace(/^```json\s*/i, "").replace(/```$/i, "").trim()
@@ -68,7 +67,7 @@ async function callGeminiModel(
     }
   }
 
-  return { result: null }
+  return { result: null, errorDetail: "Invalid JSON schema from model" }
 }
 
 export async function POST(req: Request) {
@@ -135,27 +134,35 @@ Kembalikan HANYA objek JSON valid tanpa markdown tambahan:
 `
 
     const preferredModels = [
+      "gemini-3.8-flash",
       "gemini-2.5-flash",
       "gemini-2.5-flash-lite",
-      "gemini-2.0-flash",
     ]
 
     let lastStatus: number | undefined
+    let lastErrorDetail: string | undefined
 
     for (const model of preferredModels) {
       for (let attempt = 1; attempt <= 2; attempt++) {
         try {
-          const { result, status } = await callGeminiModel(model, apiKey, prompt)
-          lastStatus = status
+          const { result, status, errorDetail } = await callGeminiModel(
+            model,
+            apiKey,
+            prompt
+          )
+          if (status !== undefined) lastStatus = status
+          if (errorDetail) lastErrorDetail = errorDetail
+
           if (result) {
             return NextResponse.json(result)
           }
           if ((status === 503 || status === 429) && attempt < 2) {
-            await new Promise((r) => setTimeout(r, 800))
+            await new Promise((r) => setTimeout(r, 900))
             continue
           }
           break
-        } catch {
+        } catch (err) {
+          lastErrorDetail = err instanceof Error ? err.message : "Network error"
           break
         }
       }
@@ -164,15 +171,19 @@ Kembalikan HANYA objek JSON valid tanpa markdown tambahan:
     const statusHint =
       lastStatus === 429
         ? "Kuota request Gemini API sedang mencapai batas sementara (429);"
-        : lastStatus === 400 || lastStatus === 403
-          ? `Konfigurasi API key perlu dicek (HTTP ${lastStatus});`
-          : "Server Gemini AI sedang padat sementara;"
+        : lastStatus === 401 || lastStatus === 400 || lastStatus === 403
+          ? `Autentikasi atau konfigurasi API key perlu dicek (HTTP ${lastStatus});`
+          : lastStatus === 503
+            ? "Server model Gemini sedang mengalami lonjakan beban sementara (503);"
+            : lastStatus === 404
+              ? "Model yang diminta tidak tersedia untuk project ini (404);"
+              : "Server Gemini AI sedang tidak merespons optimal;"
 
     return NextResponse.json({
       ...fallback,
       directAnswer: fallback.keyInsights[0] || "",
       dataQualityNotes: [
-        `${statusHint} menampilkan ringkasan statistik tervalidasi.`,
+        `${statusHint} menampilkan ringkasan statistik tervalidasi.${lastErrorDetail ? ` (${lastErrorDetail})` : ""}`,
         ...fallback.dataQualityNotes,
       ],
     })
