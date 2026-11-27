@@ -61,47 +61,47 @@ const projectsData: ProjectItem[] = [
     featured: true,
   },
   {
-    id: 3,
-    title: "Analisis Profit & Segmentasi Pelanggan RFM Menggunakan SQL dan Python",
+    id: 12,
+    title: "Agen AI Investigasi Root-Cause KPI & Anomali Bisnis",
     category: "Analytics & Research",
-    role: "Data Analyst • SQL & Python Case Study",
-    period: "2026 • BigQuery SQL & Pandas",
-    image: "/images/projects/project-8-sql-python.jpg",
+    role: "AI & BI Analyst • Agentic Analytics",
+    period: "2026 • Next.js & Gemini API",
+    image: "/images/projects/root-cause-agent.png",
+    href: "/projects/root-cause-agent",
     shortDescription:
-      "Mengelompokkan pelanggan ritel ke 5 segmen RFM dan menganalisis profitabilitas produk menggunakan SQL (BigQuery) serta Python (Pandas) untuk efisiensi retensi.",
+      "Agen analitik otonom yang menjalankan 4 tool investigasi terstruktur untuk menemukan akar penurunan margin/ROAS, menyusun memo manajemen, dan menghasilkan kueri SQL.",
     description:
-      "Mengolah data transaksi ritel menggunakan SQL dan Python (Pandas) untuk membersihkan anomali data, menghitung margin bersih, serta mengelompokkan pelanggan ke segmen RFM beserta rekomendasi aksi retensi.",
+      "Membangun Agen AI Investigasi Root-Cause di Next.js dan Gemini API yang menggabungkan tool analitik deterministik (tren laba bersih, isolasi dimensi terlemah, audit biaya/retur, dan validasi integritas data) dengan ringkasan eksekutif serta rekomendasi tindakan prioritas bagi manajemen.",
     businessContext:
-      "Strategi promosi yang seragam pada seluruh pelanggan membuat biaya pemasaran kurang efisien dan menyulitkan deteksi produk dengan margin rendah.",
+      "Tim manajemen dan analis sering menghabiskan banyak waktu menelusuri penyebab penurunan margin, lonjakan food cost, atau turunnya ROAS sebelum bisa mengambil keputusan korektif.",
     technicalAction:
-      "Melakukan data cleaning, agregasi transaksi menggunakan SQL (BigQuery), serta pemodelan segmentasi RFM dan analisis profitabilitas menggunakan Python (Pandas).",
+      "Merancang alur tool-calling terstruktur di sisi server (/api/root-cause-agent) yang memproses data per skenario/dimensi, menampilkan jejak eksekusi tiap tool secara transparan, serta menyediakan kueri SQL verifikasi dan grafik perbandingan.",
     businessImpact:
-      "Mengelompokkan pelanggan ke dalam segmen prioritas (Champions, Loyal Customers, Potential Loyalist, At Risk, Hibernating) dan memetakan sub-kategori produk dengan rasio profit tertinggi untuk rekomendasi kampanye retensi.",
+      "Mempercepat diagnosis akar masalah kinerja bisnis dan membantu manajemen memprioritaskan tindakan pemulihan margin berbasis bukti angka.",
     dataSource:
-      "Data transaksi ritel (ID transaksi, ID pelanggan, tanggal order, kategori produk, kuantitas, harga jual, dan biaya pokok/COGS).",
+      "Dataset investigasi skenario E-Commerce Net Margin, Food Cost & HPP Restoran, serta Efisiensi ROAS Kampanye Digital.",
     keyKpis: [
-      "Recency (Hari Sejak Transaksi Terakhir)",
-      "Frequency (Jumlah Transaksi Pelanggan)",
-      "Monetary (Total Nilai Belanja & Net Profit)",
-      "Distribusi Pelanggan & Revenue per Segmen RFM",
+      "Pergeseran Net Profit & Estimasi Dampak (IDR)",
+      "Dimensi / Channel Penyumbang Penurunan Utama",
+      "Jejak Eksekusi 4 Tool Investigasi Terstruktur",
+      "Rekomendasi Tindakan Prioritas & SQL Verifikasi",
     ],
     keyInsights: [
-      "Pembersihan duplikasi, nilai kosong, dan margin negatif menjaga akurasi perhitungan profitabilitas transaksi.",
-      "Segmen Champions dan Loyal Customers menyumbang porsi nilai transaksi utama, sementara At Risk perlu pendekatan win-back.",
-      "Analisis profit per kategori membantu membedakan produk ber-omzet tinggi dengan produk ber-margin bersih optimal.",
+      "Memisahkan eksekusi tool perhitungan deterministik dari narasi manajemen menjaga akurasi angka sekaligus memperjelas alur analisis.",
+      "Membandingkan net profit terhadap komponen biaya iklan dan retur/waste membantu membedakan masalah volume dari kebocoran margin.",
+      "Menampilkan kueri SQL pendamping memudahkan tim data memverifikasi temuan langsung di database.",
     ],
     businessRecommendations: [
-      "Pertahankan loyalitas segmen Champions lewat benefit eksklusif tanpa menggerus margin dengan diskon berlebih.",
-      "Jalankan promo win-back yang relevan dengan riwayat belanja terakhir untuk segmen At Risk.",
-      "Fokuskan dorongan repeat order pada Potential Loyalist dan prioritaskan item dengan rasio margin sehat.",
+      "Fokuskan intervensi awal pada segmen atau kanal dengan dampak penurunan net profit terbesar sebelum menambah belanja promosi.",
+      "Tetapkan batas kontrol biaya retur/waste dan efisiensi biaya akuisisi per periode pelaporan.",
+      "Gunakan kueri SQL investigasi sebagai bagian dari rutinitas evaluasi mingguan bersama tim operasional dan komersial.",
     ],
     highlights: [
-      "Dampak Bisnis: Memetakan segmen prioritas (Champions, At Risk, Hibernating) dan profitabilitas produk untuk strategi retensi.",
-      "Aksi Teknis: Data cleaning, CTE & Window Function SQL (BigQuery), serta RFM scoring & analisis profit di Python (Pandas).",
+      "Dampak Bisnis: Mempercepat diagnosis akar penurunan margin/ROAS dan menyusun tindakan prioritas untuk manajemen.",
+      "Aksi Teknis: 4 tool investigasi terstruktur + endpoint /api/root-cause-agent + jejak langkah agent & grafik Recharts.",
     ],
-    technologies: ["SQL", "BigQuery", "Python", "Pandas", "RFM Analysis"],
+    technologies: ["Next.js", "TypeScript", "Gemini API", "AI Agent", "SQL", "Recharts"],
     featured: true,
-    href: "/projects/sql-python-case",
   },
   {
     id: 10,
@@ -147,6 +147,49 @@ const projectsData: ProjectItem[] = [
     href: "/projects/ai-insight-assistant",
   },
   {
+    id: 3,
+    title: "Analisis Profit & Segmentasi Pelanggan RFM Menggunakan SQL dan Python",
+    category: "Analytics & Research",
+    role: "Data Analyst • SQL & Python Case Study",
+    period: "2026 • BigQuery SQL & Pandas",
+    image: "/images/projects/project-8-sql-python.jpg",
+    shortDescription:
+      "Mengelompokkan pelanggan ritel ke 5 segmen RFM dan menganalisis profitabilitas produk menggunakan SQL (BigQuery) serta Python (Pandas) untuk efisiensi retensi.",
+    description:
+      "Mengolah data transaksi ritel menggunakan SQL dan Python (Pandas) untuk membersihkan anomali data, menghitung margin bersih, serta mengelompokkan pelanggan ke segmen RFM beserta rekomendasi aksi retensi.",
+    businessContext:
+      "Strategi promosi yang seragam pada seluruh pelanggan membuat biaya pemasaran kurang efisien dan menyulitkan deteksi produk dengan margin rendah.",
+    technicalAction:
+      "Melakukan data cleaning, agregasi transaksi menggunakan SQL (BigQuery), serta pemodelan segmentasi RFM dan analisis profitabilitas menggunakan Python (Pandas).",
+    businessImpact:
+      "Mengelompokkan pelanggan ke dalam segmen prioritas (Champions, Loyal Customers, Potential Loyalist, At Risk, Hibernating) dan memetakan sub-kategori produk dengan rasio profit tertinggi untuk rekomendasi kampanye retensi.",
+    dataSource:
+      "Data transaksi ritel (ID transaksi, ID pelanggan, tanggal order, kategori produk, kuantitas, harga jual, dan biaya pokok/COGS).",
+    keyKpis: [
+      "Recency (Hari Sejak Transaksi Terakhir)",
+      "Frequency (Jumlah Transaksi Pelanggan)",
+      "Monetary (Total Nilai Belanja & Net Profit)",
+      "Distribusi Pelanggan & Revenue per Segmen RFM",
+    ],
+    keyInsights: [
+      "Pembersihan duplikasi, nilai kosong, dan margin negatif menjaga akurasi perhitungan profitabilitas transaksi.",
+      "Segmen Champions dan Loyal Customers menyumbang porsi nilai transaksi utama, sementara At Risk perlu pendekatan win-back.",
+      "Analisis profit per kategori membantu membedakan produk ber-omzet tinggi dengan produk ber-margin bersih optimal.",
+    ],
+    businessRecommendations: [
+      "Pertahankan loyalitas segmen Champions lewat benefit eksklusif tanpa menggerus margin dengan diskon berlebih.",
+      "Jalankan promo win-back yang relevan dengan riwayat belanja terakhir untuk segmen At Risk.",
+      "Fokuskan dorongan repeat order pada Potential Loyalist dan prioritaskan item dengan rasio margin sehat.",
+    ],
+    highlights: [
+      "Dampak Bisnis: Memetakan segmen prioritas (Champions, At Risk, Hibernating) dan profitabilitas produk untuk strategi retensi.",
+      "Aksi Teknis: Data cleaning, CTE & Window Function SQL (BigQuery), serta RFM scoring & analisis profit di Python (Pandas).",
+    ],
+    technologies: ["SQL", "BigQuery", "Python", "Pandas", "RFM Analysis"],
+    featured: true,
+    href: "/projects/sql-python-case",
+  },
+  {
     id: 4,
     title: "Dashboard Eksplorasi BI Interaktif: E-Commerce & Digital Marketing",
     category: "BI & Dashboard",
@@ -188,6 +231,49 @@ const projectsData: ProjectItem[] = [
     technologies: ["Next.js", "TypeScript", "PapaParse", "Recharts", "Tailwind CSS"],
     featured: true,
     href: "/projects/bi-playground",
+  },
+  {
+    id: 11,
+    title: "Simulator Penetapan Harga, Elastisitas Promo & Unit Economics",
+    category: "Operations & Data",
+    role: "Business & Pricing Analyst • Decision Simulator",
+    period: "2026 • Next.js & Recharts",
+    image: "/images/projects/simulasi.png",
+    href: "/projects/pricing-simulator",
+    shortDescription:
+      "Menguji dampak perubahan harga jual, diskon promo, HPP (COGS), dan komisi channel terhadap contribution margin, break-even volume, serta laba bersih bulanan.",
+    description:
+      "Membangun simulator pengambilan keputusan bisnis interaktif di Next.js dan Recharts untuk menguji sensitivitas penyesuaian harga jual, diskon kampanye promo, elastisitas permintaan, dan struktur biaya terhadap margin kontribusi, titik impas (BEP), serta laba bersih bulanan.",
+    businessContext:
+      "Kenaikan harga jual berisiko menurunkan volume karena elastisitas permintaan, sementara diskon promo tanpa perhitungan break-even volume dapat menggerus net margin dan profitabilitas bisnis.",
+    technicalAction:
+      "Membangun simulator What-If berbasis Next.js, TypeScript, dan Recharts dengan preset studi kasus F&B, E-Commerce, dan Retail, lengkap dengan perhitungan elastisitas harga, break-even volume, dan kurva sensitivitas laba bersih.",
+    businessImpact:
+      "Membantu mengevaluasi kelayakan skenario harga dan promo sebelum dijalankan sekaligus memetakan titik harga optimal dengan potensi laba tertinggi.",
+    dataSource:
+      "Parameter unit economics simulasi (harga jual dasar, HPP/COGS per unit, komisi channel, volume baseline, biaya tetap bulanan, dan koefisien elastisitas harga).",
+    keyKpis: [
+      "Harga Efektif & Contribution Margin per Unit (%)",
+      "Proyeksi Volume & Omzet Bulanan (IDR)",
+      "Proyeksi Laba Bersih & Selisih vs Baseline",
+      "Break-Even Volume Promo & Fixed Cost BEP",
+    ],
+    keyInsights: [
+      "Setiap potongan diskon atau perubahan harga memiliki batas volume impas (break-even lift) yang harus dicapai agar laba bersih tidak turun dibanding baseline.",
+      "Koefisien elastisitas harga menentukan apakah kenaikan harga meningkatkan net profit atau justru tertahan penurunan kuantitas.",
+      "Kurva sensitivitas membantu menemukan titik keseimbangan antara harga, volume, dan biaya tetap operasional.",
+    ],
+    businessRecommendations: [
+      "Hitung target kenaikan volume minimal sebelum meluncurkan diskon kampanye atau voucher promo.",
+      "Uji perubahan harga secara bertahap dan pantau dampaknya terhadap contribution margin serta repeat order.",
+      "Kombinasikan strategi harga dengan pengelolaan biaya tetap dan komisi channel agar margin tetap sehat.",
+    ],
+    highlights: [
+      "Dampak Bisnis: Menghitung syarat break-even volume promo dan memetakan titik harga optimal untuk laba bersih.",
+      "Aksi Teknis: Simulator What-If Next.js + Recharts dengan preset F&B, E-Commerce & Retail serta rekomendasi keputusan otomatis.",
+    ],
+    technologies: ["Next.js", "TypeScript", "Recharts", "Pricing Strategy", "Unit Economics"],
+    featured: true,
   },
   {
     id: 5,
